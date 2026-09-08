@@ -1,0 +1,12 @@
+node_modules/
+.env.local
+.env*.local
+
+# Next.js
+apps/web/.next/
+apps/web/out/
+apps/web/next-env.d.ts
+
+# misc
+*.log
+.DS_Store
