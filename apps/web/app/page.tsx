@@ -2,6 +2,9 @@ import type { Lieu } from "@gosee/shared";
 import { LieuList } from "@/components/LieuList";
 import { supabase } from "@/lib/supabaseClient";
 
+// Rafraîchit la liste depuis Supabase au plus toutes les 60 s (pas de rebuild).
+export const revalidate = 60;
+
 async function getLieux(): Promise<Lieu[]> {
   const { data, error } = await supabase.from("lieux").select("*").order("nom");
   if (error) throw new Error(error.message);
