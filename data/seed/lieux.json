@@ -10,7 +10,8 @@
     "lng": 2.3881503,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3789476,2.3881503",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "basilique-sainte-rita"
   },
   {
     "nom": "Fondation Zinsou",
@@ -23,7 +24,8 @@
     "lng": 2.4206323,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3625604,2.4206323",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "fondation-zinsou"
   },
   {
     "nom": "Plage de Fidjrossè",
@@ -36,7 +38,8 @@
     "lng": 2.3666226,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3483034,2.3666226",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "plage-de-fidjrosse"
   },
   {
     "nom": "Statue de l'Amazone (Place du Souvenir)",
@@ -49,7 +52,8 @@
     "lng": 2.4049056,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3536986,2.4049056",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "statue-de-l-amazone-place-du-souvenir"
   },
   {
     "nom": "Stade de l'Amitié",
@@ -62,7 +66,8 @@
     "lng": 2.3794872,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3859642,2.3794872",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "stade-de-l-amitie"
   },
   {
     "nom": "Route des Esclaves",
@@ -75,7 +80,8 @@
     "lng": 2.0888293,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3566471,2.0888293",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "route-des-esclaves"
   },
   {
     "nom": "Temple des Pythons",
@@ -88,7 +94,8 @@
     "lng": 2.0851368,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3595647,2.0851368",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "temple-des-pythons"
   },
   {
     "nom": "Forêt sacrée de Kpassè",
@@ -101,7 +108,8 @@
     "lng": 2.0958514,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3653416,2.0958514",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "foret-sacree-de-kpasse"
   },
   {
     "nom": "Fort Portugais de Ouidah",
@@ -114,7 +122,8 @@
     "lng": 2.0763253,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3716474,2.0763253",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "fort-portugais-de-ouidah"
   },
   {
     "nom": "Ganvié",
@@ -127,7 +136,8 @@
     "lng": 2.3912944,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4674443,2.3912944",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "ganvie"
   },
   {
     "nom": "Palais royal de Porto-Novo",
@@ -140,7 +150,8 @@
     "lng": 2.6248765,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4691571,2.6248765",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "palais-royal-de-porto-novo"
   },
   {
     "nom": "Musée da Silva",
@@ -153,7 +164,8 @@
     "lng": 2.6205004,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4708524,2.6205004",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "musee-da-silva"
   },
   {
     "nom": "Musée ethnographique Alexandre Sènou Adandé",
@@ -166,7 +178,8 @@
     "lng": 2.617385,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4731824,2.617385",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "musee-ethnographique-alexandre-senou-adande"
   },
   {
     "nom": "Centre Songhaï",
@@ -179,7 +192,8 @@
     "lng": 2.6147924,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4994544,2.6147924",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "centre-songhai"
   },
   {
     "nom": "Cathédrale Notre-Dame de Porto-Novo",
@@ -192,7 +206,8 @@
     "lng": 2.6197026,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4721065,2.6197026",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "cathedrale-notre-dame-de-porto-novo"
   },
   {
     "nom": "Cité royale de Kétou",
@@ -205,7 +220,8 @@
     "lng": 2.6040436,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.3603376,2.6040436",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "cite-royale-de-ketou"
   },
   {
     "nom": "Musée Akaba Idena",
@@ -218,7 +234,8 @@
     "lng": 2.6016927,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.3634919,2.6016927",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "musee-akaba-idena"
   },
   {
     "nom": "Sociétés de masques Guèlèdè, Sakété",
@@ -231,7 +248,8 @@
     "lng": 2.6636066,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.7368274,2.6636066",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "societes-de-masques-guelede-sakete"
   },
   {
     "nom": "Ville de Pobè",
@@ -244,7 +262,8 @@
     "lng": 2.6636066,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.9832415,2.6636066",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "ville-de-pobe"
   },
   {
     "nom": "Palais royaux d'Abomey",
@@ -257,7 +276,8 @@
     "lng": 1.997943,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.1855024,1.997943",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "palais-royaux-d-abomey"
   },
   {
     "nom": "Musée historique d'Abomey",
@@ -270,7 +290,8 @@
     "lng": 1.9943789,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.1863091,1.9943789",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "musee-historique-d-abomey"
   },
   {
     "nom": "Place Béhanzin (Place Goho)",
@@ -283,7 +304,8 @@
     "lng": 2.0078158,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.1842529,2.0078158",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "place-behanzin-place-goho"
   },
   {
     "nom": "Forêt classée de la Lama",
@@ -296,7 +318,8 @@
     "lng": 2.1662158,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.9179281,2.1662158",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "foret-classee-de-la-lama"
   },
   {
     "nom": "Grotte mariale de Dassa-Zoumé",
@@ -309,7 +332,8 @@
     "lng": 2.1865136,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.7752876,2.1865136",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "grotte-mariale-de-dassa-zoume"
   },
   {
     "nom": "Savalou (ville historique, culte vaudou)",
@@ -322,7 +346,8 @@
     "lng": 1.9710284,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.9301365,1.9710284",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "savalou-ville-historique-culte-vaudou"
   },
   {
     "nom": "Plage de Grand-Popo",
@@ -335,7 +360,8 @@
     "lng": 1.7417143,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.2639324,1.7417143",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "plage-de-grand-popo"
   },
   {
     "nom": "Village de Possotomè",
@@ -348,7 +374,8 @@
     "lng": 1.9625132,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.520838,1.9625132",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "village-de-possotome"
   },
   {
     "nom": "Bouche du Roy",
@@ -361,7 +388,8 @@
     "lng": 1.917286,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.2922216,1.917286",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "bouche-du-roy"
   },
   {
     "nom": "Ville de Lokossa",
@@ -374,7 +402,8 @@
     "lng": 1.7198215,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.6448093,1.7198215",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "ville-de-lokossa"
   },
   {
     "nom": "Parc national de la Pendjari",
@@ -387,7 +416,8 @@
     "lng": 1.5983959,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=11.2481125,1.5983959",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "parc-national-de-la-pendjari"
   },
   {
     "nom": "Villages Tata Somba",
@@ -400,7 +430,8 @@
     "lng": 1.3735244,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.3091173,1.3735244",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "villages-tata-somba"
   },
   {
     "nom": "Cascades de Tanougou",
@@ -413,7 +444,8 @@
     "lng": 1.4363443,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.8121477,1.4363443",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "cascades-de-tanougou"
   },
   {
     "nom": "Musée régional de Natitingou",
@@ -426,7 +458,8 @@
     "lng": 1.3802711,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.3106873,1.3802711",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "musee-regional-de-natitingou"
   },
   {
     "nom": "Chaîne de l'Atacora",
@@ -439,7 +472,8 @@
     "lng": 1.5,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.75,1.5",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "chaine-de-l-atacora"
   },
   {
     "nom": "Forêt classée de Wari-Maro",
@@ -452,7 +486,8 @@
     "lng": 2.1843285,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=8.9622901,2.1843285",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "foret-classee-de-wari-maro"
   },
   {
     "nom": "Village de Bassila",
@@ -465,7 +500,8 @@
     "lng": 1.6639235,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.006393,1.6639235",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "village-de-bassila"
   },
   {
     "nom": "Musée de plein air de Parakou",
@@ -478,7 +514,8 @@
     "lng": 2.6174022,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.3279386,2.6174022",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "musee-de-plein-air-de-parakou"
   },
   {
     "nom": "Fête de la Gani (Nikki)",
@@ -491,7 +528,8 @@
     "lng": 3.2167913,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.9276076,3.2167913",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "fete-de-la-gani-nikki"
   },
   {
     "nom": "Palais royal de Nikki",
@@ -504,7 +542,8 @@
     "lng": 3.2105884,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.9363278,3.2105884",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "palais-royal-de-nikki"
   },
   {
     "nom": "Parc national du W",
@@ -517,7 +556,8 @@
     "lng": 3.0341667,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=12.0408333,3.0341667",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "parc-national-du-w"
   },
   {
     "nom": "Fleuve Niger (rives)",
@@ -530,7 +570,8 @@
     "lng": 3.3842473,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=11.8633332,3.3842473",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "fleuve-niger-rives"
   },
   {
     "nom": "Ville de Kandi",
@@ -543,7 +584,8 @@
     "lng": 2.9325785,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=11.1305191,2.9325785",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "ville-de-kandi"
   },
   {
     "nom": "Beach Sand Hotel & Resort",
@@ -556,7 +598,8 @@
     "lng": 2.4786126,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3629805,2.4786126",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "beach-sand-hotel-resort"
   },
   {
     "nom": "Benin Berge Hotel",
@@ -569,7 +612,8 @@
     "lng": 2.4329079,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3802222,2.4329079",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "benin-berge-hotel"
   },
   {
     "nom": "Résidences Easy Hotel",
@@ -582,7 +626,8 @@
     "lng": 2.3639597,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3532986,2.3639597",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "residences-easy-hotel"
   },
   {
     "nom": "Aquamazone",
@@ -595,7 +640,8 @@
     "lng": 2.2819732,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3487974,2.2819732",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "aquamazone"
   },
   {
     "nom": "Balade Route des Pêches",
@@ -608,7 +654,8 @@
     "lng": 2.3649948,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3494908,2.3649948",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "balade-route-des-peches"
   },
   {
     "nom": "Rio Hôtel Ouidah",
@@ -621,7 +668,8 @@
     "lng": 2.0933362,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3711179,2.0933362",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "rio-hotel-ouidah"
   },
   {
     "nom": "Native Hotels Ouidah",
@@ -634,7 +682,8 @@
     "lng": 2.0743288,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3553466,2.0743288",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "native-hotels-ouidah"
   },
   {
     "nom": "Bel Ami sur Pilotis",
@@ -647,7 +696,8 @@
     "lng": 2.0004834,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.5017655,2.0004834",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "bel-ami-sur-pilotis"
   },
   {
     "nom": "Holy Land Parc",
@@ -660,7 +710,8 @@
     "lng": 2.3402988,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4443954,2.3402988",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "holy-land-parc"
   },
   {
     "nom": "Visite guidée de Ouidah (Nadal Évasion Tours)",
@@ -673,7 +724,8 @@
     "lng": 2.0880394,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3740054,2.0880394",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-guidee-de-ouidah-nadal-evasion-tours"
   },
   {
     "nom": "Sortie pirogue à Ganvié",
@@ -686,7 +738,8 @@
     "lng": 2.3912944,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4674443,2.3912944",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "sortie-pirogue-a-ganvie"
   },
   {
     "nom": "Fête du Vodun (10 janvier)",
@@ -699,7 +752,8 @@
     "lng": 2.0851368,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3595647,2.0851368",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "fete-du-vodun-10-janvier"
   },
   {
     "nom": "Art Résidence Hôtel",
@@ -712,7 +766,8 @@
     "lng": 2.6114132,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4824678,2.6114132",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "art-residence-hotel"
   },
   {
     "nom": "Tour Eiffel Hôtel Bénin",
@@ -725,7 +780,8 @@
     "lng": 2.5956944,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4816315,2.5956944",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "tour-eiffel-hotel-benin"
   },
   {
     "nom": "Parc d'attraction Ifè",
@@ -738,7 +794,8 @@
     "lng": 2.6095372,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.4707072,2.6095372",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "parc-d-attraction-ife"
   },
   {
     "nom": "Balade sur la Rivière Noire",
@@ -751,7 +808,8 @@
     "lng": 2.6715489,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.5429012,2.6715489",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "balade-sur-la-riviere-noire"
   },
   {
     "nom": "Visite du Grand Marché de Porto-Novo",
@@ -764,7 +822,8 @@
     "lng": 2.6266839,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.470905,2.6266839",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-du-grand-marche-de-porto-novo"
   },
   {
     "nom": "Adebayo Hôtel",
@@ -777,7 +836,8 @@
     "lng": 2.658367,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.9774796,2.658367",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "adebayo-hotel"
   },
   {
     "nom": "Visite du musée Akaba Idena",
@@ -790,7 +850,8 @@
     "lng": 2.6016927,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.3634919,2.6016927",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-du-musee-akaba-idena"
   },
   {
     "nom": "Balade dans la cité royale de Kétou",
@@ -803,7 +864,8 @@
     "lng": 2.6040436,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.3603376,2.6040436",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "balade-dans-la-cite-royale-de-ketou"
   },
   {
     "nom": "Guèlèdè (spectacle de masques)",
@@ -816,7 +878,8 @@
     "lng": 2.6636066,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.7368274,2.6636066",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "guelede-spectacle-de-masques"
   },
   {
     "nom": "Ekagnon Hôtel Abomey",
@@ -829,7 +892,8 @@
     "lng": 2.0021363,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.1640097,2.0021363",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "ekagnon-hotel-abomey"
   },
   {
     "nom": "Bois Vert Hôtel",
@@ -842,7 +906,8 @@
     "lng": 1.9902517,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.1732015,1.9902517",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "bois-vert-hotel"
   },
   {
     "nom": "Chez Sabine",
@@ -855,7 +920,8 @@
     "lng": 2.0302333,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.183616,2.0302333",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "chez-sabine"
   },
   {
     "nom": "Visite guidée des palais royaux (Guide Abomey)",
@@ -868,7 +934,8 @@
     "lng": 1.9942085,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.1889261,1.9942085",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-guidee-des-palais-royaux-guide-abomey"
   },
   {
     "nom": "Découverte de la Forêt classée de la Lama",
@@ -881,7 +948,8 @@
     "lng": 2.1662158,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.9179281,2.1662158",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "decouverte-de-la-foret-classee-de-la-lama"
   },
   {
     "nom": "Hôtel Jeco",
@@ -894,7 +962,8 @@
     "lng": 2.1843505,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.7790481,2.1843505",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-jeco"
   },
   {
     "nom": "Auberge de Dassa-Zoumé",
@@ -907,7 +976,8 @@
     "lng": 2.1824554,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.7811209,2.1824554",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "auberge-de-dassa-zoume"
   },
   {
     "nom": "Loubna Hôtel & Restauration",
@@ -920,7 +990,8 @@
     "lng": 2.2237021,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.6698299,2.2237021",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "loubna-hotel-restauration"
   },
   {
     "nom": "Pèlerinage à la Grotte mariale de Dassa",
@@ -933,7 +1004,8 @@
     "lng": 2.1865136,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.7752876,2.1865136",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "pelerinage-a-la-grotte-mariale-de-dassa"
   },
   {
     "nom": "Visite du sanctuaire vaudou de Dankoli",
@@ -946,7 +1018,8 @@
     "lng": 1.9710284,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.9301365,1.9710284",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-du-sanctuaire-vaudou-de-dankoli"
   },
   {
     "nom": "Visite du Palais Royal de Savalou",
@@ -959,7 +1032,8 @@
     "lng": 1.9726773,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7.9313702,1.9726773",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-du-palais-royal-de-savalou"
   },
   {
     "nom": "Hôtel Arnogos",
@@ -972,7 +1046,8 @@
     "lng": 1.7079479,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.9326883,1.7079479",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-arnogos"
   },
   {
     "nom": "Awale Plage",
@@ -985,7 +1060,8 @@
     "lng": 1.786942,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.270213,1.786942",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "awale-plage"
   },
   {
     "nom": "ASVA Beach Resort",
@@ -998,7 +1074,8 @@
     "lng": 1.8104271,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.2757733,1.8104271",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "asva-beach-resort"
   },
   {
     "nom": "Millenium Popo Beach Hôtel",
@@ -1011,7 +1088,8 @@
     "lng": 1.6979677,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.2518431,1.6979677",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "millenium-popo-beach-hotel"
   },
   {
     "nom": "Excursions avec BAKOLO Tours",
@@ -1024,7 +1102,8 @@
     "lng": 1.8037903,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.2772786,1.8037903",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "excursions-avec-bakolo-tours"
   },
   {
     "nom": "Sortie bateau vers la Bouche du Roy",
@@ -1037,7 +1116,8 @@
     "lng": 1.917286,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.2922216,1.917286",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "sortie-bateau-vers-la-bouche-du-roy"
   },
   {
     "nom": "Hôtel Bellevue",
@@ -1050,7 +1130,8 @@
     "lng": 1.3856433,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.3059893,1.3856433",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-bellevue"
   },
   {
     "nom": "Hôtel Tata Somba",
@@ -1063,7 +1144,8 @@
     "lng": 1.3735244,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.3091173,1.3735244",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-tata-somba"
   },
   {
     "nom": "Hôtel Totora",
@@ -1076,7 +1158,8 @@
     "lng": 1.3738271,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.3181651,1.3738271",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-totora"
   },
   {
     "nom": "Safari au Parc national de la Pendjari",
@@ -1089,7 +1172,8 @@
     "lng": 1.5983959,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=11.2481125,1.5983959",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "safari-au-parc-national-de-la-pendjari"
   },
   {
     "nom": "Visite des villages Tata Somba",
@@ -1102,7 +1186,8 @@
     "lng": 1.3735244,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.3091173,1.3735244",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-des-villages-tata-somba"
   },
   {
     "nom": "Randonnée aux cascades de Tanougou",
@@ -1115,7 +1200,8 @@
     "lng": 1.4363443,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10.8121477,1.4363443",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "randonnee-aux-cascades-de-tanougou"
   },
   {
     "nom": "Motel Du Lac",
@@ -1128,7 +1214,8 @@
     "lng": 1.6527047,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.6802129,1.6527047",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "motel-du-lac"
   },
   {
     "nom": "Hôtel de la Donga",
@@ -1141,7 +1228,8 @@
     "lng": 1.6732916,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.6997379,1.6732916",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-de-la-donga"
   },
   {
     "nom": "Hôtel Cathas",
@@ -1154,7 +1242,8 @@
     "lng": 1.6729295,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.6989611,1.6729295",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-cathas"
   },
   {
     "nom": "Découverte de la Forêt classée de Wari-Maro",
@@ -1167,7 +1256,8 @@
     "lng": 2.1843285,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=8.9622901,2.1843285",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "decouverte-de-la-foret-classee-de-wari-maro"
   },
   {
     "nom": "Ola Luxury Hôtel",
@@ -1180,7 +1270,8 @@
     "lng": 2.6330228,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.3553016,2.6330228",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "ola-luxury-hotel"
   },
   {
     "nom": "Kobourou City Hôtel",
@@ -1193,7 +1284,8 @@
     "lng": 2.6247833,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.3664096,2.6247833",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "kobourou-city-hotel"
   },
   {
     "nom": "Hôtel Iya-Oasis",
@@ -1206,7 +1298,8 @@
     "lng": 2.6373219,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.3457835,2.6373219",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-iya-oasis"
   },
   {
     "nom": "Visite du musée de plein air de Parakou",
@@ -1219,7 +1312,8 @@
     "lng": 2.6174022,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.3279386,2.6174022",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "visite-du-musee-de-plein-air-de-parakou"
   },
   {
     "nom": "Fête de la Gani",
@@ -1232,7 +1326,8 @@
     "lng": 3.2167913,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.9276076,3.2167913",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "fete-de-la-gani"
   },
   {
     "nom": "Hôtel Séjour du Sahel",
@@ -1245,7 +1340,8 @@
     "lng": 3.389122,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=11.8523034,3.389122",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "hotel-sejour-du-sahel"
   },
   {
     "nom": "Safari au Parc national du W",
@@ -1258,6 +1354,7 @@
     "lng": 3.0341667,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=12.0408333,3.0341667",
     "verified": true,
-    "source": "Vérifié (Google Places)"
+    "source": "Vérifié (Google Places)",
+    "slug": "safari-au-parc-national-du-w"
   }
 ]

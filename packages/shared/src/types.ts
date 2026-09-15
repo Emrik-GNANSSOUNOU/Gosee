@@ -23,6 +23,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 
 export interface Lieu {
   id: string;
+  slug: string;
   nom: string;
   category: Category;
   description: string | null;

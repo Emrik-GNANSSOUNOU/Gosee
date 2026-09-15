@@ -1,19 +1,37 @@
-import type { Lieu } from "@gosee/shared";
+import type { Metadata } from "next";
+import { CATEGORIES, CATEGORY_LABELS, type Category } from "@gosee/shared";
 import { LieuList } from "@/components/LieuList";
-import { supabase } from "@/lib/supabaseClient";
+import { getAllLieux } from "@/lib/lieux";
+import { absoluteUrl } from "@/lib/seo";
 
-// Rendu à la demande : la liste reflète toujours l'état de Supabase, et le
-// build ne dépend pas d'un accès DB (plus fiable en CI/Vercel).
-export const dynamic = "force-dynamic";
+type SearchParams = Promise<{ category?: string }>;
 
-async function getLieux(): Promise<Lieu[]> {
-  const { data, error } = await supabase.from("lieux").select("*").order("nom");
-  if (error) throw new Error(error.message);
-  return data as Lieu[];
+function parseCategory(raw?: string): Category | "all" {
+  return raw && (CATEGORIES as string[]).includes(raw) ? (raw as Category) : "all";
 }
 
-export default async function HomePage() {
-  const lieux = await getLieux();
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}): Promise<Metadata> {
+  const category = parseCategory((await searchParams).category);
+
+  if (category === "all") {
+    return { alternates: { canonical: absoluteUrl("/") } };
+  }
+
+  const label = CATEGORY_LABELS[category];
+  return {
+    title: `${label} au Bénin`,
+    description: `Découvrez tous les lieux de catégorie ${label.toLowerCase()} référencés par Gosee au Bénin, avec localisation et itinéraire.`,
+    alternates: { canonical: absoluteUrl(`/?category=${category}`) },
+  };
+}
+
+export default async function HomePage({ searchParams }: { searchParams: SearchParams }) {
+  const category = parseCategory((await searchParams).category);
+  const lieux = await getAllLieux();
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-6">
@@ -24,7 +42,7 @@ export default async function HomePage() {
         </p>
       </header>
 
-      <LieuList lieux={lieux} />
+      <LieuList lieux={lieux} initialCategory={category} />
     </main>
   );
 }

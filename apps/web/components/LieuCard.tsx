@@ -4,7 +4,7 @@ import { CATEGORY_LABELS, type Lieu } from "@gosee/shared";
 export function LieuCard({ lieu }: { lieu: Lieu }) {
   return (
     <Link
-      href={`/lieux/${lieu.id}`}
+      href={`/lieux/${lieu.slug}`}
       className="block rounded-xl border border-neutral-200 bg-white p-4 transition-shadow hover:shadow-md"
     >
       <div className="flex items-start justify-between gap-2">

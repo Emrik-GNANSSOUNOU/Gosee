@@ -12,4 +12,11 @@ if (!supabaseUrl || !supabaseAnonKey) {
   );
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  global: {
+    // Fait passer les requêtes de lecture par le Data Cache de Next.js
+    // (60s) : les pages restent server-rendered (bon pour le SEO / le
+    // crawl) sans refaire un aller-retour Supabase à chaque requête.
+    fetch: (input, init) => fetch(input, { ...init, next: { revalidate: 60 } }),
+  },
+});

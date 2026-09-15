@@ -38,6 +38,39 @@ def parse_verified(statut):
     return bool(statut) and "vérifié" in str(statut).lower()
 
 
+_ACCENTS = str.maketrans(
+    "àâäáãåèéêëìíîïòóôöõùúûüçñ",
+    "aaaaaaeeeeiiiiooooouuuucn",
+)
+
+
+def slugify(text):
+    text = str(text).lower().translate(_ACCENTS)
+    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    return text
+
+
+def assign_unique_slugs(lieux):
+    """Slug de base = nom. En cas de collision, suffixe par le département,
+    puis par un compteur si ça ne suffit toujours pas."""
+    counts = {}
+    for lieu in lieux:
+        counts[slugify(lieu["nom"])] = counts.get(slugify(lieu["nom"]), 0) + 1
+
+    seen = set()
+    for lieu in lieux:
+        base = slugify(lieu["nom"])
+        slug = base if counts[base] == 1 else f"{base}-{slugify(lieu['department'] or '')}"
+        if slug in seen:
+            n = 2
+            while f"{slug}-{n}" in seen:
+                n += 1
+            slug = f"{slug}-{n}"
+        seen.add(slug)
+        lieu["slug"] = slug
+    return lieux
+
+
 def rows_from_sheet_1(ws):
     """60 Lieux incontournables: Département, #, Nom, Type, Description,
     Localisation, GPS, Lien Google Maps, Statut."""
@@ -94,6 +127,8 @@ def main():
         if key in seen:
             print(f"Doublon détecté: {key}")
         seen.add(key)
+
+    assign_unique_slugs(lieux)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(lieux, ensure_ascii=False, indent=2), encoding="utf-8")

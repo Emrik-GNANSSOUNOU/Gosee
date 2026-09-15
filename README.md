@@ -86,8 +86,25 @@ npm run lint    # lint
    Variables) :
    - `NEXT_PUBLIC_SUPABASE_URL`
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `NEXT_PUBLIC_SITE_URL` : l'URL de production (ex.
+     `https://gosee-web-xxx.vercel.app`), sans slash final — utilisée pour
+     les canonicals, Open Graph, `robots.txt` et `sitemap.xml`
 5. Déployer. Chaque push sur la branche principale redéploie
    automatiquement.
+
+## SEO
+
+- `app/sitemap.ts` et `app/robots.ts` sont générés nativement par Next.js
+  (`/sitemap.xml`, `/robots.txt`) à partir des lieux en base.
+- Chaque fiche lieu (`/lieux/[slug]`) a un `<title>`/description dynamiques,
+  une URL canonique, des balises Open Graph/Twitter, et un JSON-LD
+  (`TouristAttraction` / `LodgingBusiness` selon la catégorie).
+- Les URLs utilisent un `slug` lisible (ex. `/lieux/fondation-zinsou`),
+  généré à l'export (`data/scripts/export_xlsx_to_json.py`) et stocké en
+  base — pas l'UUID interne.
+- Le filtre catégorie est reflété dans l'URL (`/?category=hotel`) : lien
+  `<a href>` réel (crawlable, partageable) intercepté en JS pour un
+  filtrage instantané côté client, sans rechargement.
 
 ## Notes de modélisation
 
