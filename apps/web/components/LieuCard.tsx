@@ -34,9 +34,16 @@ export function LieuCard({ lieu }: { lieu: Lieu }) {
           <h3 className="text-lg font-bold leading-snug text-white drop-shadow-sm">
             {lieu.nom}
           </h3>
-          {lieu.department && (
-            <p className="mt-0.5 text-sm text-white/85 drop-shadow-sm">{lieu.department}</p>
-          )}
+          <div className="mt-0.5 flex items-center gap-2 text-sm text-white/85 drop-shadow-sm">
+            {lieu.department && <span>{lieu.department}</span>}
+            {lieu.rating != null && (
+              <span className="flex items-center gap-0.5">
+                <span aria-hidden>★</span>
+                {lieu.rating.toFixed(1)}
+                {lieu.reviews_count != null && ` (${lieu.reviews_count})`}
+              </span>
+            )}
+          </div>
         </div>
       </div>
 

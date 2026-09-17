@@ -105,11 +105,20 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
           <h1 className="mt-2 text-2xl font-extrabold leading-tight text-white drop-shadow-sm sm:text-3xl">
             {lieu.nom}
           </h1>
-          {lieu.department && (
-            <p className="mt-1 text-white/85 drop-shadow-sm">
-              {lieu.department}, {lieu.country}
-            </p>
-          )}
+          <div className="mt-1 flex items-center gap-2 text-white/85 drop-shadow-sm">
+            {lieu.department && (
+              <span>
+                {lieu.department}, {lieu.country}
+              </span>
+            )}
+            {lieu.rating != null && (
+              <span className="flex items-center gap-0.5">
+                <span aria-hidden>★</span>
+                {lieu.rating.toFixed(1)}
+                {lieu.reviews_count != null && ` (${lieu.reviews_count} avis)`}
+              </span>
+            )}
+          </div>
         </div>
       </div>
 
@@ -127,12 +136,31 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
           )}
           <div className="flex justify-between gap-4 px-4 py-3">
             <dt className="text-sm text-neutral-500">Horaires</dt>
-            <dd className="text-right text-sm text-neutral-400">Non renseignés</dd>
+            <dd
+              className={`text-right text-sm ${lieu.horaires ? "text-neutral-900" : "text-neutral-400"}`}
+            >
+              {lieu.horaires ?? "Non renseignés"}
+            </dd>
           </div>
           {lieu.contact && (
             <div className="flex justify-between gap-4 px-4 py-3">
-              <dt className="text-sm text-neutral-500">Contact</dt>
+              <dt className="text-sm text-neutral-500">Téléphone</dt>
               <dd className="text-right text-sm text-neutral-900">{lieu.contact}</dd>
+            </div>
+          )}
+          {lieu.website && (
+            <div className="flex justify-between gap-4 px-4 py-3">
+              <dt className="text-sm text-neutral-500">Site web</dt>
+              <dd className="text-right text-sm">
+                <a
+                  href={lieu.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-700 hover:underline"
+                >
+                  {lieu.website.replace(/^https?:\/\//, "")}
+                </a>
+              </dd>
             </div>
           )}
         </dl>

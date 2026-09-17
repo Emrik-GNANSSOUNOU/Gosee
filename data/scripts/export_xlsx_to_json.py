@@ -71,11 +71,31 @@ def assign_unique_slugs(lieux):
     return lieux
 
 
+def extra_fields(row, headers, offset):
+    """Champs d'enrichissement (Horaires, Téléphone, Site web, Note, Nb avis,
+    Remarque) ajoutés après les colonnes de base — optionnels, absents pour
+    beaucoup de lieux (site naturel/public sans horaires officiels, etc.)."""
+    extra = dict(zip(headers[offset:], row[offset:]))
+    remarque = extra.get("Remarque")
+    description = None
+    note = extra.get("Note")
+    avis = extra.get("Nb avis")
+    return {
+        "horaires": extra.get("Horaires"),
+        "contact": extra.get("Téléphone"),
+        "website": extra.get("Site web"),
+        "rating": float(note) if note is not None else None,
+        "reviews_count": int(avis) if avis is not None else None,
+        "remarque": remarque,
+    }
+
+
 def rows_from_sheet_1(ws):
     """60 Lieux incontournables: Département, #, Nom, Type, Description,
-    Localisation, GPS, Lien Google Maps, Statut."""
+    Localisation, GPS, Lien Google Maps, Statut, [+ enrichissement]."""
+    headers = [c.value for c in next(ws.iter_rows(min_row=1, max_row=1))]
     for row in ws.iter_rows(min_row=2, values_only=True):
-        department, _num, nom, type_, description, localisation, gps, maps_url, statut = row
+        department, _num, nom, type_, description, localisation, gps, maps_url, statut = row[:9]
         if not nom:
             continue
         lat, lng = parse_gps(gps)
@@ -91,14 +111,16 @@ def rows_from_sheet_1(ws):
             "google_maps_url": maps_url,
             "verified": parse_verified(statut),
             "source": statut,
+            **extra_fields(row, headers, 9),
         }
 
 
 def rows_from_sheet_2(ws):
     """Hôtels-Activités-Événements: Département, Catégorie, Nom, Description,
-    Localisation, GPS, Lien Google Maps, Statut."""
+    Localisation, GPS, Lien Google Maps, Statut, [+ enrichissement]."""
+    headers = [c.value for c in next(ws.iter_rows(min_row=1, max_row=1))]
     for row in ws.iter_rows(min_row=2, values_only=True):
-        department, categorie, nom, description, localisation, gps, maps_url, statut = row
+        department, categorie, nom, description, localisation, gps, maps_url, statut = row[:8]
         if not nom:
             continue
         lat, lng = parse_gps(gps)
@@ -114,12 +136,21 @@ def rows_from_sheet_2(ws):
             "google_maps_url": maps_url,
             "verified": parse_verified(statut),
             "source": statut,
+            **extra_fields(row, headers, 8),
         }
 
 
 def main():
     wb = openpyxl.load_workbook(XLSX_PATH, data_only=True)
     lieux = list(rows_from_sheet_1(wb.worksheets[0])) + list(rows_from_sheet_2(wb.worksheets[1]))
+
+    # La colonne "Remarque" (fermeture temporaire, statut incertain...) n'a
+    # pas sa propre colonne en base : elle rejoint la description, visible
+    # par l'utilisateur, plutôt que d'être silencieusement perdue.
+    for lieu in lieux:
+        remarque = lieu.pop("remarque", None)
+        if remarque:
+            lieu["description"] = f"{lieu['description']} ({remarque})" if lieu["description"] else remarque
 
     seen = set()
     for lieu in lieux:

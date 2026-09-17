@@ -41,8 +41,11 @@ export interface Lieu {
   lat: number | null;
   lng: number | null;
   google_maps_url: string | null;
-  horaires: unknown | null;
+  horaires: string | null;
   contact: string | null;
+  website: string | null;
+  rating: number | null;
+  reviews_count: number | null;
   photos: string[] | null;
   verified: boolean;
   source: string | null;
