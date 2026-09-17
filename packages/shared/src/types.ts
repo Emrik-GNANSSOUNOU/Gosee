@@ -21,6 +21,14 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   evenement: "Événement",
 };
 
+export const CATEGORY_ICONS: Record<Category, string> = {
+  site_touristique: "🏛️",
+  loisir: "🌴",
+  hotel: "🏨",
+  activite: "🎯",
+  evenement: "🎉",
+};
+
 export interface Lieu {
   id: string;
   slug: string;

@@ -22,11 +22,11 @@ export function LieuList({
       <CategoryFilter active={category} onChange={setCategory} />
 
       <h2 className="sr-only">{heading}</h2>
-      <p className="mt-3 text-sm text-neutral-500">
+      <p className="mt-4 text-sm text-neutral-500">
         {filtered.length} lieu{filtered.length > 1 ? "x" : ""}
       </p>
 
-      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((lieu) => (
           <LieuCard key={lieu.id} lieu={lieu} />
         ))}

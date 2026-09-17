@@ -34,15 +34,17 @@ export default async function HomePage({ searchParams }: { searchParams: SearchP
   const lieux = await getAllLieux();
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-6">
-      <header className="mb-6">
-        <h1 className="text-2xl font-bold text-neutral-900">Gosee</h1>
-        <p className="mt-1 text-neutral-600">
-          Découvrez les lieux, activités et événements incontournables du Bénin.
-        </p>
-      </header>
+    <main className="min-h-screen bg-neutral-50">
+      <div className="mx-auto max-w-5xl px-4 py-6">
+        <header className="mb-6">
+          <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900">Gosee</h1>
+          <p className="mt-1 text-neutral-600">
+            Découvrez les lieux, activités et événements incontournables du Bénin.
+          </p>
+        </header>
 
-      <LieuList lieux={lieux} initialCategory={category} />
+        <LieuList lieux={lieux} initialCategory={category} />
+      </div>
     </main>
   );
 }

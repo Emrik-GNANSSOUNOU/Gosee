@@ -1,6 +1,6 @@
 "use client";
 
-import { CATEGORIES, CATEGORY_LABELS, type Category } from "@gosee/shared";
+import { CATEGORIES, CATEGORY_ICONS, CATEGORY_LABELS, type Category } from "@gosee/shared";
 
 interface CategoryFilterProps {
   active: Category | "all";
@@ -12,9 +12,13 @@ function hrefFor(category: Category | "all"): string {
 }
 
 export function CategoryFilter({ active, onChange }: CategoryFilterProps) {
-  const options: Array<{ value: Category | "all"; label: string }> = [
-    { value: "all", label: "Tout" },
-    ...CATEGORIES.map((category) => ({ value: category, label: CATEGORY_LABELS[category] })),
+  const options: Array<{ value: Category | "all"; label: string; icon: string }> = [
+    { value: "all", label: "Tout", icon: "✨" },
+    ...CATEGORIES.map((category) => ({
+      value: category,
+      label: CATEGORY_LABELS[category],
+      icon: CATEGORY_ICONS[category],
+    })),
   ];
 
   return (
@@ -38,6 +42,9 @@ export function CategoryFilter({ active, onChange }: CategoryFilterProps) {
               : "border-neutral-300 bg-white text-neutral-700 hover:border-emerald-600"
           }`}
         >
+          <span aria-hidden className="mr-1">
+            {option.icon}
+          </span>
           {option.label}
         </a>
       ))}
