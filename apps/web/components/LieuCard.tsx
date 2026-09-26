@@ -24,12 +24,6 @@ export function LieuCard({ lieu, distanceKm }: { lieu: Lieu; distanceKm?: number
           {CATEGORY_LABELS[lieu.category]}
         </span>
 
-        {lieu.verified && (
-          <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-emerald-600/90 px-2.5 py-1 text-xs font-semibold text-white shadow-sm backdrop-blur">
-            ✓ Vérifié
-          </span>
-        )}
-
         <div className="absolute inset-x-0 bottom-0 p-4">
           <h3 className="text-lg font-bold leading-snug text-white drop-shadow-sm">
             {lieu.nom}

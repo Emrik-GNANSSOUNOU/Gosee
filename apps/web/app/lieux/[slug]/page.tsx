@@ -88,12 +88,6 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
           ← Retour
         </Link>
 
-        {lieu.verified && (
-          <span className="absolute right-4 top-4 inline-flex items-center gap-1 rounded-full bg-emerald-600/90 px-3 py-1.5 text-sm font-semibold text-white shadow-sm backdrop-blur">
-            ✓ Vérifié
-          </span>
-        )}
-
         <div className="absolute inset-x-0 bottom-0 mx-auto max-w-2xl px-4 pb-5">
           <span className="inline-flex items-center gap-1 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-neutral-900 shadow-sm backdrop-blur">
             <span aria-hidden>{CATEGORY_ICONS[lieu.category]}</span>
