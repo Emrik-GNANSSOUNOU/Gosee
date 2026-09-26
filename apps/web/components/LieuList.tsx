@@ -33,13 +33,13 @@ export function LieuList({
 
   return (
     <div>
-      <CategoryFilter active={category} onChange={setCategory} />
       <GeoFilter
         position={position}
         radiusKm={radiusKm}
         onPositionChange={setPosition}
         onRadiusChange={setRadiusKm}
       />
+      <CategoryFilter active={category} onChange={setCategory} />
 
       <h2 className="sr-only">Lieux</h2>
       <p className="mt-4 text-sm text-neutral-500">
