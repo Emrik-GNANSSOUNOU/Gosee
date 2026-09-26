@@ -8,7 +8,7 @@ create table if not exists lieux (
   nom text not null,
   slug text,
   category text not null check (category in
-    ('site_touristique','loisir','hotel','activite','evenement')),
+    ('site_touristique','loisir','hotel','activite')),
   description text,
   department text,
   country text not null default 'Bénin',
@@ -40,6 +40,14 @@ alter table lieux alter column horaires type text using horaires::text;
 alter table lieux add column if not exists website text;
 alter table lieux add column if not exists rating numeric(2,1);
 alter table lieux add column if not exists reviews_count integer;
+
+-- Retrait du contenu événementiel (mise à jour de conception, sept. 2026) :
+-- l'app ne présente pas d'agenda daté. Supprimer les lignes avant de resserrer
+-- la contrainte, sinon des lignes existantes la violeraient.
+delete from lieux where category = 'evenement';
+alter table lieux drop constraint if exists lieux_category_check;
+alter table lieux add constraint lieux_category_check check (category in
+  ('site_touristique','loisir','hotel','activite'));
 
 create index if not exists lieux_category_idx on lieux(category);
 create index if not exists lieux_department_idx on lieux(department);

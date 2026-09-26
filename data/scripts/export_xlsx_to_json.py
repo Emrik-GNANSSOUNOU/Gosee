@@ -21,8 +21,12 @@ TYPE_TO_CATEGORY = {
     "Loisir": "loisir",
     "Hôtel": "hotel",
     "Activité": "activite",
-    "Événement": "evenement",
 }
+
+# Les événements sont hors périmètre produit (pas d'agenda daté) : toute
+# ligne encore typée "Événement" dans le classeur est ignorée à l'export
+# plutôt que silencieusement recatégorisée.
+EXCLUDED_TYPES = {"Événement"}
 
 
 def parse_gps(raw):
@@ -96,7 +100,7 @@ def rows_from_sheet_1(ws):
     headers = [c.value for c in next(ws.iter_rows(min_row=1, max_row=1))]
     for row in ws.iter_rows(min_row=2, values_only=True):
         department, _num, nom, type_, description, localisation, gps, maps_url, statut = row[:9]
-        if not nom:
+        if not nom or type_ in EXCLUDED_TYPES:
             continue
         lat, lng = parse_gps(gps)
         yield {
@@ -121,7 +125,7 @@ def rows_from_sheet_2(ws):
     headers = [c.value for c in next(ws.iter_rows(min_row=1, max_row=1))]
     for row in ws.iter_rows(min_row=2, values_only=True):
         department, categorie, nom, description, localisation, gps, maps_url, statut = row[:8]
-        if not nom:
+        if not nom or categorie in EXCLUDED_TYPES:
             continue
         lat, lng = parse_gps(gps)
         yield {

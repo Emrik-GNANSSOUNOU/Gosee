@@ -26,71 +26,65 @@ Cible : résidents autant que touristes. Lancement au Bénin, mais architecture 
 
 Contrainte transversale : la logique métier (filtres, calcul de distance, règles de disponibilité, etc.) doit être partageable entre web et mobile — ne pas la coupler fortement à Next.js. Toute nouvelle dépendance doit être signalée avant d'être ajoutée.
 
-## Les 7 piliers fonctionnels
+## Les 6 piliers fonctionnels
 
 Toute fonctionnalité doit se rattacher à l'un de ces piliers ; sinon, la remettre en question.
 
-1. **Découvrir** — activités, lieux, restaurants, loisirs, sites touristiques, événements
-2. **Voir ce qui se passe maintenant** — aujourd'hui, ce soir, ce week-end, cette semaine, tendances, nouveautés
-3. **Découverte géolocalisée** — « que puis-je faire autour de moi ? » (distance, horaires, prix, itinéraire)
-4. **Recommandations personnalisées** — budget, localisation, temps disponible, nombre de personnes, préférences
-5. **Créer sa sortie** — combiner activité → restaurant → événement → itinéraire
-6. **Information toujours actualisée** — fraîcheur des données, gestion des annulations/reports/promotions
-7. **Réservation et billetterie** — achat de billets, réservation, paiement (Mobile Money, carte), historique
+L'app ne présente pas d'événements (pas d'agenda daté) — ce type de contenu a été retiré du périmètre produit.
+
+1. **Découvrir** — activités, lieux, restaurants, loisirs, sites touristiques
+2. **Découverte géolocalisée** — « que puis-je faire autour de moi ? » (distance, horaires, prix, itinéraire)
+3. **Recommandations personnalisées** — budget, localisation, temps disponible, nombre de personnes, préférences
+4. **Créer sa sortie** — combiner activité → restaurant → itinéraire
+5. **Information toujours actualisée** — fraîcheur des données, gestion des annulations/reports/promotions
+6. **Réservation et billetterie** — achat de billets, réservation, paiement (Mobile Money, carte), historique
 
 ## Scope MVP — ordre strict validé
 
 Ne pas développer un pilier suivant avant que le précédent soit fonctionnel, sauf validation explicite.
 
-1. **Découvrir** — le socle : lister/afficher lieux, activités, restaurants, événements, avec filtres par catégorie et fiche détaillée
+1. **Découvrir** — le socle : lister/afficher lieux, activités, restaurants, avec filtres par catégorie et fiche détaillée
 2. **Découverte géolocalisée** — « autour de moi » avec rayon de distance ajustable et itinéraire
-3. **Voir ce qui se passe maintenant** — agenda aujourd'hui / ce week-end / cette semaine, nouveautés/tendances
-4. **Billetterie / réservation** — ajoutée en dernier dans le MVP, une fois 1 à 3 fonctionnels
+3. **Billetterie / réservation** — ajoutée en dernier dans le MVP, une fois 1 et 2 fonctionnels
 
 **Hors MVP (V2)** : recommandations personnalisées (moteur de logique plus poussé), créer sa sortie (dépend des recommandations), information toujours actualisée en tant que système d'admin/alertes construit progressivement.
 
 ## Modèle de données
 
-### Socle (piliers 1 à 3)
+### Socle (piliers 1-2)
 
 - **Lieu** : nom, type (hôtel/resto/loisir/site touristique...), adresse, coordonnées GPS, description, photos, horaires, contact
-- **Événement** : titre, description, date/heure début-fin, lieu associé, catégorie, prix, statut (prévu/annulé/reporté)
 - **Activité** : à fusionner avec Lieu ou à distinguer selon les cas (ex. visite guidée sans lieu fixe) — décision à trancher au moment de l'implémentation
 - **Catégorie / Tag** : pour classer et filtrer (tourisme, plage, culture, business...)
 - **Utilisateur** : profil, localisation, préférences
 
-### Billetterie (pilier 7, fin de MVP)
+### Billetterie (pilier 6, fin de MVP)
 
-- **Billet** : type (standard/VIP...), prix, quantité disponible, événement associé
+- **Billet** : type (standard/VIP...), prix, quantité disponible, lieu/activité associée
 - **Réservation** : utilisateur, billet(s), quantité, statut (en attente/confirmée/annulée), date de réservation
 - **Paiement** : montant, méthode (Mobile Money/carte), statut, référence transaction, réservation associée
 
-Chaque activité/événement doit pouvoir porter, à terme : nom, catégorie, description, photos, localisation, GPS, horaires, prix, disponibilité, contact, lien de réservation, dates de début/fin, organisateur, statut, date de dernière mise à jour.
+Chaque activité doit pouvoir porter, à terme : nom, catégorie, description, photos, localisation, GPS, horaires, prix, disponibilité, contact, lien de réservation, organisateur, statut, date de dernière mise à jour.
 
 ## Spécifications fonctionnelles (user stories du MVP)
 
 ### 1. Découvrir
-- En tant qu'utilisateur, je veux voir une liste de lieux/activités/événements, afin d'explorer ce qui existe au Bénin
+- En tant qu'utilisateur, je veux voir une liste de lieux/activités, afin d'explorer ce qui existe au Bénin
 - En tant qu'utilisateur, je veux filtrer par catégorie (resto, loisir, tourisme...), afin de trouver ce qui m'intéresse
-- En tant qu'utilisateur, je veux voir la fiche détaillée d'un lieu/événement (photos, horaires, prix, avis), afin de décider si ça me convient
+- En tant qu'utilisateur, je veux voir la fiche détaillée d'un lieu (photos, horaires, prix, avis), afin de décider si ça me convient
 
 ### 2. Découverte géolocalisée
-- En tant qu'utilisateur, je veux voir les lieux/événements autour de ma position, afin de trouver une sortie proche
+- En tant qu'utilisateur, je veux voir les lieux autour de ma position, afin de trouver une sortie proche
 - En tant qu'utilisateur, je veux ajuster un rayon de distance, afin d'affiner ma recherche et réduire mon temps de déplacement
 - En tant qu'utilisateur, je veux obtenir un itinéraire vers un lieu, afin de m'y rendre facilement
-
-### 3. Voir ce qui se passe maintenant
-- En tant qu'utilisateur, je veux voir les événements du jour/du week-end/de la semaine, afin de ne rien manquer
-- En tant qu'utilisateur, je veux voir les événements récemment ajoutés ou tendances, afin de découvrir des nouveautés
-- En tant qu'utilisateur de passage temporaire, je veux voir les événements qui se dérouleront pendant mon séjour
 
 ## Données de contenu déjà disponibles
 
 Un premier jeu de données réelles et vérifiées existe dans le projet (`benin_contenu_curation.xlsx`) :
 - **60 lieux incontournables** répartis par département (Littoral, Atlantique, Ouémé, Plateau, Zou, Collines, Mono, Couffo, Atacora, Donga, Borgou, Alibori), avec nom, type, description, localisation, coordonnées GPS et lien Google Maps, vérifiés via Google Places
-- **Hôtels, activités et événements** associés par département
+- **Hôtels et activités** associés par département
 
-À utiliser comme données de seed (mock puis premier import réel) pour les tables Lieu / Événement dès le développement du pilier « Découvrir » — préférer ce jeu de données réel à des mocks génériques.
+À utiliser comme données de seed (mock puis premier import réel) pour la table Lieu dès le développement du pilier « Découvrir » — préférer ce jeu de données réel à des mocks génériques.
 
 ## Conventions (à compléter au fil du projet)
 
@@ -114,4 +108,5 @@ Un premier jeu de données réelles et vérifiées existe dans le projet (`benin
 - Ne pas introduire de nouvelle dépendance sans le signaler explicitement
 - Utiliser les données réelles de `benin_contenu_curation.xlsx` plutôt que des exemples génériques dès que possible
 - Ne rien coder en dur qui suppose un seul pays (le Bénin est le marché de départ, pas la limite)
-- Éviter que Gosee devienne : un simple annuaire, un simple réseau social, un site touristique pur, une simple billetterie, ou une app saturée de fonctionnalités sans rapport avec les 7 piliers
+- Éviter que Gosee devienne : un simple annuaire, un simple réseau social, un site touristique pur, une simple billetterie, ou une app saturée de fonctionnalités sans rapport avec les 6 piliers
+- Ne pas présenter de contenu événementiel (agenda daté) : ce type de contenu est explicitement hors périmètre

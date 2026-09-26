@@ -1,24 +1,12 @@
-export type Category =
-  | "site_touristique"
-  | "loisir"
-  | "hotel"
-  | "activite"
-  | "evenement";
+export type Category = "site_touristique" | "loisir" | "hotel" | "activite";
 
-export const CATEGORIES: Category[] = [
-  "site_touristique",
-  "loisir",
-  "hotel",
-  "activite",
-  "evenement",
-];
+export const CATEGORIES: Category[] = ["site_touristique", "loisir", "hotel", "activite"];
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   site_touristique: "Site touristique",
   loisir: "Loisir",
   hotel: "Hôtel",
   activite: "Activité",
-  evenement: "Événement",
 };
 
 export const CATEGORY_ICONS: Record<Category, string> = {
@@ -26,7 +14,6 @@ export const CATEGORY_ICONS: Record<Category, string> = {
   loisir: "🌴",
   hotel: "🏨",
   activite: "🎯",
-  evenement: "🎉",
 };
 
 export interface Lieu {

@@ -108,11 +108,12 @@ npm run lint    # lint
 
 ## Notes de modélisation
 
-- Les événements du jeu de données n'ont pas de date/heure réelle : ils
-  sont modélisés comme des `lieux` (catégorie `evenement`) plutôt que
-  dans une table `evenements` à part. Cette dernière sera introduite au
-  pilier 3 ("voir ce qui se passe maintenant"), quand de vraies données
-  temporelles seront disponibles.
-- Les champs `horaires`, `contact`, `photos`, `price_info` existent dans
-  le schéma mais restent `null` : absents du jeu de données source,
-  à enrichir progressivement (voir pilier 6 de CLAUDE.md).
+- Pas de contenu événementiel (agenda daté) : mise à jour de conception,
+  hors périmètre produit — voir CLAUDE.md. La catégorie `evenement` a été
+  retirée du modèle et les entrées correspondantes supprimées du jeu de
+  données.
+- Les champs `horaires`, `contact`, `website`, `rating`, `reviews_count`
+  ont été enrichis par recherche web pour une partie du catalogue ; ils
+  restent `null` quand l'info n'est pas disponible publiquement (site
+  naturel/public sans horaires officiels, etc.) plutôt que devinés — voir
+  pilier 5 de CLAUDE.md.

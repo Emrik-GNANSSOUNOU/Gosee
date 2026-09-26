@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/seo";
 
 const defaultTitle = "Gosee — Découvrir le Bénin";
 const defaultDescription =
-  "Découvrez les lieux, activités, hôtels et événements incontournables du Bénin, avec localisation et itinéraire.";
+  "Découvrez les lieux, activités et hôtels incontournables du Bénin, avec localisation et itinéraire.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

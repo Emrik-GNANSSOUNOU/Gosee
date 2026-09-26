@@ -323,25 +323,6 @@
     "slug": "musee-akaba-idena"
   },
   {
-    "nom": "Sociétés de masques Guèlèdè, Sakété",
-    "category": "evenement",
-    "description": "Spectacles traditionnels de masques et danses, patrimoine immatériel UNESCO. (Patrimoine culturel immatériel (UNESCO) ; le berceau historique documenté est plutôt Kétou/Savè.)",
-    "department": "Plateau",
-    "country": "Bénin",
-    "address": "Sakété, Plateau",
-    "lat": 6.7368274,
-    "lng": 2.6636066,
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.7368274,2.6636066",
-    "verified": true,
-    "source": "Vérifié (Google Places)",
-    "horaires": null,
-    "contact": null,
-    "website": null,
-    "rating": null,
-    "reviews_count": null,
-    "slug": "societes-de-masques-guelede-sakete"
-  },
-  {
     "nom": "Ville de Pobè",
     "category": "site_touristique",
     "description": "Chef-lieu du département du Plateau, culture yoruba-nago.",
@@ -684,25 +665,6 @@
     "slug": "musee-de-plein-air-de-parakou"
   },
   {
-    "nom": "Fête de la Gaani",
-    "category": "evenement",
-    "description": "Grande manifestation culturelle annuelle des Batombu. (Anciennement orthographié « Gani » ; deux fiches en doublon fusionnées.)",
-    "department": "Borgou",
-    "country": "Bénin",
-    "address": "Nikki, Borgou",
-    "lat": 9.9276076,
-    "lng": 3.2167913,
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=9.9276076,3.2167913",
-    "verified": true,
-    "source": "Vérifié (Google Places)",
-    "horaires": "3 jours fin août (ex. 25-27 août 2026)",
-    "contact": null,
-    "website": "https://gaani.bj",
-    "rating": null,
-    "reviews_count": null,
-    "slug": "fete-de-la-gaani"
-  },
-  {
     "nom": "Palais royal de Nikki",
     "category": "site_touristique",
     "description": "Capitale historique des Batombu, siège royal.",
@@ -988,25 +950,6 @@
     "slug": "sortie-pirogue-a-ganvie"
   },
   {
-    "nom": "Fête du Vodun (10 janvier)",
-    "category": "evenement",
-    "description": "Célébration nationale du culte vaudou, grands rassemblements à Ouidah.",
-    "department": "Atlantique",
-    "country": "Bénin",
-    "address": "Ouidah, Atlantique (chaque 10 janvier)",
-    "lat": 6.3595647,
-    "lng": 2.0851368,
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.3595647,2.0851368",
-    "verified": true,
-    "source": "Vérifié (Google Places)",
-    "horaires": "Format étendu « Vodun Days » sur 2-3 jours (ex. 8-10 janvier 2026)",
-    "contact": null,
-    "website": "https://vodundays.bj",
-    "rating": null,
-    "reviews_count": null,
-    "slug": "fete-du-vodun-10-janvier"
-  },
-  {
     "nom": "Art Résidence Hôtel",
     "category": "hotel",
     "description": "Hôtel boutique moderne à Porto-Novo.",
@@ -1157,25 +1100,6 @@
     "rating": null,
     "reviews_count": null,
     "slug": "balade-dans-la-cite-royale-de-ketou"
-  },
-  {
-    "nom": "Guèlèdè (spectacle de masques)",
-    "category": "evenement",
-    "description": "Spectacle traditionnel de masques et danses, patrimoine UNESCO, Kétou/Sakété.",
-    "department": "Plateau",
-    "country": "Bénin",
-    "address": "Kétou/Sakété, Plateau",
-    "lat": 6.7368274,
-    "lng": 2.6636066,
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=6.7368274,2.6636066",
-    "verified": true,
-    "source": "Vérifié (Google Places)",
-    "horaires": null,
-    "contact": null,
-    "website": null,
-    "rating": null,
-    "reviews_count": null,
-    "slug": "guelede-spectacle-de-masques"
   },
   {
     "nom": "Ekagnon Hôtel Abomey",

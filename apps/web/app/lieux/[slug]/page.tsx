@@ -10,15 +10,12 @@ import { absoluteUrl } from "@/lib/seo";
 type Params = Promise<{ slug: string }>;
 
 // schema.org n'a pas de type "lieu touristique générique" unique ; on choisit
-// le plus proche par catégorie. "evenement" reste TouristAttraction tant que
-// le pilier 3 n'apporte pas de vraies dates (Event exige startDate, qu'on
-// n'a pas encore — mieux vaut ne pas émettre un schema invalide).
+// le plus proche par catégorie.
 const SCHEMA_TYPE: Record<Category, string> = {
   site_touristique: "TouristAttraction",
   loisir: "TouristAttraction",
   hotel: "LodgingBusiness",
   activite: "TouristAttraction",
-  evenement: "TouristAttraction",
 };
 
 function jsonLd(lieu: Lieu, url: string) {

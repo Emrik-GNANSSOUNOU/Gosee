@@ -39,7 +39,7 @@ export default async function HomePage({ searchParams }: { searchParams: SearchP
         <header className="mb-6">
           <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900">Gosee</h1>
           <p className="mt-1 text-neutral-600">
-            Découvrez les lieux, activités et événements incontournables du Bénin.
+            Découvrez les lieux, activités et hôtels incontournables du Bénin.
           </p>
         </header>
 
