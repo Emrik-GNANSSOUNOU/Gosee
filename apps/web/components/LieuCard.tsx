@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CATEGORY_ICONS, CATEGORY_LABELS, type Lieu } from "@gosee/shared";
 import { getLieuImage } from "@/lib/images";
 
-export function LieuCard({ lieu }: { lieu: Lieu }) {
+export function LieuCard({ lieu, distanceKm }: { lieu: Lieu; distanceKm?: number | null }) {
   return (
     <Link
       href={`/lieux/${lieu.slug}`}
@@ -34,13 +34,19 @@ export function LieuCard({ lieu }: { lieu: Lieu }) {
           <h3 className="text-lg font-bold leading-snug text-white drop-shadow-sm">
             {lieu.nom}
           </h3>
-          <div className="mt-0.5 flex items-center gap-2 text-sm text-white/85 drop-shadow-sm">
+          <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm text-white/85 drop-shadow-sm">
             {lieu.department && <span>{lieu.department}</span>}
             {lieu.rating != null && (
               <span className="flex items-center gap-0.5">
                 <span aria-hidden>★</span>
                 {lieu.rating.toFixed(1)}
                 {lieu.reviews_count != null && ` (${lieu.reviews_count})`}
+              </span>
+            )}
+            {distanceKm != null && (
+              <span className="flex items-center gap-0.5">
+                <span aria-hidden>📍</span>
+                {distanceKm < 1 ? `${Math.round(distanceKm * 1000)} m` : `${distanceKm.toFixed(1)} km`}
               </span>
             )}
           </div>
