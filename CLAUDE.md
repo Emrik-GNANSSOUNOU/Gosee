@@ -86,18 +86,56 @@ Un premier jeu de données réelles et vérifiées existe dans le projet (`benin
 
 À utiliser comme données de seed (mock puis premier import réel) pour la table Lieu dès le développement du pilier « Découvrir » — préférer ce jeu de données réel à des mocks génériques.
 
-## Conventions (à compléter au fil du projet)
+## Conventions
 
-- Structure de dossiers : [à définir — ex. monorepo avec `apps/web`, `apps/mobile`, `packages/shared` pour la logique métier et le client API partagés]
-- Nommage des composants : [à définir]
-- Commits : [conventional commits recommandé — à confirmer]
+- Structure de dossiers : monorepo npm workspaces —
+  - `apps/web` : app Next.js (App Router), déployée sur Vercel
+  - `packages/shared` : logique métier partagée web/mobile (types, filtres, calcul de distance géo) — `apps/mobile` sera ajouté ici le jour où le mobile démarre
+  - `supabase` : `schema.sql` (à exécuter manuellement dans le SQL Editor du dashboard) + `seed.ts` (importe `data/seed/lieux.json` dans Supabase)
+  - `data/` : `seed/lieux.json` (généré, ne pas éditer à la main) + `scripts/export_xlsx_to_json.py` (génère le JSON depuis `benin_contenu_curation.xlsx`, la source de vérité du contenu)
+- Nommage des composants : PascalCase, un composant par fichier (`apps/web/components/`)
+- Commits : pas de convention stricte imposée ; messages descriptifs en français, corps explique le "pourquoi" si non-évident
+
+## Variables d'environnement
+
+Aucune valeur réelle dans ce fichier ni dans le repo — voir `.env.example` (racine) et `apps/web/.env.local.example` pour la liste à jour des noms. Résumé :
+
+- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` (`apps/web/.env.local`) : client Supabase, lecture publique seule (RLS)
+- `NEXT_PUBLIC_SITE_URL` (`apps/web/.env.local`) : URL canonique (SEO, sitemap, robots) ; sur Vercel, déjà configurée en Production/Preview
+- `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (`.env.local` racine) : utilisés uniquement par `supabase/seed.ts` (accès complet, jamais exposé au client)
+
+Ces variables sont déjà configurées sur Vercel (projet `gosee-web`) pour Production et Preview — rien à refaire pour déployer. Pour développer/seed en local (ou depuis une session cloud), les valeurs sont dans le dashboard Supabase (Project Settings → API).
 
 ## Commandes
 
+- Install : `npm install` (racine, installe tous les workspaces)
 - Dev web : `npm run dev`
 - Build : `npm run build`
 - Lint : `npm run lint`
+- Seed Supabase : `npm run seed` (réimporte tout `data/seed/lieux.json` — supprime puis réinsère toutes les lignes de la table `lieux`)
+- Régénérer le JSON depuis le xlsx : `python data/scripts/export_xlsx_to_json.py` (nécessite `pip install openpyxl`)
 - Tests : [à définir]
+
+## État d'avancement (dernière mise à jour : octobre 2026)
+
+**Fait :**
+- Pilier 1 (Découvrir) : liste + fiche détaillée, filtres catégorie, style "vitrine boutique" (grandes images, badges, CTA), SEO (slugs, sitemap, JSON-LD)
+- Pilier 2 (Découverte géolocalisée) : bandeau "Autour de moi" (mis en avant visuellement, pas un simple filtre discret), rayon ajustable 5/10/25/50 km, tri par distance, itinéraire Google Maps sur la fiche détail
+- 90 lieux en base (les événements ont été retirés du périmètre produit — voir pilier 1 et règles ci-dessous)
+- ~32 lieux enrichis (horaires, téléphone, site web, note/avis) par recherche web manuelle ; le reste n'a pas d'info publique trouvable (sites naturels, petits établissements) — champs laissés vides plutôt qu'inventés
+- Photos : images libres de droit génériques par catégorie (pas les vraies photos des lieux), via `apps/web/lib/images.ts`
+
+**Prochaine étape prévue :** pilier 3 (Billetterie/réservation), une fois 1 et 2 jugés solides — respecter l'ordre strict du MVP.
+
+**En attente / bloqué :**
+- Vraies photos + avis Google Places : nécessite une clé API Google Cloud (Places API), bloquée côté utilisateur sur l'activation de la facturation Google Cloud. Plan déjà défini une fois débloqué : résoudre un `place_id` par lieu, proxy serveur pour les photos (cache court, jamais stockées en permanence — CGU Google), Google Places prioritaire sur les données déjà enrichies par recherche web.
+
+## Points de vigilance (infra)
+
+- **Deux projets Vercel** (`gosee-web` et `gosee-web-gwtp`) pointent sur le même repo GitHub — doublon jamais nettoyé, les deux se déploient à chaque push. `gosee-web-gwtp` n'a pas `NEXT_PUBLIC_SITE_URL` configurée (contrairement à `gosee-web`).
+- **Déploiements Vercel bloqués si l'auteur du commit n'est pas reconnu** : le plan Hobby exige que l'auteur git soit le compte GitHub lié au compte Vercel (`Emrik-GNANSSOUNOU`). La config git de ce repo est déjà réglée en conséquence (`git config user.name/user.email` au niveau du repo, pas globalement) — si une nouvelle machine/session clone le repo, refaire ce réglage avant de push, sinon le déploiement reste bloqué (`TEAM_ACCESS_REQUIRED`).
+- **Supabase (plan gratuit)** se met en pause après une période d'inactivité prolongée — le site renvoie alors une 500 (la page d'accueil est `force-dynamic`, elle dépend d'un fetch Supabase réussi). Se répare en rouvrant le dashboard Supabase et en cliquant "Restore project".
+- **Dépôt GitHub public** (pas privé) — à vérifier si c'est voulu.
 
 ## Règles pour Claude Code
 
