@@ -2,13 +2,35 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CATEGORY_ICONS, CATEGORY_LABELS, type Category, type Lieu } from "@gosee/shared";
+import {
+  CATEGORY_ICONS,
+  CATEGORY_LABELS,
+  CATEGORY_PLURAL_LABELS,
+  CATEGORY_SLUGS,
+  metaDescription,
+  type Category,
+  type Lieu,
+} from "@gosee/shared";
+import { AlerteLieu } from "@/components/AlerteLieu";
+import { AProximite } from "@/components/AProximite";
+import { FilAriane } from "@/components/FilAriane";
 import { InfosPratiques } from "@/components/InfosPratiques";
-import { getLieuImage } from "@/lib/images";
-import { getLieuBySlug } from "@/lib/lieux";
+import { lieuImageProps } from "@/lib/images";
+import { getAllLieux, getLieuBySlug } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
 
 type Params = Promise<{ slug: string }>;
+
+// ISR à la demande (pas de generateStaticParams : le build ne dépend pas de
+// Supabase pour les 90 fiches) ; chaque fiche est mise en cache 5 min et la
+// dernière version reste servie si la base ne répond pas.
+export const revalidate = 300;
+
+// Liste vide = aucune fiche pré-générée au build, mais chaque fiche visitée
+// est générée puis mise en cache (ISR à la demande).
+export function generateStaticParams() {
+  return [];
+}
 
 // schema.org n'a pas de type "lieu touristique générique" unique ; on choisit
 // le plus proche par catégorie.
@@ -26,6 +48,7 @@ function jsonLd(lieu: Lieu, url: string) {
     name: lieu.nom,
     description: lieu.description ?? undefined,
     url,
+    image: lieu.photos?.[0] ?? `${url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
       addressLocality: lieu.department ?? undefined,
@@ -43,8 +66,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!lieu) return {};
 
   const title = `${lieu.nom} — ${lieu.department ?? lieu.country}`;
-  const description =
-    lieu.description?.slice(0, 155) ?? `Découvrez ${lieu.nom} sur Gosee, au ${lieu.country}.`;
+  const description = metaDescription(lieu);
   const url = absoluteUrl(`/lieux/${lieu.slug}`);
 
   return {
@@ -52,7 +74,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     description,
     alternates: { canonical: url },
     openGraph: { title, description, url, type: "website" },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -63,6 +85,7 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
   if (!lieu) notFound();
 
   const url = absoluteUrl(`/lieux/${lieu.slug}`);
+  const lieux = await getAllLieux();
 
   return (
     <main className="min-h-screen bg-neutral-50 pb-10">
@@ -73,7 +96,7 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
 
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-200 sm:aspect-[16/7]">
         <Image
-          src={getLieuImage(lieu)}
+          {...lieuImageProps(lieu)}
           alt={lieu.nom}
           fill
           priority
@@ -114,9 +137,35 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
         </div>
       </div>
 
+      {lieu.photos?.[0] && lieu.photo_credit && (
+        <p className="mx-auto max-w-2xl px-4 pt-1 text-right text-[11px] text-neutral-500">
+          {lieu.photo_source ? (
+            <a href={lieu.photo_source} target="_blank" rel="noopener noreferrer" className="hover:underline">
+              {lieu.photo_credit}
+            </a>
+          ) : (
+            lieu.photo_credit
+          )}
+        </p>
+      )}
+
       <div className="mx-auto max-w-2xl px-4">
+        <FilAriane
+          className="mt-4"
+          crumbs={[
+            { name: "Accueil", path: "/" },
+            {
+              name: CATEGORY_PLURAL_LABELS[lieu.category],
+              path: `/categorie/${CATEGORY_SLUGS[lieu.category]}`,
+            },
+            { name: lieu.nom, path: `/lieux/${lieu.slug}` },
+          ]}
+        />
+
+        {lieu.alerte && <AlerteLieu message={lieu.alerte} />}
+
         {lieu.description && (
-          <p className="mt-5 leading-relaxed text-neutral-700">{lieu.description}</p>
+          <p className="mt-4 leading-relaxed text-neutral-700">{lieu.description}</p>
         )}
 
         <InfosPratiques lieu={lieu} />
@@ -169,6 +218,8 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
             Voir l&apos;itinéraire sur Google Maps
           </a>
         )}
+
+        <AProximite lieu={lieu} lieux={lieux} />
       </div>
     </main>
   );

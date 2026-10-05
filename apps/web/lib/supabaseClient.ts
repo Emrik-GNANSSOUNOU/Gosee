@@ -1,5 +1,9 @@
 import { createClient } from "@supabase/supabase-js";
 
+// Durée de cache des données et des pages (ISR) : le contenu change peu, et
+// une page déjà générée reste servie même si Supabase est en pause.
+export const REVALIDATE_SECONDS = 300;
+
 // .trim() : une valeur d'env collée dans un dashboard (Vercel...) embarque
 // souvent un espace ou un \n final, ce qui casse les en-têtes HTTP envoyés
 // par supabase-js ("Cannot convert argument to a ByteString").
@@ -17,6 +21,6 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     // Fait passer les requêtes de lecture par le Data Cache de Next.js
     // (60s) : les pages restent server-rendered (bon pour le SEO / le
     // crawl) sans refaire un aller-retour Supabase à chaque requête.
-    fetch: (input, init) => fetch(input, { ...init, next: { revalidate: 60 } }),
+    fetch: (input, init) => fetch(input, { ...init, next: { revalidate: REVALIDATE_SECONDS } }),
   },
 });

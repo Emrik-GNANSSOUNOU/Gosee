@@ -12,8 +12,13 @@ export const getAllLieux = cache(async (): Promise<Lieu[]> => {
   return data as Lieu[];
 });
 
+// null uniquement si le slug n'existe pas (PGRST116 = aucune ligne). Toute
+// autre erreur (Supabase en pause, réseau...) est levée : en ISR, Next garde
+// alors la dernière version valide de la page au lieu de mettre en cache
+// une 404.
 export const getLieuBySlug = cache(async (slug: string): Promise<Lieu | null> => {
   const { data, error } = await supabase.from("lieux").select("*").eq("slug", slug).single();
-  if (error) return null;
+  if (error?.code === "PGRST116") return null;
+  if (error) throw new Error(error.message);
   return data as Lieu;
 });

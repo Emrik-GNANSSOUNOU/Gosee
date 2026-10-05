@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { CATEGORIES } from "@gosee/shared";
+import { CATEGORIES, CATEGORY_SLUGS } from "@gosee/shared";
 import { supabase } from "@/lib/supabaseClient";
 import { SITE_URL } from "@/lib/seo";
 
@@ -16,7 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
 
   const categoryEntries: MetadataRoute.Sitemap = CATEGORIES.map((category) => ({
-    url: `${SITE_URL}/?category=${category}`,
+    url: `${SITE_URL}/categorie/${CATEGORY_SLUGS[category]}`,
     changeFrequency: "daily",
     priority: 0.6,
   }));

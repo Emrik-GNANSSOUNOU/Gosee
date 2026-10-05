@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import {
   distanceToLieu,
-  filterByCategory,
   filterByRadius,
   sortByDistance,
   type Category,
@@ -14,22 +13,22 @@ import { CategoryFilter } from "./CategoryFilter";
 import { GeoFilter } from "./GeoFilter";
 import { LieuCard } from "./LieuCard";
 
+// `lieux` arrive déjà filtré par catégorie (chaque catégorie est sa propre
+// page) ; ce composant ne gère que le filtre « Autour de moi ».
 export function LieuList({
   lieux,
-  initialCategory,
+  activeCategory,
 }: {
   lieux: Lieu[];
-  initialCategory: Category | "all";
+  activeCategory: Category | "all";
 }) {
-  const [category, setCategory] = useState<Category | "all">(initialCategory);
   const [position, setPosition] = useState<Coordinates | null>(null);
   const [radiusKm, setRadiusKm] = useState<number | null>(null);
 
   const filtered = useMemo(() => {
-    const byCategory = filterByCategory(lieux, category);
-    const byRadius = filterByRadius(byCategory, position, radiusKm);
+    const byRadius = filterByRadius(lieux, position, radiusKm);
     return sortByDistance(byRadius, position);
-  }, [lieux, category, position, radiusKm]);
+  }, [lieux, position, radiusKm]);
 
   return (
     <div>
@@ -39,7 +38,7 @@ export function LieuList({
         onPositionChange={setPosition}
         onRadiusChange={setRadiusKm}
       />
-      <CategoryFilter active={category} onChange={setCategory} />
+      <CategoryFilter active={activeCategory} />
 
       <h2 className="sr-only">Lieux</h2>
       <p className="mt-4 text-sm text-neutral-500">

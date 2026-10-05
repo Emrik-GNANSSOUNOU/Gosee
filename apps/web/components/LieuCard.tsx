@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CATEGORY_ICONS, CATEGORY_LABELS, type Lieu } from "@gosee/shared";
-import { getLieuImage } from "@/lib/images";
+import { lieuImageProps } from "@/lib/images";
 
 export function LieuCard({ lieu, distanceKm }: { lieu: Lieu; distanceKm?: number | null }) {
   return (
@@ -11,7 +11,7 @@ export function LieuCard({ lieu, distanceKm }: { lieu: Lieu; distanceKm?: number
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
         <Image
-          src={getLieuImage(lieu)}
+          {...lieuImageProps(lieu)}
           alt={lieu.nom}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
