@@ -130,7 +130,7 @@ Ces variables sont déjà configurées sur Vercel (projet `gosee-web`) pour Prod
 
 **Prochaine étape :** à décider avec l'utilisateur — reprendre la billetterie (dernier pilier du MVP) ou « Créer sa sortie » (activité + restaurant/hôtel + itinéraire), qui s'appuie sur les recommandations.
 
-**À faire côté dashboard Supabase** pour que les infos pratiques et les recommandations fonctionnent en prod : exécuter le bloc « Infos pratiques » de `supabase/schema.sql`, puis `npm run seed`. Sans ça, la page `/recommandations` ne propose rien (aucun lieu n'a de budget/durée en base).
+**À faire côté dashboard Supabase** pour que les infos pratiques et les recommandations fonctionnent en prod : coller `supabase/infos_pratiques.sql` dans le SQL Editor puis Run (migration + données des 90 lieux, sans PC ni seed ; équivaut au bloc « Infos pratiques » de `schema.sql` + `npm run seed`), puis merger la branche sur `main`. Sans ça, la page `/recommandations` ne propose rien (aucun lieu n'a de budget/durée en base).
 
 **En attente / bloqué :**
 - Vraies photos + avis Google Places : nécessite une clé API Google Cloud (Places API), bloquée côté utilisateur sur l'activation de la facturation Google Cloud. Plan déjà défini une fois débloqué : résoudre un `place_id` par lieu, proxy serveur pour les photos (cache court, jamais stockées en permanence — CGU Google), Google Places prioritaire sur les données déjà enrichies par recherche web.
