@@ -7,6 +7,8 @@ import {
   CATEGORY_LABELS,
   CATEGORY_PLURAL_LABELS,
   CATEGORY_SLUGS,
+  PRICE_LEVEL_RANGES,
+  countryIso,
   metaDescription,
   type Category,
   type Lieu,
@@ -17,7 +19,7 @@ import { FilAriane } from "@/components/FilAriane";
 import { InfosPratiques } from "@/components/InfosPratiques";
 import { lieuImageProps } from "@/lib/images";
 import { getAllLieux, getLieuBySlug } from "@/lib/lieux";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, adresseStructuree } from "@/lib/seo";
 
 type Params = Promise<{ slug: string }>;
 
@@ -42,21 +44,36 @@ const SCHEMA_TYPE: Record<Category, string> = {
 };
 
 function jsonLd(lieu: Lieu, url: string) {
+  const type = SCHEMA_TYPE[lieu.category];
   return {
     "@context": "https://schema.org",
-    "@type": SCHEMA_TYPE[lieu.category],
+    "@type": type,
     name: lieu.nom,
     description: lieu.description ?? undefined,
     url,
     image: lieu.photos?.[0] ?? `${url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
-      addressLocality: lieu.department ?? undefined,
-      addressCountry: lieu.country,
+      ...adresseStructuree(lieu.address, lieu.department),
+      addressRegion: lieu.department ?? undefined,
+      addressCountry: countryIso(lieu.country),
     },
     ...(lieu.lat != null && lieu.lng != null
       ? { geo: { "@type": "GeoCoordinates", latitude: lieu.lat, longitude: lieu.lng } }
       : {}),
+    ...(lieu.google_maps_url ? { hasMap: lieu.google_maps_url } : {}),
+    ...(lieu.contact ? { telephone: lieu.contact } : {}),
+    ...(lieu.website ? { sameAs: [lieu.website] } : {}),
+    // isAccessibleForFree n'existe que pour les lieux publics (pas les hôtels) ;
+    // priceRange est le champ attendu pour un établissement payant.
+    ...(type === "TouristAttraction" && lieu.price_level
+      ? { isAccessibleForFree: lieu.price_level === "gratuit" }
+      : {}),
+    ...(type === "LodgingBusiness" && lieu.price_level && PRICE_LEVEL_RANGES[lieu.price_level]
+      ? { priceRange: PRICE_LEVEL_RANGES[lieu.price_level] }
+      : {}),
+    // Pas d'aggregateRating : les notes viennent de Google/TripAdvisor, et
+    // Google interdit de baliser des avis collectés sur un autre site.
   };
 }
 

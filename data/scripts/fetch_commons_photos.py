@@ -150,7 +150,8 @@ def score(page, tokens, lat, lng, radius):
     return {
         "score": round(s, 2),
         "matched": matched,
-        "url": info.get("thumburl") or info.get("url"),
+        # Sans les paramètres de suivi (?utm_source=...) ajoutés par l'API.
+        "url": (info.get("thumburl") or info.get("url") or "").split("?")[0],
         "source": info.get("descriptionurl"),
         "credit": f"Photo : {strip_html(meta.get('Artist', {}).get('value', '')) or 'auteur inconnu'} — {license_name}, via Wikimedia Commons",
         "title": title,
