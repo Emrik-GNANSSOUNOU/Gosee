@@ -1,51 +1,35 @@
 import type { Metadata } from "next";
-import { CATEGORIES, CATEGORY_LABELS, type Category } from "@gosee/shared";
 import { LieuList } from "@/components/LieuList";
 import { RecoBanner } from "@/components/RecoBanner";
+import { dansLePaysPrincipal } from "@/lib/categories";
 import { getAllLieux } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
 
-type SearchParams = Promise<{ category?: string }>;
+// ISR (cf. REVALIDATE_SECONDS) : plus de fetch Supabase à chaque visite, et
+// la dernière version reste servie si la base est en pause. Les anciennes
+// URL /?category=X redirigent vers /categorie/<slug> (next.config.ts).
+export const revalidate = 300;
 
-function parseCategory(raw?: string): Category | "all" {
-  return raw && (CATEGORIES as string[]).includes(raw) ? (raw as Category) : "all";
-}
+export const metadata: Metadata = {
+  alternates: { canonical: absoluteUrl("/") },
+};
 
-export async function generateMetadata({
-  searchParams,
-}: {
-  searchParams: SearchParams;
-}): Promise<Metadata> {
-  const category = parseCategory((await searchParams).category);
-
-  if (category === "all") {
-    return { alternates: { canonical: absoluteUrl("/") } };
-  }
-
-  const label = CATEGORY_LABELS[category];
-  return {
-    title: `${label} au Bénin`,
-    description: `Découvrez tous les lieux de catégorie ${label.toLowerCase()} référencés par Gosee au Bénin, avec localisation et itinéraire.`,
-    alternates: { canonical: absoluteUrl(`/?category=${category}`) },
-  };
-}
-
-export default async function HomePage({ searchParams }: { searchParams: SearchParams }) {
-  const category = parseCategory((await searchParams).category);
+export default async function HomePage() {
   const lieux = await getAllLieux();
+  const pays = dansLePaysPrincipal(lieux);
 
   return (
     <main className="min-h-screen bg-neutral-50">
       <div className="mx-auto max-w-5xl px-4 py-6">
         <header className="mb-6">
-          <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900">Gosee</h1>
-          <p className="mt-1 text-neutral-600">
-            Découvrez les lieux, activités et hôtels incontournables du Bénin.
-          </p>
+          <p className="text-3xl font-extrabold tracking-tight text-neutral-900">Gosee</p>
+          <h1 className="mt-1 text-lg font-semibold text-neutral-700">
+            Que faire {pays} ? Lieux, activités et sorties à découvrir
+          </h1>
         </header>
 
         <RecoBanner />
-        <LieuList lieux={lieux} initialCategory={category} />
+        <LieuList lieux={lieux} activeCategory="all" />
       </div>
     </main>
   );

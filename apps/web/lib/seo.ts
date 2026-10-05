@@ -9,3 +9,23 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://loc
 export function absoluteUrl(path: string): string {
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+export interface Crumb {
+  name: string;
+  path: string;
+}
+
+// Données structurées BreadcrumbList, pour que Google affiche le fil
+// d'Ariane (Accueil › Catégorie › Lieu) à la place de l'URL brute.
+export function breadcrumbJsonLd(crumbs: Crumb[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: absoluteUrl(crumb.path),
+    })),
+  };
+}

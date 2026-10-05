@@ -4,8 +4,8 @@ import { Recommandeur } from "@/components/Recommandeur";
 import { getAllLieux } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
 
-// Même contrainte que l'accueil : dépend d'un fetch Supabase à la requête.
-export const dynamic = "force-dynamic";
+// ISR, comme l'accueil : le moteur tourne côté navigateur sur ces données.
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Que faire aujourd'hui ? Idées de sortie personnalisées",

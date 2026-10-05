@@ -1,17 +1,19 @@
-"use client";
+import Link from "next/link";
+import {
+  CATEGORIES,
+  CATEGORY_ICONS,
+  CATEGORY_LABELS,
+  CATEGORY_SLUGS,
+  type Category,
+} from "@gosee/shared";
 
-import { CATEGORIES, CATEGORY_ICONS, CATEGORY_LABELS, type Category } from "@gosee/shared";
-
-interface CategoryFilterProps {
-  active: Category | "all";
-  onChange: (category: Category | "all") => void;
+// Chaque catégorie est une vraie page (/categorie/<slug>) avec son propre
+// titre et sa canonical : des liens simples, suivis par Google.
+export function categoryHref(category: Category | "all"): string {
+  return category === "all" ? "/" : `/categorie/${CATEGORY_SLUGS[category]}`;
 }
 
-function hrefFor(category: Category | "all"): string {
-  return category === "all" ? "/" : `/?category=${category}`;
-}
-
-export function CategoryFilter({ active, onChange }: CategoryFilterProps) {
+export function CategoryFilter({ active }: { active: Category | "all" }) {
   const options: Array<{ value: Category | "all"; label: string; icon: string }> = [
     { value: "all", label: "Tout", icon: "✨" },
     ...CATEGORIES.map((category) => ({
@@ -22,20 +24,16 @@ export function CategoryFilter({ active, onChange }: CategoryFilterProps) {
   ];
 
   return (
-    <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
+    <nav
+      aria-label="Catégories"
+      className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap"
+    >
       {options.map((option) => (
-        // Vrai <a href> (pas un <button>) : Google et les lecteurs sans JS
-        // peuvent suivre/indexer /?category=X directement. Le clic est
-        // intercepté pour un filtrage instantané côté client, mais
-        // clic-molette / "ouvrir dans un nouvel onglet" restent utilisables.
-        <a
+        <Link
           key={option.value}
-          href={hrefFor(option.value)}
-          onClick={(e) => {
-            e.preventDefault();
-            onChange(option.value);
-            window.history.replaceState(null, "", hrefFor(option.value));
-          }}
+          href={categoryHref(option.value)}
+          scroll={false}
+          aria-current={active === option.value ? "page" : undefined}
           className={`shrink-0 rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
             active === option.value
               ? "border-emerald-600 bg-emerald-600 text-white"
@@ -46,8 +44,8 @@ export function CategoryFilter({ active, onChange }: CategoryFilterProps) {
             {option.icon}
           </span>
           {option.label}
-        </a>
+        </Link>
       ))}
-    </div>
+    </nav>
   );
 }

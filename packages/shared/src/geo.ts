@@ -50,3 +50,17 @@ export function sortByDistance(lieux: Lieu[], position: Coordinates | null): Lie
     return da - db;
   });
 }
+
+// Suggestions « À proximité » d'une fiche : les plus proches, hors le lieu
+// lui-même et hors ses doublons au même endroit (ex. « Ganvié » et « Sortie
+// pirogue à Ganvié », à moins d'1 km), dans un rayon raisonnable.
+export function lieuxProches(lieu: Lieu, lieux: Lieu[], limit = 3, maxKm = 60): Array<{ lieu: Lieu; distanceKm: number }> {
+  if (lieu.lat == null || lieu.lng == null) return [];
+  const origin = { lat: lieu.lat, lng: lieu.lng };
+  return lieux
+    .filter((l) => l.slug !== lieu.slug)
+    .map((l) => ({ lieu: l, distanceKm: distanceToLieu(l, origin) }))
+    .filter((x): x is { lieu: Lieu; distanceKm: number } => x.distanceKm != null && x.distanceKm >= 1 && x.distanceKm <= maxKm)
+    .sort((a, b) => a.distanceKm - b.distanceKm)
+    .slice(0, limit);
+}
