@@ -16,6 +16,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée libre (lieu de culte)",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "spiritualite",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "eglise-sainte-rita"
   },
   {
@@ -35,6 +48,20 @@
     "website": "https://www.fondation-zinsou.org",
     "rating": 4.3,
     "reviews_count": 88,
+    "prix": "Entrée gratuite",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "art",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "fondation-zinsou"
   },
   {
@@ -54,6 +81,19 @@
     "website": null,
     "rating": 3.6,
     "reviews_count": 72,
+    "prix": "Accès libre",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "plage",
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "plage-de-fidjrosse"
   },
   {
@@ -73,6 +113,20 @@
     "website": null,
     "rating": 4.5,
     "reviews_count": 15,
+    "prix": "Accès libre (espace public)",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "statue-de-l-amazone-place-du-souvenir"
   },
   {
@@ -92,6 +146,17 @@
     "website": null,
     "rating": 3.3,
     "reviews_count": 15,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "sport"
+    ],
+    "ideal_pour": [
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "stade-de-l-amitie"
   },
   {
@@ -111,6 +176,20 @@
     "website": null,
     "rating": 4.6,
     "reviews_count": 5,
+    "prix": "Parcours en accès libre ; guide en option",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "route-des-esclaves"
   },
   {
@@ -130,6 +209,20 @@
     "website": null,
     "rating": 3.6,
     "reviews_count": 142,
+    "prix": "≈ 2 000 FCFA / pers. (tarif relevé en 2021)",
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "spiritualite",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "temple-des-pythons"
   },
   {
@@ -149,6 +242,21 @@
     "website": null,
     "rating": 4.3,
     "reviews_count": 10,
+    "prix": "≈ 1 100 FCFA / pers. (tarif relevé en 2021)",
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "spiritualite",
+      "nature",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "foret-sacree-de-kpasse"
   },
   {
@@ -168,6 +276,19 @@
     "website": null,
     "rating": 4.0,
     "reviews_count": 79,
+    "prix": "≈ 5 000 FCFA / pers. pour le musée d'histoire (tarif 2021, fermeture possible)",
+    "price_level": "moyen",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "fort-portugais-de-ouidah"
   },
   {
@@ -187,6 +308,20 @@
     "website": null,
     "rating": 4.4,
     "reviews_count": 69,
+    "prix": "≈ 5 000 à 10 500 FCFA / pers. (pirogue + guide, selon taille du groupe)",
+    "price_level": "moyen",
+    "duree": "demi_journee",
+    "tags": [
+      "culture",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "ganvie"
   },
   {
@@ -206,6 +341,20 @@
     "website": null,
     "rating": 4.0,
     "reviews_count": 21,
+    "prix": "≈ 1 000 FCFA / pers.",
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "palais-royal-de-porto-novo"
   },
   {
@@ -225,6 +374,20 @@
     "website": null,
     "rating": 3.9,
     "reviews_count": 21,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture",
+      "art"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "musee-da-silva"
   },
   {
@@ -244,6 +407,19 @@
     "website": null,
     "rating": 3.7,
     "reviews_count": 29,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "culture",
+      "art"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "musee-ethnographique-alexandre-senou-adande"
   },
   {
@@ -263,6 +439,20 @@
     "website": "https://songhai.org",
     "rating": null,
     "reviews_count": null,
+    "prix": "Visite guidée d'environ 1 h ; restaurant sur place (≈ 1 200 à 3 500 FCFA le plat)",
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "nature",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "centre-songhai"
   },
   {
@@ -282,6 +472,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée libre (lieu de culte)",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "spiritualite",
+      "histoire"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "cathedrale-notre-dame-de-porto-novo"
   },
   {
@@ -301,6 +504,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "cite-royale-de-ketou"
   },
   {
@@ -320,6 +537,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "musee-akaba-idena"
   },
   {
@@ -339,6 +569,18 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Découverte libre de la ville",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "ville-de-pobe"
   },
   {
@@ -358,6 +600,20 @@
     "website": null,
     "rating": 3.7,
     "reviews_count": 105,
+    "prix": "≈ 3 000 à 5 000 FCFA / pers.",
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "palais-royaux-d-abomey"
   },
   {
@@ -377,6 +633,19 @@
     "website": null,
     "rating": 4.0,
     "reviews_count": 5,
+    "prix": "Accès libre (espace public)",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "histoire"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "place-behanzin-place-goho"
   },
   {
@@ -396,6 +665,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "journee",
+    "tags": [
+      "nature",
+      "faune",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "foret-classee-de-la-lama"
   },
   {
@@ -415,6 +697,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Accès libre (lieu de pèlerinage)",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "spiritualite",
+      "nature"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "grotte-mariale-de-dassa-zoume"
   },
   {
@@ -434,6 +730,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "culture",
+      "spiritualite",
+      "histoire"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "savalou-ville-historique-culte-vaudou"
   },
   {
@@ -453,6 +763,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Accès libre",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "plage",
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "plage-de-grand-popo"
   },
   {
@@ -472,6 +796,21 @@
     "website": "https://www.ecobenin.org/possotome",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "detente",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "village-de-possotome"
   },
   {
@@ -491,6 +830,21 @@
     "website": "https://www.boucheduroy.bj",
     "rating": 4.0,
     "reviews_count": 2,
+    "prix": "≈ 10 000 FCFA / pers. en pirogue (réductions possibles en groupe)",
+    "price_level": "moyen",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "aventure",
+      "plage"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "bouche-du-roy"
   },
   {
@@ -510,6 +864,18 @@
     "website": "https://lokossa.mairie.bj/fr/decouverte",
     "rating": null,
     "reviews_count": null,
+    "prix": "Découverte libre de la ville",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "ville-de-lokossa"
   },
   {
@@ -529,6 +895,21 @@
     "website": "https://www.african-parks.org/the-parks/pendjari",
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée ≈ 19 € adulte étranger, ≈ 7 € résident béninois (anciens tarifs), + véhicule et guide",
+    "price_level": "eleve",
+    "duree": "sejour",
+    "tags": [
+      "faune",
+      "nature",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "parc-national-de-la-pendjari"
   },
   {
@@ -548,6 +929,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "culture",
+      "histoire"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "villages-tata-somba"
   },
   {
@@ -567,6 +962,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "aventure",
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "cascades-de-tanougou"
   },
   {
@@ -586,6 +995,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "culture",
+      "histoire"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "musee-regional-de-natitingou"
   },
   {
@@ -605,6 +1027,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Accès libre ; guide conseillé pour la randonnée",
+    "price_level": "gratuit",
+    "duree": "journee",
+    "tags": [
+      "nature",
+      "aventure",
+      "sport"
+    ],
+    "ideal_pour": [
+      "solo",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "chaine-de-l-atacora"
   },
   {
@@ -624,6 +1059,18 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "journee",
+    "tags": [
+      "nature",
+      "faune",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "foret-classee-de-wari-maro"
   },
   {
@@ -643,6 +1090,18 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Découverte libre",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "village-de-bassila"
   },
   {
@@ -662,6 +1121,20 @@
     "website": "https://tourisme.parakou.bj/2024/01/18/musee-plein-air-et-ethnographique/",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "culture",
+      "art"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "musee-de-plein-air-de-parakou"
   },
   {
@@ -681,6 +1154,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "palais-royal-de-nikki"
   },
   {
@@ -700,6 +1186,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée ≈ 10 000 FCFA / 24 h, + véhicule (≈ 60 000 à 70 000 FCFA), guide (≈ 20 000 FCFA) et carburant",
+    "price_level": "eleve",
+    "duree": "sejour",
+    "tags": [
+      "faune",
+      "nature",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "parc-national-du-w"
   },
   {
@@ -719,6 +1219,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Accès libre ; balade en pirogue à négocier sur place",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "fleuve-niger-rives"
   },
   {
@@ -738,6 +1251,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Découverte libre de la ville",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "ville-de-kandi"
   },
   {
@@ -757,6 +1281,18 @@
     "website": "https://www.beachsandhotel.com",
     "rating": null,
     "reviews_count": null,
+    "prix": "Dès ≈ 33 USD / nuit (plateformes de réservation)",
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "plage"
+    ],
+    "ideal_pour": [
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "beach-sand-hotel-resort"
   },
   {
@@ -776,6 +1312,17 @@
     "website": null,
     "rating": 4.9,
     "reviews_count": 8,
+    "prix": "Dès ≈ 36 € / nuit (plateformes de réservation)",
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": false,
     "slug": "benin-berge-hotel"
   },
   {
@@ -795,6 +1342,19 @@
     "website": "https://easyhotelsbenin.com",
     "rating": 2.0,
     "reviews_count": 9,
+    "prix": "Dès ≈ 30 USD / nuit (plateformes de réservation)",
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "plage",
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": false,
     "slug": "residences-easy-hotel"
   },
   {
@@ -814,6 +1374,19 @@
     "website": "https://sites.google.com/view/aquamazone229/accueil",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "demi_journee",
+    "tags": [
+      "sport",
+      "aventure",
+      "plage"
+    ],
+    "ideal_pour": [
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "aquamazone"
   },
   {
@@ -833,6 +1406,21 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Balade libre (transport à prévoir)",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "plage",
+      "detente",
+      "nature"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "balade-route-des-peches"
   },
   {
@@ -852,6 +1440,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "rio-hotel-ouidah"
   },
   {
@@ -871,6 +1470,17 @@
     "website": "https://nativehotels.net",
     "rating": null,
     "reviews_count": null,
+    "prix": "Dès ≈ 127 £ / nuit (plateformes de réservation)",
+    "price_level": "eleve",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "histoire"
+    ],
+    "ideal_pour": [
+      "couple"
+    ],
+    "infos_estimees": false,
     "slug": "native-hotels-ouidah"
   },
   {
@@ -890,6 +1500,18 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "nature"
+    ],
+    "ideal_pour": [
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "bel-ami-sur-pilotis"
   },
   {
@@ -909,6 +1531,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "loisirs"
+    ],
+    "ideal_pour": [
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "holy-land-parc"
   },
   {
@@ -928,6 +1561,21 @@
     "website": "https://nadalevasiontours.com",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "journee",
+    "tags": [
+      "histoire",
+      "culture",
+      "spiritualite"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "visite-guidee-de-ouidah-nadal-evasion-tours"
   },
   {
@@ -947,6 +1595,20 @@
     "website": "https://www.visit-ganvie-tourism.com",
     "rating": null,
     "reviews_count": null,
+    "prix": "≈ 5 000 à 10 500 FCFA / pers. (pirogue + guide, selon taille du groupe)",
+    "price_level": "moyen",
+    "duree": "demi_journee",
+    "tags": [
+      "culture",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "sortie-pirogue-a-ganvie"
   },
   {
@@ -966,6 +1628,17 @@
     "website": "https://artresidence.bj",
     "rating": 5.0,
     "reviews_count": 1,
+    "prix": "Dès ≈ 150 USD / nuit (plateformes de réservation)",
+    "price_level": "eleve",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "art"
+    ],
+    "ideal_pour": [
+      "couple"
+    ],
+    "infos_estimees": false,
     "slug": "art-residence-hotel"
   },
   {
@@ -985,6 +1658,18 @@
     "website": null,
     "rating": 3.0,
     "reviews_count": 5,
+    "prix": "Dès ≈ 44 USD / nuit (plateformes de réservation)",
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "tour-eiffel-hotel-benin"
   },
   {
@@ -1004,6 +1689,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "loisirs"
+    ],
+    "ideal_pour": [
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "parc-d-attraction-ife"
   },
   {
@@ -1023,6 +1719,21 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "aventure",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "balade-sur-la-riviere-noire"
   },
   {
@@ -1042,6 +1753,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée libre (achats en sus)",
+    "price_level": "gratuit",
+    "duree": "courte",
+    "tags": [
+      "marche",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": false,
     "slug": "visite-du-grand-marche-de-porto-novo"
   },
   {
@@ -1061,6 +1785,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "adebayo-hotel"
   },
   {
@@ -1080,6 +1815,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "visite-du-musee-akaba-idena"
   },
   {
@@ -1099,6 +1847,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "balade-dans-la-cite-royale-de-ketou"
   },
   {
@@ -1118,6 +1880,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "ekagnon-hotel-abomey"
   },
   {
@@ -1137,6 +1910,17 @@
     "website": null,
     "rating": 4.0,
     "reviews_count": 3,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "bois-vert-hotel"
   },
   {
@@ -1156,6 +1940,18 @@
     "website": null,
     "rating": 4.7,
     "reviews_count": 30,
+    "prix": "≈ 34 à 73 USD / nuit pour 2 adultes (plateformes de réservation)",
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": false,
     "slug": "chez-sabine"
   },
   {
@@ -1175,6 +1971,20 @@
     "website": null,
     "rating": 3.7,
     "reviews_count": 105,
+    "prix": "Entrée du site ≈ 3 000 à 5 000 FCFA / pers., guide en sus",
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "visite-guidee-des-palais-royaux-guide-abomey"
   },
   {
@@ -1194,6 +2004,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "journee",
+    "tags": [
+      "nature",
+      "faune",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "decouverte-de-la-foret-classee-de-la-lama"
   },
   {
@@ -1213,6 +2036,17 @@
     "website": "https://jecohotels.com",
     "rating": 2.6,
     "reviews_count": 43,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-jeco"
   },
   {
@@ -1232,6 +2066,17 @@
     "website": null,
     "rating": 3.0,
     "reviews_count": 12,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "auberge-de-dassa-zoume"
   },
   {
@@ -1251,6 +2096,17 @@
     "website": "https://loubna-hotel.com",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "loubna-hotel-restauration"
   },
   {
@@ -1270,6 +2126,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Accès libre (lieu de pèlerinage)",
+    "price_level": "gratuit",
+    "duree": "demi_journee",
+    "tags": [
+      "spiritualite",
+      "nature"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "pelerinage-a-la-grotte-mariale-de-dassa"
   },
   {
@@ -1289,6 +2159,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "spiritualite",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "visite-du-sanctuaire-vaudou-de-dankoli"
   },
   {
@@ -1308,6 +2191,19 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "histoire",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "visite-du-palais-royal-de-savalou"
   },
   {
@@ -1327,6 +2223,19 @@
     "website": "https://www.hotel-benin-awaleplage.com",
     "rating": 3.6,
     "reviews_count": 137,
+    "prix": "Dès ≈ 29 USD / nuit (plateformes de réservation)",
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "plage",
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "awale-plage"
   },
   {
@@ -1346,6 +2255,18 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "plage",
+      "detente"
+    ],
+    "ideal_pour": [
+      "amis",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "asva-beach-resort"
   },
   {
@@ -1365,6 +2286,18 @@
     "website": null,
     "rating": 2.0,
     "reviews_count": 16,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "plage",
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "millenium-popo-beach-hotel"
   },
   {
@@ -1384,6 +2317,21 @@
     "website": "https://www.bakolotours.com",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "journee",
+    "tags": [
+      "nature",
+      "culture",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "excursions-avec-bakolo-tours"
   },
   {
@@ -1403,6 +2351,21 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "≈ 10 000 FCFA / pers. (réductions possibles en groupe)",
+    "price_level": "moyen",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "aventure",
+      "plage"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "sortie-bateau-vers-la-bouche-du-roy"
   },
   {
@@ -1422,6 +2385,17 @@
     "website": null,
     "rating": 4.0,
     "reviews_count": 20,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-bellevue"
   },
   {
@@ -1441,6 +2415,19 @@
     "website": null,
     "rating": 3.8,
     "reviews_count": 217,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-tata-somba"
   },
   {
@@ -1460,6 +2447,18 @@
     "website": "https://www.hoteltotora.com",
     "rating": 4.1,
     "reviews_count": 375,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "nature"
+    ],
+    "ideal_pour": [
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-totora"
   },
   {
@@ -1479,6 +2478,21 @@
     "website": "https://www.african-parks.org/the-parks/pendjari",
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée ≈ 19 € adulte étranger, ≈ 7 € résident béninois (anciens tarifs), + véhicule et guide",
+    "price_level": "eleve",
+    "duree": "sejour",
+    "tags": [
+      "faune",
+      "nature",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "safari-au-parc-national-de-la-pendjari"
   },
   {
@@ -1498,6 +2512,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "culture",
+      "histoire"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "visite-des-villages-tata-somba"
   },
   {
@@ -1517,6 +2545,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "demi_journee",
+    "tags": [
+      "nature",
+      "aventure",
+      "detente"
+    ],
+    "ideal_pour": [
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "randonnee-aux-cascades-de-tanougou"
   },
   {
@@ -1536,6 +2578,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "motel-du-lac"
   },
   {
@@ -1555,6 +2608,16 @@
     "website": null,
     "rating": 3.0,
     "reviews_count": 5,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-de-la-donga"
   },
   {
@@ -1574,6 +2637,16 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-cathas"
   },
   {
@@ -1593,6 +2666,18 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "journee",
+    "tags": [
+      "nature",
+      "faune",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "amis"
+    ],
+    "infos_estimees": true,
     "slug": "decouverte-de-la-foret-classee-de-wari-maro"
   },
   {
@@ -1612,6 +2697,17 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "ola-luxury-hotel"
   },
   {
@@ -1631,6 +2727,18 @@
     "website": null,
     "rating": 2.3,
     "reviews_count": 6,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "kobourou-city-hotel"
   },
   {
@@ -1650,6 +2758,18 @@
     "website": null,
     "rating": 5.0,
     "reviews_count": 5,
+    "prix": null,
+    "price_level": "moyen",
+    "duree": "sejour",
+    "tags": [
+      "detente",
+      "culture"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-iya-oasis"
   },
   {
@@ -1669,6 +2789,20 @@
     "website": "https://tourisme.parakou.bj/2024/01/18/musee-plein-air-et-ethnographique/",
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "courte",
+    "tags": [
+      "culture",
+      "art"
+    ],
+    "ideal_pour": [
+      "solo",
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": true,
     "slug": "visite-du-musee-de-plein-air-de-parakou"
   },
   {
@@ -1688,6 +2822,16 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": null,
+    "price_level": "economique",
+    "duree": "sejour",
+    "tags": [
+      "detente"
+    ],
+    "ideal_pour": [
+      "solo"
+    ],
+    "infos_estimees": true,
     "slug": "hotel-sejour-du-sahel"
   },
   {
@@ -1707,6 +2851,20 @@
     "website": null,
     "rating": null,
     "reviews_count": null,
+    "prix": "Entrée ≈ 10 000 FCFA / 24 h, + véhicule (≈ 60 000 à 70 000 FCFA), guide (≈ 20 000 FCFA) et carburant",
+    "price_level": "eleve",
+    "duree": "sejour",
+    "tags": [
+      "faune",
+      "nature",
+      "aventure"
+    ],
+    "ideal_pour": [
+      "couple",
+      "amis",
+      "famille"
+    ],
+    "infos_estimees": false,
     "slug": "safari-au-parc-national-du-w"
   }
 ]

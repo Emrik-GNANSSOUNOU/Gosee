@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CATEGORY_ICONS, CATEGORY_LABELS, type Category, type Lieu } from "@gosee/shared";
+import { InfosPratiques } from "@/components/InfosPratiques";
 import { getLieuImage } from "@/lib/images";
 import { getLieuBySlug } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
@@ -117,6 +118,8 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
         {lieu.description && (
           <p className="mt-5 leading-relaxed text-neutral-700">{lieu.description}</p>
         )}
+
+        <InfosPratiques lieu={lieu} />
 
         <dl className="mt-6 divide-y divide-neutral-200 rounded-xl border border-neutral-200 bg-white shadow-sm">
           {lieu.address && (

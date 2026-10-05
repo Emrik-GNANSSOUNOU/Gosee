@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CATEGORIES, CATEGORY_LABELS, type Category } from "@gosee/shared";
 import { LieuList } from "@/components/LieuList";
+import { RecoBanner } from "@/components/RecoBanner";
 import { getAllLieux } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -43,6 +44,7 @@ export default async function HomePage({ searchParams }: { searchParams: SearchP
           </p>
         </header>
 
+        <RecoBanner />
         <LieuList lieux={lieux} initialCategory={category} />
       </div>
     </main>
