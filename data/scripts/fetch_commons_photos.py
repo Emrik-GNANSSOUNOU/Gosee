@@ -37,6 +37,7 @@ import re
 import sys
 import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -76,10 +77,19 @@ def api(params):
     params = {**params, "format": "json", "formatversion": "2"}
     url = f"{API}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.load(resp)
-    time.sleep(0.5)
-    return data
+    # Wikimedia limite le débit (429) : on attend le délai qu'il indique
+    # (Retry-After) ou un délai croissant, puis on réessaie.
+    for attempt in range(6):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.load(resp)
+            time.sleep(1.5)
+            return data
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == 5:
+                raise
+            wait = int(exc.headers.get("Retry-After") or 0) or 5 * 2 ** attempt
+            time.sleep(min(wait, 120))
 
 
 IMAGEINFO = {
