@@ -27,7 +27,7 @@ NUMS = ["lat", "lng", "rating", "reviews_count"]
 TEXT = ["description", "horaires", "contact", "website", "prix", "price_level", "duree", "alerte",
         "photo_credit", "photo_source"]
 ARRAYS = ["tags", "ideal_pour", "photos"]
-BOOLS = ["verified", "infos_estimees"]
+BOOLS = ["verified", "infos_estimees", "restauration"]
 
 def q(v):
     return "null" if v is None else "'" + str(v).replace("'", "''") + "'"

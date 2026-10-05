@@ -64,10 +64,14 @@ export function EtapeSortie({
         {lieu ? (
           <LieuCompactCard
             lieu={lieu}
-            chips={[
-              ...(etape.type === "visite" ? [formatDuree(etape.fin - etape.debut)] : []),
-              ...(lieu.prix && lieu.prix.length < 40 ? [lieu.prix] : []),
-            ]}
+            chips={
+              etape.type === "repas"
+                ? [lieu.category === "restaurant" ? "Restaurant" : "Restaurant sur place"]
+                : [
+                    ...(etape.type === "visite" ? [formatDuree(etape.fin - etape.debut)] : []),
+                    ...(lieu.prix && lieu.prix.length < 40 ? [lieu.prix] : []),
+                  ]
+            }
           />
         ) : (
           <div className="rounded-2xl border border-dashed border-neutral-300 bg-white p-3 text-sm text-neutral-600">

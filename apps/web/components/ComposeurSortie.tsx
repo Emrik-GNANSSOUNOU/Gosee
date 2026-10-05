@@ -209,7 +209,7 @@ export function ComposeurSortie({ lieux, villes }: { lieux: Lieu[]; villes: Vill
                   valeur={
                     sortie.budget.max === 0
                       ? "Gratuit"
-                      : `${fcfa(sortie.budget.min)} – ${fcfa(sortie.budget.max)}`
+                      : `${fcfa(sortie.budget.min)} – ${fcfa(sortie.budget.max)} F`
                   }
                 />
               </div>
@@ -288,6 +288,7 @@ function Resume({ titre, valeur }: { titre: string; valeur: string }) {
   );
 }
 
+// Espace insécable comme séparateur de milliers (« 15 000 »).
 function fcfa(n: number): string {
-  return n >= 1000 ? `${Math.round(n / 1000)} k` : `${n}`;
+  return Math.round(n).toLocaleString("fr-FR").replace(/\s/g, "\u00a0");
 }

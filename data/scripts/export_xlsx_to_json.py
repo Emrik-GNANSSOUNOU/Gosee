@@ -109,6 +109,9 @@ def extra_fields(row, headers, offset):
         # Avertissement affiché en tête de fiche (sécurité, fermeture...) ;
         # un lieu en alerte n'est jamais proposé par les recommandations.
         "alerte": extra.get("Alerte"),
+        # Restaurant sur place (hôtel-restaurant, restaurant d'un site) : peut
+        # accueillir la pause repas de « Créer sa sortie ».
+        "restauration": str(extra.get("Restauration sur place") or "").lower() == "oui",
         # Vraie photo (Wikimedia Commons via fetch_commons_photos.py, ou
         # saisie à la main) + crédit exigé par sa licence.
         "photos": [extra["Photo"]] if extra.get("Photo") else None,

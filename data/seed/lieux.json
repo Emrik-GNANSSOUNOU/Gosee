@@ -30,6 +30,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -67,6 +68,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -103,6 +105,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Jeunes_sur_la_plage_de_Fidjross%C3%A8_%C3%A0_Cotonou_au_B%C3%A9nin.jpg/1920px-Jeunes_sur_la_plage_de_Fidjross%C3%A8_%C3%A0_Cotonou_au_B%C3%A9nin.jpg"
     ],
@@ -142,6 +145,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Vue_de_gauche_de_la_statue_%C3%A0_la_Place_du_souvenir.jpg/1920px-Vue_de_gauche_de_la_statue_%C3%A0_la_Place_du_souvenir.jpg"
     ],
@@ -178,6 +182,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -215,6 +220,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Route_des_esclaves_%C3%A0_Ouidah_au_B%C3%A9nin.jpg/1920px-Route_des_esclaves_%C3%A0_Ouidah_au_B%C3%A9nin.jpg"
     ],
@@ -254,6 +260,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Temple_des_Pythons_de_Ouidah_02.jpg/1920px-Temple_des_Pythons_de_Ouidah_02.jpg"
     ],
@@ -294,6 +301,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f8/Foret_Sacree_de_Kpasse_%2820733814183%29.jpg"
     ],
@@ -332,6 +340,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Le_Fort_Portugais_de_Ouidah.jpg/1920px-Le_Fort_Portugais_de_Ouidah.jpg"
     ],
@@ -371,6 +380,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Pilotis_of_Ganvi%C3%A9_People.jpg/1920px-Pilotis_of_Ganvi%C3%A9_People.jpg"
     ],
@@ -410,6 +420,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Une_vue_de_proche_de_la_devanture_du_Mus%C3%A9e_Honm%C3%A8.jpg/1920px-Une_vue_de_proche_de_la_devanture_du_Mus%C3%A9e_Honm%C3%A8.jpg"
     ],
@@ -449,6 +460,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Mus%C3%A9e_da_Silva.jpg/1920px-Mus%C3%A9e_da_Silva.jpg"
     ],
@@ -487,6 +499,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -524,6 +537,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -560,6 +574,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cath%C3%A9drale_Notre-Dame_de_l%27Immacul%C3%A9e_Conception_de_Porto-Novo_2021_01.jpg/1920px-Cath%C3%A9drale_Notre-Dame_de_l%27Immacul%C3%A9e_Conception_de_Porto-Novo_2021_01.jpg"
     ],
@@ -599,6 +614,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -635,6 +651,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg/1920px-La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg"
     ],
@@ -672,6 +689,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -709,6 +727,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Palais_royaux_d%27Abomey_3.jpg/1920px-Palais_royaux_d%27Abomey_3.jpg"
     ],
@@ -747,6 +766,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -783,6 +803,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg/1920px-All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg"
     ],
@@ -822,6 +843,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -859,6 +881,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -896,6 +919,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Plage_de_Grand-Popo_en_fin_de_journ%C3%A9e_%281%29.jpg/1920px-Plage_de_Grand-Popo_en_fin_de_journ%C3%A9e_%281%29.jpg"
     ],
@@ -936,6 +960,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -974,6 +999,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1009,6 +1035,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1047,6 +1074,7 @@
     ],
     "infos_estimees": false,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Une_vue_du_Parc_de_la_Pendjari.jpg/1920px-Une_vue_du_Parc_de_la_Pendjari.jpg"
     ],
@@ -1086,6 +1114,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1123,6 +1152,7 @@
     ],
     "infos_estimees": true,
     "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Chutes_de_Tanongou.jpg/1920px-Chutes_de_Tanongou.jpg"
     ],
@@ -1161,6 +1191,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/MUS%C3%89E_R%C3%89GIONAL_DE_NATITINGOU.jpg/1920px-MUS%C3%89E_R%C3%89GIONAL_DE_NATITINGOU.jpg"
     ],
@@ -1199,6 +1230,7 @@
     ],
     "infos_estimees": true,
     "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1234,6 +1266,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1269,6 +1302,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1306,6 +1340,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1342,6 +1377,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1379,6 +1415,7 @@
     ],
     "infos_estimees": false,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1415,6 +1452,7 @@
     ],
     "infos_estimees": true,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1449,6 +1487,7 @@
     ],
     "infos_estimees": true,
     "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1484,6 +1523,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1518,6 +1558,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1554,6 +1595,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1590,6 +1632,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1628,6 +1671,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1662,6 +1706,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1696,6 +1741,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1731,6 +1777,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1765,6 +1812,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1803,6 +1851,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1840,6 +1889,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Pilotis_of_Ganvi%C3%A9_People.jpg/1920px-Pilotis_of_Ganvi%C3%A9_People.jpg"
     ],
@@ -1876,6 +1926,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1911,6 +1962,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1945,6 +1997,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -1983,6 +2036,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/La_rivi%C3%A8re_noire_au_sud_du_B%C3%A9nin_06.jpg/1920px-La_rivi%C3%A8re_noire_au_sud_du_B%C3%A9nin_06.jpg"
     ],
@@ -2021,6 +2075,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2055,6 +2110,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2091,6 +2147,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg/1920px-La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg"
     ],
@@ -2130,6 +2187,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg/1920px-La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg"
     ],
@@ -2166,6 +2224,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2200,6 +2259,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2235,6 +2295,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2272,6 +2333,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/H%C3%A9ritage_des_rois_du_Danxom%C3%A9_%C3%A0_travers_leurs_palais_02.jpg/1920px-H%C3%A9ritage_des_rois_du_Danxom%C3%A9_%C3%A0_travers_leurs_palais_02.jpg"
     ],
@@ -2310,6 +2372,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg/1920px-All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg"
     ],
@@ -2346,6 +2409,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2380,6 +2444,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2414,6 +2479,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2451,6 +2517,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2487,6 +2554,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2523,6 +2591,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2559,6 +2628,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": true,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Grand-Popo-Awal%C3%A9_Plage.jpg/1920px-Grand-Popo-Awal%C3%A9_Plage.jpg"
     ],
@@ -2596,6 +2666,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2631,6 +2702,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2669,6 +2741,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2707,6 +2780,7 @@
     ],
     "infos_estimees": false,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2741,6 +2815,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2777,6 +2852,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2812,6 +2888,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Vue_de_la_piscine_de_l%27h%C3%B4tel_Totora_de_Natitingou.jpg/1920px-Vue_de_la_piscine_de_l%27h%C3%B4tel_Totora_de_Natitingou.jpg"
     ],
@@ -2852,6 +2929,7 @@
     ],
     "infos_estimees": false,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2889,6 +2967,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2926,6 +3005,7 @@
     ],
     "infos_estimees": true,
     "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Chutes_de_Tanongou.jpg/1920px-Chutes_de_Tanongou.jpg"
     ],
@@ -2962,6 +3042,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": true,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -2995,6 +3076,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3028,6 +3110,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3063,6 +3146,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3097,6 +3181,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3132,6 +3217,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Kobourou_city_H%C3%B4tel_Parakou.jpg/1920px-Kobourou_city_H%C3%B4tel_Parakou.jpg"
     ],
@@ -3169,6 +3255,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3206,6 +3293,7 @@
     ],
     "infos_estimees": true,
     "alerte": null,
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3239,6 +3327,7 @@
     ],
     "infos_estimees": true,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,
@@ -3276,6 +3365,7 @@
     ],
     "infos_estimees": false,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "restauration": false,
     "photos": null,
     "photo_credit": null,
     "photo_source": null,

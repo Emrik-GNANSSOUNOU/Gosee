@@ -4,7 +4,7 @@ import { supabase } from "@/lib/supabaseClient";
 import { SITE_URL } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const { data } = await supabase.from("lieux").select("slug, updated_at");
+  const { data } = await supabase.from("lieux").select("slug, category, updated_at");
 
   const lieuEntries: MetadataRoute.Sitemap = (data ?? [])
     .filter((lieu) => lieu.slug)
@@ -15,7 +15,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     }));
 
-  const categoryEntries: MetadataRoute.Sitemap = CATEGORIES.map((category) => ({
+  // Seulement les catégories qui ont des lieux (les autres renvoient une 404).
+  const presentes = CATEGORIES.filter((c) => (data ?? []).some((l) => l.category === c));
+  const categoryEntries: MetadataRoute.Sitemap = presentes.map((category) => ({
     url: `${SITE_URL}/categorie/${CATEGORY_SLUGS[category]}`,
     changeFrequency: "daily",
     priority: 0.6,

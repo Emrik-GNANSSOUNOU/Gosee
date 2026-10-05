@@ -9,7 +9,7 @@ import {
 import { FilAriane } from "@/components/FilAriane";
 import { LieuList } from "@/components/LieuList";
 import { RecoBanner } from "@/components/RecoBanner";
-import { CATEGORY_COPY, dansLePaysPrincipal } from "@/lib/categories";
+import { CATEGORY_COPY, categoriesDisponibles, dansLePaysPrincipal } from "@/lib/categories";
 import { getAllLieux } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -48,6 +48,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
 
   const all = await getAllLieux();
   const lieux = all.filter((l) => l.category === category);
+  if (lieux.length === 0) notFound();
   const pays = dansLePaysPrincipal(all);
   const copy = CATEGORY_COPY[category];
 
@@ -68,7 +69,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
         </header>
 
         <RecoBanner />
-        <LieuList lieux={lieux} activeCategory={category} />
+        <LieuList lieux={lieux} activeCategory={category} categories={categoriesDisponibles(all)} />
       </div>
     </main>
   );

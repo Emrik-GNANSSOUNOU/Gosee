@@ -18,9 +18,11 @@ import { LieuCard } from "./LieuCard";
 export function LieuList({
   lieux,
   activeCategory,
+  categories,
 }: {
   lieux: Lieu[];
   activeCategory: Category | "all";
+  categories?: Category[];
 }) {
   const [position, setPosition] = useState<Coordinates | null>(null);
   const [radiusKm, setRadiusKm] = useState<number | null>(null);
@@ -38,7 +40,7 @@ export function LieuList({
         onPositionChange={setPosition}
         onRadiusChange={setRadiusKm}
       />
-      <CategoryFilter active={activeCategory} />
+      <CategoryFilter active={activeCategory} disponibles={categories} />
 
       <h2 className="sr-only">Lieux</h2>
       <p className="mt-4 text-sm text-neutral-500">

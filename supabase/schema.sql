@@ -72,6 +72,8 @@ alter table lieux add column if not exists alerte text;
 -- Creative Commons des photos Wikimedia Commons), oct. 2026.
 alter table lieux add column if not exists photo_credit text;
 alter table lieux add column if not exists photo_source text;
+-- Restaurant sur place (pause repas de « Créer sa sortie »), oct. 2026.
+alter table lieux add column if not exists restauration boolean not null default false;
 
 create index if not exists lieux_category_idx on lieux(category);
 create index if not exists lieux_department_idx on lieux(department);

@@ -13,10 +13,18 @@ export function categoryHref(category: Category | "all"): string {
   return category === "all" ? "/" : `/categorie/${CATEGORY_SLUGS[category]}`;
 }
 
-export function CategoryFilter({ active }: { active: Category | "all" }) {
+// `disponibles` : catégories qui ont au moins un lieu (pas de filtre menant
+// à une page vide, ex. une catégorie dont les données ne sont pas importées).
+export function CategoryFilter({
+  active,
+  disponibles = CATEGORIES,
+}: {
+  active: Category | "all";
+  disponibles?: Category[];
+}) {
   const options: Array<{ value: Category | "all"; label: string; icon: string }> = [
     { value: "all", label: "Tout", icon: "✨" },
-    ...CATEGORIES.map((category) => ({
+    ...CATEGORIES.filter((c) => disponibles.includes(c)).map((category) => ({
       value: category,
       label: CATEGORY_LABELS[category],
       icon: CATEGORY_ICONS[category],

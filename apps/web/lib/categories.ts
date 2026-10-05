@@ -1,4 +1,4 @@
-import { dansLePays, type Category, type Lieu } from "@gosee/shared";
+import { CATEGORIES, dansLePays, type Category, type Lieu } from "@gosee/shared";
 
 // Textes propres à chaque page catégorie (titre, description, intro) : un
 // contenu distinct par page plutôt qu'une simple liste filtrée, pour que
@@ -72,4 +72,9 @@ export function paysPrincipal(lieux: Lieu[]): string {
 
 export function dansLePaysPrincipal(lieux: Lieu[]): string {
   return dansLePays(paysPrincipal(lieux));
+}
+
+// Catégories qui ont au moins un lieu (filtres, sitemap, pages catégorie).
+export function categoriesDisponibles(lieux: Lieu[]): Category[] {
+  return CATEGORIES.filter((c) => lieux.some((l) => l.category === c));
 }

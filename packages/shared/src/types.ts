@@ -109,4 +109,6 @@ export interface Lieu {
   // Attribution de photos[0] (auteur, licence) et lien vers sa page d'origine.
   photo_credit?: string | null;
   photo_source?: string | null;
+  // Restaurant sur place : le lieu peut accueillir une pause repas.
+  restauration?: boolean;
 }

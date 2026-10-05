@@ -153,10 +153,15 @@ export function composerSortie(lieux: Lieu[], criteres: SortieCriteres): SortieC
     for (let i = 1; i < plan.etapes.length; i++) {
       if (Math.abs(plan.etapes[i].fin - 12 * 60 - 45) < Math.abs(plan.etapes[apres].fin - 12 * 60 - 45)) apres = i;
     }
-    const pres = plan.etapes[apres].lieu;
-    const resto = pres ? restaurantProche(lieux, pres, criteres.budget) : null;
-    slugs.splice(apres + 1, 0, resto?.slug ?? "");
-    types.splice(apres + 1, 0, "repas");
+    // Pas de pause repas hors des heures raisonnables (11h-14h30) : cas d'une
+    // activité à la journée (excursion...), qui inclut en général le repas.
+    const debutRepas = plan.etapes[apres].fin;
+    if (debutRepas >= 11 * 60 && debutRepas <= 14 * 60 + 30) {
+      const pres = plan.etapes[apres].lieu;
+      const resto = pres ? restaurantProche(lieux, pres, criteres.budget) : null;
+      slugs.splice(apres + 1, 0, resto?.slug ?? "");
+      types.splice(apres + 1, 0, "repas");
+    }
   }
 
   if (criteres.temps === "sejour" && ordonnees.length > 0) {
@@ -201,6 +206,12 @@ export function restaurantProche(lieux: Lieu[], pres: Lieu, budget: PriceLevel, 
   return procheDeCategorie(lieux, pres, "restaurant", REPAS_RAYON_KM, budget, exclure)[0] ?? null;
 }
 
+// Peut accueillir la pause repas : un restaurant, ou un lieu avec
+// restauration sur place (hôtel-restaurant, restaurant d'un site visité).
+function sertARepas(l: Lieu): boolean {
+  return l.category === "restaurant" || !!l.restauration;
+}
+
 function hotelProche(lieux: Lieu[], pres: Lieu, budget: PriceLevel): Lieu | null {
   return procheDeCategorie(lieux, pres, "hotel", NUIT_RAYON_KM, budget, [])[0] ?? null;
 }
@@ -216,7 +227,10 @@ function procheDeCategorie(
   const pos = coords(pres);
   if (!pos) return [];
   return lieux
-    .filter((l) => l.category === category && !l.alerte && !exclure.includes(l.slug) && dansBudget(l, budget))
+    .filter((l) => (category === "restaurant" ? sertARepas(l) : l.category === category))
+    // Pour un repas pris dans un hôtel, la gamme de prix connue est celle de
+    // la nuit : elle ne dit rien du repas, on ne filtre pas dessus.
+    .filter((l) => !l.alerte && !exclure.includes(l.slug) && (category === "restaurant" && l.category !== "restaurant" ? true : dansBudget(l, budget)))
     .map((l) => ({ l, d: distanceToLieu(l, pos) }))
     .filter((x): x is { l: Lieu; d: number } => x.d != null && x.d <= rayonKm)
     .sort((a, b) => a.d - b.d)
@@ -282,7 +296,10 @@ export function planifierSortie(
     etapes.push({ type, lieu, debut: heure, fin: heure + duree, trajet });
     heure += duree;
 
-    if (lieu?.price_level) {
+    // Le prix d'un hôtel-restaurant est celui de la nuit : pour une pause
+    // repas, seul le prix d'un vrai restaurant compte.
+    const prixApplicable = type !== "repas" || lieu?.category === "restaurant";
+    if (lieu?.price_level && prixApplicable) {
       min += PRIX[lieu.price_level][0];
       max += PRIX[lieu.price_level][1];
     } else if (type === "repas") {
