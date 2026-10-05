@@ -14,7 +14,7 @@ renseigne pas).
 Licence : données © contributeurs OpenStreetMap, sous licence ODbL —
 l'attribution est affichée sur les fiches (colonne Statut = « OpenStreetMap »).
 
-Réseau requis : overpass-api.de.
+Réseau requis : overpass-api.de ou l'un des miroirs de APIS.
 
 Usage : python data/scripts/import_osm_restaurants.py
 puis    python data/scripts/export_xlsx_to_json.py
@@ -35,7 +35,13 @@ ROOT = Path(__file__).resolve().parents[2]
 XLSX_PATH = ROOT / "benin_contenu_curation.xlsx"
 LIEUX_JSON = ROOT / "data" / "seed" / "lieux.json"
 SHEET = "Restaurants (OSM)"
-API = "https://overpass-api.de/api/interpreter"
+# Instance principale puis miroirs publics (mêmes données OSM) : certaines
+# instances refusent les connexions depuis des hébergeurs cloud.
+APIS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
+]
 USER_AGENT = "GoseeContentBot/1.0 (https://gosee-web.vercel.app; curation de contenu)"
 
 # Zone de recherche : le pays du catalogue (code ISO) — rien de figé sur le
@@ -70,15 +76,23 @@ def distance_km(a, b):
 
 def overpass(query):
     data = urllib.parse.urlencode({"data": query}).encode()
-    req = urllib.request.Request(API, data=data, headers={"User-Agent": USER_AGENT})
-    for attempt in range(5):
-        try:
-            with urllib.request.urlopen(req, timeout=180) as resp:
-                return json.load(resp)
-        except urllib.error.HTTPError as exc:
-            if exc.code not in (429, 504) or attempt == 4:
-                raise
-            time.sleep(15 * (attempt + 1))
+    erreurs = []
+    for api in APIS:
+        req = urllib.request.Request(api, data=data, headers={"User-Agent": USER_AGENT})
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=180) as resp:
+                    print(f"  données reçues de {api}")
+                    return json.load(resp)
+            except urllib.error.HTTPError as exc:
+                if exc.code not in (429, 504):
+                    erreurs.append(f"{api}: HTTP {exc.code}")
+                    break
+                time.sleep(15 * (attempt + 1))
+            except (urllib.error.URLError, ConnectionError, TimeoutError) as exc:
+                erreurs.append(f"{api}: {exc}")
+                break
+    raise RuntimeError("Aucune instance Overpass joignable :\n  " + "\n  ".join(erreurs))
 
 
 def restaurants_osm():
