@@ -75,6 +75,12 @@ def assign_unique_slugs(lieux):
     return lieux
 
 
+def parse_list(raw):
+    if not raw:
+        return []
+    return [part.strip() for part in str(raw).split(",") if part.strip()]
+
+
 def extra_fields(row, headers, offset):
     """Champs d'enrichissement (Horaires, Téléphone, Site web, Note, Nb avis,
     Remarque) ajoutés après les colonnes de base — optionnels, absents pour
@@ -91,6 +97,14 @@ def extra_fields(row, headers, offset):
         "rating": float(note) if note is not None else None,
         "reviews_count": int(avis) if avis is not None else None,
         "remarque": remarque,
+        # Colonnes recommandations (oct. 2026) : codes alignés sur les types
+        # de packages/shared (PriceLevel, Duree, Ambiance, IdealPour).
+        "prix": extra.get("Prix"),
+        "price_level": extra.get("Gamme de prix"),
+        "duree": extra.get("Durée"),
+        "tags": parse_list(extra.get("Ambiances")),
+        "ideal_pour": parse_list(extra.get("Idéal pour")),
+        "infos_estimees": str(extra.get("Infos estimées") or "").lower() == "oui",
     }
 
 

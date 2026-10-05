@@ -124,8 +124,11 @@ Ces variables sont déjà configurées sur Vercel (projet `gosee-web`) pour Prod
 - 90 lieux en base (les événements ont été retirés du périmètre produit — voir pilier 1 et règles ci-dessous)
 - ~32 lieux enrichis (horaires, téléphone, site web, note/avis) par recherche web manuelle ; le reste n'a pas d'info publique trouvable (sites naturels, petits établissements) — champs laissés vides plutôt qu'inventés
 - Photos : images libres de droit génériques par catégorie (pas les vraies photos des lieux), via `apps/web/lib/images.ts`
+- Infos pratiques (préparation du pilier Recommandations, oct. 2026) : les 90 lieux ont gamme de prix, durée, ambiances et public idéal (colonnes xlsx « Prix », « Gamme de prix », « Durée », « Ambiances », « Idéal pour », « Infos estimées »), affichés dans un bloc « Infos pratiques » sur la fiche. Prix sourcés quand un tarif public a été trouvé (souvent anciens : 2021, plateformes de réservation) ; sinon `infos_estimees = true` et la fiche l'indique. Vocabulaire partagé dans `packages/shared/src/pratique.ts`
 
-**Prochaine étape prévue :** pilier 3 (Billetterie/réservation), une fois 1 et 2 jugés solides — respecter l'ordre strict du MVP.
+**Prochaine étape prévue :** moteur de recommandations personnalisées (questionnaire budget/temps/groupe/ambiance → suggestions expliquées), sur décision explicite de l'utilisateur (oct. 2026) de passer devant la billetterie, mise en pause.
+
+**À faire côté dashboard Supabase** pour que les infos pratiques apparaissent en prod : exécuter le bloc « Infos pratiques » de `supabase/schema.sql`, puis `npm run seed`.
 
 **En attente / bloqué :**
 - Vraies photos + avis Google Places : nécessite une clé API Google Cloud (Places API), bloquée côté utilisateur sur l'activation de la facturation Google Cloud. Plan déjà défini une fois débloqué : résoudre un `place_id` par lieu, proxy serveur pour les photos (cache court, jamais stockées en permanence — CGU Google), Google Places prioritaire sur les données déjà enrichies par recherche web.

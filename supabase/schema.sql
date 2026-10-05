@@ -49,6 +49,18 @@ alter table lieux drop constraint if exists lieux_category_check;
 alter table lieux add constraint lieux_category_check check (category in
   ('site_touristique','loisir','hotel','activite'));
 
+-- Infos pratiques pour les recommandations personnalisées (oct. 2026) :
+-- prix lisible (sourcé quand trouvé), gamme/durée/ambiances/public en codes
+-- filtrables. infos_estimees = gamme/durée estimées faute de source publique.
+alter table lieux add column if not exists prix text;
+alter table lieux add column if not exists price_level text check (price_level in
+  ('gratuit','economique','moyen','eleve'));
+alter table lieux add column if not exists duree text check (duree in
+  ('courte','demi_journee','journee','sejour'));
+alter table lieux add column if not exists tags text[] not null default '{}';
+alter table lieux add column if not exists ideal_pour text[] not null default '{}';
+alter table lieux add column if not exists infos_estimees boolean not null default false;
+
 create index if not exists lieux_category_idx on lieux(category);
 create index if not exists lieux_department_idx on lieux(department);
 create unique index if not exists lieux_slug_idx on lieux(slug);

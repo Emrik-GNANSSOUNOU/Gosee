@@ -1,3 +1,5 @@
+import type { Ambiance, Duree, IdealPour, PriceLevel } from "./pratique";
+
 export type Category = "site_touristique" | "loisir" | "hotel" | "activite";
 
 export const CATEGORIES: Category[] = ["site_touristique", "loisir", "hotel", "activite"];
@@ -36,4 +38,12 @@ export interface Lieu {
   photos: string[] | null;
   verified: boolean;
   source: string | null;
+  // Optionnels : absents tant que la migration "infos pratiques" de
+  // supabase/schema.sql n'a pas été appliquée.
+  prix?: string | null;
+  price_level?: PriceLevel | null;
+  duree?: Duree | null;
+  tags?: Ambiance[] | null;
+  ideal_pour?: IdealPour[] | null;
+  infos_estimees?: boolean;
 }
