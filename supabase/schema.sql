@@ -49,6 +49,12 @@ alter table lieux drop constraint if exists lieux_category_check;
 alter table lieux add constraint lieux_category_check check (category in
   ('site_touristique','loisir','hotel','activite'));
 
+-- Restaurants (pilier « Créer sa sortie », oct. 2026) : nouvelle catégorie,
+-- importée depuis OpenStreetMap. Contrainte recréée pour l'autoriser.
+alter table lieux drop constraint if exists lieux_category_check;
+alter table lieux add constraint lieux_category_check check (category in
+  ('site_touristique','loisir','hotel','activite','restaurant'));
+
 -- Infos pratiques pour les recommandations personnalisées (oct. 2026) :
 -- prix lisible (sourcé quand trouvé), gamme/durée/ambiances/public en codes
 -- filtrables. infos_estimees = gamme/durée estimées faute de source publique.

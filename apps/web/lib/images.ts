@@ -9,6 +9,7 @@ const PLACEHOLDER_BY_CATEGORY: Record<Category, string> = {
   loisir: "/images/placeholders/loisir.svg",
   hotel: "/images/placeholders/hotel.svg",
   activite: "/images/placeholders/activite.svg",
+  restaurant: "/images/placeholders/restaurant.svg",
 };
 
 export function getLieuImage(lieu: Pick<Lieu, "photos" | "category">): string {

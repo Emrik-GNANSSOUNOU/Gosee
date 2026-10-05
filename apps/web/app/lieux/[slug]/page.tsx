@@ -41,6 +41,7 @@ const SCHEMA_TYPE: Record<Category, string> = {
   loisir: "TouristAttraction",
   hotel: "LodgingBusiness",
   activite: "TouristAttraction",
+  restaurant: "Restaurant",
 };
 
 function jsonLd(lieu: Lieu, url: string) {
@@ -234,6 +235,25 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
           >
             Voir l&apos;itinéraire sur Google Maps
           </a>
+        )}
+
+        {!lieu.alerte && lieu.category !== "hotel" && lieu.category !== "restaurant" && (
+          <Link
+            href={`/creer-ma-sortie?ancre=${lieu.slug}`}
+            className="mt-3 block rounded-lg border border-orange-400 px-4 py-3 text-center font-medium text-orange-700 transition-colors hover:bg-orange-50"
+          >
+            🗺️ Créer ma sortie autour de ce lieu
+          </Link>
+        )}
+
+        {lieu.source === "OpenStreetMap" && (
+          <p className="mt-3 text-xs text-neutral-500">
+            Données ©{" "}
+            <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="underline">
+              contributeurs OpenStreetMap
+            </a>{" "}
+            (licence ODbL).
+          </p>
         )}
 
         <AProximite lieu={lieu} lieux={lieux} />

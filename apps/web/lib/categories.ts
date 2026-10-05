@@ -45,6 +45,14 @@ export const CATEGORY_COPY: Record<Category, CategoryCopy> = {
     intro: () =>
       "Pirogue sur les lagunes, safari au petit matin, visite guidée d'une cité royale, journée en parc de loisirs : des expériences à vivre plutôt qu'à regarder.",
   },
+  restaurant: {
+    title: (pays) => `Où manger ${pays} ? Restaurants et maquis`,
+    h1: (pays) => `Restaurants ${pays}`,
+    description: (pays, n) =>
+      `${n} restaurants et maquis ${pays}, près des sites à visiter : adresse, contact et itinéraire pour une pause repas pendant votre sortie.`,
+    intro: () =>
+      "Une pause repas entre deux visites : restaurants, maquis et cafés situés près des lieux à découvrir, pour composer une sortie complète.",
+  },
 };
 
 // Pays majoritaire du catalogue (le marché affiché), « Bénin » à défaut.

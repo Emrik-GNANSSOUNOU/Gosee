@@ -1,14 +1,15 @@
 import type { Ambiance, Duree, IdealPour, PriceLevel } from "./pratique";
 
-export type Category = "site_touristique" | "loisir" | "hotel" | "activite";
+export type Category = "site_touristique" | "loisir" | "hotel" | "activite" | "restaurant";
 
-export const CATEGORIES: Category[] = ["site_touristique", "loisir", "hotel", "activite"];
+export const CATEGORIES: Category[] = ["site_touristique", "loisir", "hotel", "activite", "restaurant"];
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   site_touristique: "Site touristique",
   loisir: "Loisir",
   hotel: "Hôtel",
   activite: "Activité",
+  restaurant: "Restaurant",
 };
 
 export const CATEGORY_ICONS: Record<Category, string> = {
@@ -16,6 +17,7 @@ export const CATEGORY_ICONS: Record<Category, string> = {
   loisir: "🌴",
   hotel: "🏨",
   activite: "🎯",
+  restaurant: "🍽️",
 };
 
 // Segments d'URL publics des pages catégorie (/categorie/<slug>) : en
@@ -25,6 +27,7 @@ export const CATEGORY_SLUGS: Record<Category, string> = {
   loisir: "loisirs",
   hotel: "hotels",
   activite: "activites",
+  restaurant: "restaurants",
 };
 
 export const CATEGORY_PLURAL_LABELS: Record<Category, string> = {
@@ -32,6 +35,7 @@ export const CATEGORY_PLURAL_LABELS: Record<Category, string> = {
   loisir: "Loisirs",
   hotel: "Hôtels",
   activite: "Activités",
+  restaurant: "Restaurants",
 };
 
 export function categoryFromSlug(slug: string): Category | null {

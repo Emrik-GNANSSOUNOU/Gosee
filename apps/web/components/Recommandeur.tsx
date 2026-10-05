@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import {
   AMBIANCE_LABELS,
   IDEAL_POUR_LABELS,
@@ -200,7 +201,15 @@ export function Recommandeur({ lieux }: { lieux: Lieu[] }) {
             )}
             <div className="mt-4 flex flex-col gap-3">
               {resultat.recommandations.map((reco, i) => (
-                <RecommandationCard key={reco.lieu.id} reco={reco} rang={i + 1} />
+                <div key={reco.lieu.id}>
+                  <RecommandationCard reco={reco} rang={i + 1} />
+                  <Link
+                    href={`/creer-ma-sortie?ancre=${reco.lieu.slug}`}
+                    className="mt-1 inline-block px-1 text-sm font-medium text-orange-700 hover:underline"
+                  >
+                    🗺️ Construire ma sortie autour de cette idée →
+                  </Link>
+                </div>
               ))}
             </div>
           </section>

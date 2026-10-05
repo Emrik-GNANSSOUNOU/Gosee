@@ -67,6 +67,12 @@ export function recommander(lieux: Lieu[], criteres: RecoCriteres, limit = 5): R
   return { recommandations: large, elargi: large.length > 0 };
 }
 
+// Tous les candidats compatibles, du meilleur au moins bon (dédoublonnés) :
+// base de la composition d'une sortie complète (sortie.ts).
+export function candidatsClasses(lieux: Lieu[], criteres: RecoCriteres): Recommandation[] {
+  return classer(lieux, criteres, Infinity);
+}
+
 function classer(lieux: Lieu[], criteres: RecoCriteres, limit: number): Recommandation[] {
   const { budget, temps, groupe, ambiances, position } = criteres;
   const maxPrice = PRICE_ORDER.indexOf(budget);
@@ -76,9 +82,9 @@ function classer(lieux: Lieu[], criteres: RecoCriteres, limit: number): Recomman
   const candidats: Recommandation[] = [];
 
   for (const lieu of lieux) {
-    // Un hôtel n'est pas une sortie en soi : il reviendra avec le pilier
-    // « Créer sa sortie » (activité + hébergement).
-    if (lieu.category === "hotel") continue;
+    // Un hôtel ou un restaurant n'est pas une sortie en soi : « Créer sa
+    // sortie » les ajoute autour des activités (repas, nuit sur place).
+    if (lieu.category === "hotel" || lieu.category === "restaurant") continue;
     // On ne propose jamais une sortie signalée comme déconseillée.
     if (lieu.alerte) continue;
     if (!lieu.price_level || !lieu.duree) continue;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LieuList } from "@/components/LieuList";
 import { RecoBanner } from "@/components/RecoBanner";
+import { SortieBanner } from "@/components/SortieBanner";
 import { dansLePaysPrincipal } from "@/lib/categories";
 import { getAllLieux } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
@@ -29,6 +30,7 @@ export default async function HomePage() {
         </header>
 
         <RecoBanner />
+        <SortieBanner />
         <LieuList lieux={lieux} activeCategory="all" />
       </div>
     </main>

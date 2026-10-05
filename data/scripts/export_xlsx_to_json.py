@@ -21,6 +21,7 @@ TYPE_TO_CATEGORY = {
     "Loisir": "loisir",
     "Hôtel": "hotel",
     "Activité": "activite",
+    "Restaurant": "restaurant",
 }
 
 # Les événements sont hors périmètre produit (pas d'agenda daté) : toute
@@ -169,6 +170,10 @@ def rows_from_sheet_2(ws):
 def main():
     wb = openpyxl.load_workbook(XLSX_PATH, data_only=True)
     lieux = list(rows_from_sheet_1(wb.worksheets[0])) + list(rows_from_sheet_2(wb.worksheets[1]))
+    # Feuilles suivantes (ex. « Restaurants (OSM) », import_osm_restaurants.py) :
+    # même format de colonnes que la feuille Hôtels-Activités.
+    for ws in wb.worksheets[2:]:
+        lieux += list(rows_from_sheet_2(ws))
 
     # La colonne "Remarque" (fermeture temporaire, statut incertain...) n'a
     # pas sa propre colonne en base : elle rejoint la description, visible
