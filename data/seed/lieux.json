@@ -103,9 +103,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Jeunes_sur_la_plage_de_Fidjross%C3%A8_%C3%A0_Cotonou_au_B%C3%A9nin.jpg/1920px-Jeunes_sur_la_plage_de_Fidjross%C3%A8_%C3%A0_Cotonou_au_B%C3%A9nin.jpg"
+    ],
+    "photo_credit": "Photo : Saliousoft — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Jeunes_sur_la_plage_de_Fidjross%C3%A8_%C3%A0_Cotonou_au_B%C3%A9nin.jpg",
     "slug": "plage-de-fidjrosse"
   },
   {
@@ -140,9 +142,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Vue_de_gauche_de_la_statue_%C3%A0_la_Place_du_souvenir.jpg/1920px-Vue_de_gauche_de_la_statue_%C3%A0_la_Place_du_souvenir.jpg"
+    ],
+    "photo_credit": "Photo : Rachad sanoussi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Vue_de_gauche_de_la_statue_%C3%A0_la_Place_du_souvenir.jpg",
     "slug": "statue-de-l-amazone-place-du-souvenir"
   },
   {
@@ -211,9 +215,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Route_des_esclaves_%C3%A0_Ouidah_au_B%C3%A9nin.jpg/1920px-Route_des_esclaves_%C3%A0_Ouidah_au_B%C3%A9nin.jpg"
+    ],
+    "photo_credit": "Photo : Hinnou Gontran Serge — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Route_des_esclaves_%C3%A0_Ouidah_au_B%C3%A9nin.jpg",
     "slug": "route-des-esclaves"
   },
   {
@@ -248,9 +254,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Temple_des_Pythons_de_Ouidah_02.jpg/1920px-Temple_des_Pythons_de_Ouidah_02.jpg"
+    ],
+    "photo_credit": "Photo : Gildaskiki — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Temple_des_Pythons_de_Ouidah_02.jpg",
     "slug": "temple-des-pythons"
   },
   {
@@ -286,9 +294,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Foret_Sacree_de_Kpasse_%2820733814183%29.jpg"
+    ],
+    "photo_credit": "Photo : David Stanley from Nanaimo, Canada — CC BY 2.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Foret_Sacree_de_Kpasse_(20733814183).jpg",
     "slug": "foret-sacree-de-kpasse"
   },
   {
@@ -322,9 +332,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Le_Fort_Portugais_de_Ouidah.jpg/1920px-Le_Fort_Portugais_de_Ouidah.jpg"
+    ],
+    "photo_credit": "Photo : Rachad sanoussi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Le_Fort_Portugais_de_Ouidah.jpg",
     "slug": "fort-portugais-de-ouidah"
   },
   {
@@ -359,9 +371,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Pilotis_of_Ganvi%C3%A9_People.jpg/1920px-Pilotis_of_Ganvi%C3%A9_People.jpg"
+    ],
+    "photo_credit": "Photo : jbdodane — CC BY 2.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Pilotis_of_Ganvi%C3%A9_People.jpg",
     "slug": "ganvie"
   },
   {
@@ -396,9 +410,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Une_vue_de_proche_de_la_devanture_du_Mus%C3%A9e_Honm%C3%A8.jpg/1920px-Une_vue_de_proche_de_la_devanture_du_Mus%C3%A9e_Honm%C3%A8.jpg"
+    ],
+    "photo_credit": "Photo : Rachad sanoussi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Une_vue_de_proche_de_la_devanture_du_Mus%C3%A9e_Honm%C3%A8.jpg",
     "slug": "palais-royal-de-porto-novo"
   },
   {
@@ -433,9 +449,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Mus%C3%A9e_da_Silva.jpg/1920px-Mus%C3%A9e_da_Silva.jpg"
+    ],
+    "photo_credit": "Photo : Ksperentos — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_da_Silva.jpg",
     "slug": "musee-da-silva"
   },
   {
@@ -542,9 +560,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cath%C3%A9drale_Notre-Dame_de_l%27Immacul%C3%A9e_Conception_de_Porto-Novo_2021_01.jpg/1920px-Cath%C3%A9drale_Notre-Dame_de_l%27Immacul%C3%A9e_Conception_de_Porto-Novo_2021_01.jpg"
+    ],
+    "photo_credit": "Photo : Mhope2010 — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_de_l%27Immacul%C3%A9e_Conception_de_Porto-Novo_2021_01.jpg",
     "slug": "cathedrale-notre-dame-de-porto-novo"
   },
   {
@@ -615,9 +635,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg/1920px-La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg"
+    ],
+    "photo_credit": "Photo : Rachad sanoussi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg",
     "slug": "musee-akaba-idena"
   },
   {
@@ -687,9 +709,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Palais_royaux_d%27Abomey_3.jpg/1920px-Palais_royaux_d%27Abomey_3.jpg"
+    ],
+    "photo_credit": "Photo : Azogbonon — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Palais_royaux_d%27Abomey_3.jpg",
     "slug": "palais-royaux-d-abomey"
   },
   {
@@ -759,9 +783,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg/1920px-All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg"
+    ],
+    "photo_credit": "Photo : Padonou Dotou — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg",
     "slug": "foret-classee-de-la-lama"
   },
   {
@@ -870,9 +896,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Plage_de_Grand-Popo_en_fin_de_journ%C3%A9e_%281%29.jpg/1920px-Plage_de_Grand-Popo_en_fin_de_journ%C3%A9e_%281%29.jpg"
+    ],
+    "photo_credit": "Photo : Ji-Elle — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Plage_de_Grand-Popo_en_fin_de_journ%C3%A9e_(1).jpg",
     "slug": "plage-de-grand-popo"
   },
   {
@@ -1019,9 +1047,11 @@
     ],
     "infos_estimees": false,
     "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Une_vue_du_Parc_de_la_Pendjari.jpg/1920px-Une_vue_du_Parc_de_la_Pendjari.jpg"
+    ],
+    "photo_credit": "Photo : Gildasjr — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Une_vue_du_Parc_de_la_Pendjari.jpg",
     "slug": "parc-national-de-la-pendjari"
   },
   {
@@ -1093,9 +1123,11 @@
     ],
     "infos_estimees": true,
     "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Chutes_de_Tanongou.jpg/1920px-Chutes_de_Tanongou.jpg"
+    ],
+    "photo_credit": "Photo : KOUAGOU Damien — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Chutes_de_Tanongou.jpg",
     "slug": "cascades-de-tanougou"
   },
   {
@@ -1129,9 +1161,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/MUS%C3%89E_R%C3%89GIONAL_DE_NATITINGOU.jpg/1920px-MUS%C3%89E_R%C3%89GIONAL_DE_NATITINGOU.jpg"
+    ],
+    "photo_credit": "Photo : Farid AMADOU BAHLEMAN — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:MUS%C3%89E_R%C3%89GIONAL_DE_NATITINGOU.jpg",
     "slug": "musee-regional-de-natitingou"
   },
   {
@@ -1806,9 +1840,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Pilotis_of_Ganvi%C3%A9_People.jpg/1920px-Pilotis_of_Ganvi%C3%A9_People.jpg"
+    ],
+    "photo_credit": "Photo : jbdodane — CC BY 2.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Pilotis_of_Ganvi%C3%A9_People.jpg",
     "slug": "sortie-pirogue-a-ganvie"
   },
   {
@@ -1947,9 +1983,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/La_rivi%C3%A8re_noire_au_sud_du_B%C3%A9nin_06.jpg/1920px-La_rivi%C3%A8re_noire_au_sud_du_B%C3%A9nin_06.jpg"
+    ],
+    "photo_credit": "Photo : Fawaz.tairou — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:La_rivi%C3%A8re_noire_au_sud_du_B%C3%A9nin_06.jpg",
     "slug": "balade-sur-la-riviere-noire"
   },
   {
@@ -2053,9 +2091,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg/1920px-La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg"
+    ],
+    "photo_credit": "Photo : Rachad sanoussi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg",
     "slug": "visite-du-musee-akaba-idena"
   },
   {
@@ -2090,9 +2130,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg/1920px-La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg"
+    ],
+    "photo_credit": "Photo : Rachad sanoussi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:La_porte_pour_femme_du_mus%C3%A9e_Akaba_idena.jpg",
     "slug": "balade-dans-la-cite-royale-de-ketou"
   },
   {
@@ -2230,9 +2272,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/H%C3%A9ritage_des_rois_du_Danxom%C3%A9_%C3%A0_travers_leurs_palais_02.jpg/1920px-H%C3%A9ritage_des_rois_du_Danxom%C3%A9_%C3%A0_travers_leurs_palais_02.jpg"
+    ],
+    "photo_credit": "Photo : Zokoluc11 — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:H%C3%A9ritage_des_rois_du_Danxom%C3%A9_%C3%A0_travers_leurs_palais_02.jpg",
     "slug": "visite-guidee-des-palais-royaux-guide-abomey"
   },
   {
@@ -2266,9 +2310,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg/1920px-All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg"
+    ],
+    "photo_credit": "Photo : Padonou Dotou — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:All%C3%A9e_verte_pour_des_circuits_%C3%A9cotouristiques_dans_la_for%C3%AAts_de_la_Lama_dans_la_commune_de_Zogbodomey_au_B%C3%A9nin.jpg",
     "slug": "decouverte-de-la-foret-classee-de-la-lama"
   },
   {
@@ -2513,9 +2559,11 @@
     ],
     "infos_estimees": false,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Grand-Popo-Awal%C3%A9_Plage.jpg/1920px-Grand-Popo-Awal%C3%A9_Plage.jpg"
+    ],
+    "photo_credit": "Photo : Ji-Elle — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Grand-Popo-Awal%C3%A9_Plage.jpg",
     "slug": "awale-plage"
   },
   {
@@ -2764,9 +2812,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Vue_de_la_piscine_de_l%27h%C3%B4tel_Totora_de_Natitingou.jpg/1920px-Vue_de_la_piscine_de_l%27h%C3%B4tel_Totora_de_Natitingou.jpg"
+    ],
+    "photo_credit": "Photo : Barke11 — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Vue_de_la_piscine_de_l%27h%C3%B4tel_Totora_de_Natitingou.jpg",
     "slug": "hotel-totora"
   },
   {
@@ -2876,9 +2926,11 @@
     ],
     "infos_estimees": true,
     "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Chutes_de_Tanongou.jpg/1920px-Chutes_de_Tanongou.jpg"
+    ],
+    "photo_credit": "Photo : KOUAGOU Damien — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Chutes_de_Tanongou.jpg",
     "slug": "randonnee-aux-cascades-de-tanougou"
   },
   {
@@ -3080,9 +3132,11 @@
     ],
     "infos_estimees": true,
     "alerte": null,
-    "photos": null,
-    "photo_credit": null,
-    "photo_source": null,
+    "photos": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Kobourou_city_H%C3%B4tel_Parakou.jpg/1920px-Kobourou_city_H%C3%B4tel_Parakou.jpg"
+    ],
+    "photo_credit": "Photo : Africasounvi — CC BY-SA 4.0, via Wikimedia Commons",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Kobourou_city_H%C3%B4tel_Parakou.jpg",
     "slug": "kobourou-city-hotel"
   },
   {

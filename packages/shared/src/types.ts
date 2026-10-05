@@ -52,6 +52,22 @@ const COUNTRY_IN: Record<string, string> = {
   "Côte d'Ivoire": "en Côte d'Ivoire",
 };
 
+// Codes ISO 3166-1 alpha-2 (données structurées, futurs formats d'adresse).
+const COUNTRY_ISO: Record<string, string> = {
+  Bénin: "BJ",
+  Togo: "TG",
+  Ghana: "GH",
+  Sénégal: "SN",
+  Nigeria: "NG",
+  "Burkina Faso": "BF",
+  Niger: "NE",
+  "Côte d'Ivoire": "CI",
+};
+
+export function countryIso(country: string): string {
+  return COUNTRY_ISO[country] ?? country;
+}
+
 export function dansLePays(country: string): string {
   return COUNTRY_IN[country] ?? `(${country})`;
 }
