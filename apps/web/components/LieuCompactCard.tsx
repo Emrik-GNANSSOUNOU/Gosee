@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CATEGORY_LABELS, type Lieu } from "@gosee/shared";
-import { getLieuImage } from "@/lib/images";
+import { lieuImageProps } from "@/lib/images";
 
 // Carte horizontale compacte (vignette + titre + pastilles), pour les listes
 // courtes : recommandations, « À proximité ».
@@ -21,7 +21,7 @@ export function LieuCompactCard({
     >
       <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-neutral-100 sm:h-28 sm:w-28">
         <Image
-          src={getLieuImage(lieu)}
+          {...lieuImageProps(lieu)}
           alt={lieu.nom}
           fill
           sizes="112px"

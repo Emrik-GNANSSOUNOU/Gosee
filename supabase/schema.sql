@@ -60,6 +60,12 @@ alter table lieux add column if not exists duree text check (duree in
 alter table lieux add column if not exists tags text[] not null default '{}';
 alter table lieux add column if not exists ideal_pour text[] not null default '{}';
 alter table lieux add column if not exists infos_estimees boolean not null default false;
+-- Avertissement en tête de fiche (sécurité, fermeture...), oct. 2026.
+alter table lieux add column if not exists alerte text;
+-- Crédit et page d'origine de la photo (attribution exigée par les licences
+-- Creative Commons des photos Wikimedia Commons), oct. 2026.
+alter table lieux add column if not exists photo_credit text;
+alter table lieux add column if not exists photo_source text;
 
 create index if not exists lieux_category_idx on lieux(category);
 create index if not exists lieux_department_idx on lieux(department);

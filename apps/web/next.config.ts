@@ -3,6 +3,10 @@ import { CATEGORIES, CATEGORY_SLUGS } from "@gosee/shared";
 
 const nextConfig: NextConfig = {
   transpilePackages: ["@gosee/shared"],
+  // Vraies photos des lieux hébergées par Wikimedia Commons.
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "upload.wikimedia.org" }],
+  },
   // Anciennes pages catégorie (/?category=X), déjà présentes dans le sitemap
   // et possiblement indexées : redirection permanente vers la vraie page.
   async redirects() {

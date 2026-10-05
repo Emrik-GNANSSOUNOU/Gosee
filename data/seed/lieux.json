@@ -2,7 +2,7 @@
   {
     "nom": "Église Sainte Rita",
     "category": "site_touristique",
-    "description": "Paroisse et lieu de culte emblématique de Cotonou, repère du quartier Sainte Rita.",
+    "description": "Au cœur du quartier qui porte son nom, l'église Sainte-Rita est l'un des repères les plus connus de Cotonou. On y passe pour une messe, un moment de calme ou simplement pour voir l'animation du carrefour voisin.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Cotonou, Littoral",
@@ -29,12 +29,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "eglise-sainte-rita"
   },
   {
     "nom": "Fondation Zinsou",
     "category": "site_touristique",
-    "description": "Espace d'art contemporain africain, expositions temporaires et médiathèque.",
+    "description": "Créée en 2005 par Marie-Cécile Zinsou, la fondation a fait de l'art contemporain africain une sortie gratuite et accessible à tous. Expositions temporaires, médiathèque et ateliers pour enfants : une adresse culturelle incontournable de Cotonou.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Av. Germain Olory Togbé, Cotonou",
@@ -62,12 +66,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "fondation-zinsou"
   },
   {
     "nom": "Plage de Fidjrossè",
     "category": "loisir",
-    "description": "Plage populaire de Cotonou, accès libre, idéale pour la détente en bord de mer.",
+    "description": "La plage des Cotonois : sable clair, maquis et paillotes les pieds dans le sable, ambiance animée le week-end. Idéale pour une fin d'après-midi face à l'océan — la baignade y est dangereuse à cause des courants, on profite plutôt du rivage.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Cotonou, Littoral",
@@ -94,12 +102,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "plage-de-fidjrosse"
   },
   {
     "nom": "Statue de l'Amazone (Place du Souvenir)",
     "category": "site_touristique",
-    "description": "Ancienne Place des Martyrs, site mémoriel dédié à l'indépendance du Bénin.",
+    "description": "Inaugurée en 2022, la statue de l'Amazone culmine à près de 30 mètres et rend hommage aux guerrières du royaume du Dahomey. L'esplanade de la Place du Souvenir se prête à une courte visite, idéalement au coucher du soleil.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Rte de l'Aéroport, Cotonou",
@@ -127,12 +139,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "statue-de-l-amazone-place-du-souvenir"
   },
   {
     "nom": "Stade de l'Amitié",
     "category": "loisir",
-    "description": "Principal stade national, matchs de football et grands événements.",
+    "description": "Le stade Général Mathieu Kérékou, ex-stade de l'Amitié, accueille jusqu'à 35 000 spectateurs. C'est ici que vibrent les grands matchs des Guépards du Bénin et les rassemblements populaires de Cotonou.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Kouhounou, Cotonou",
@@ -157,12 +173,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "stade-de-l-amitie"
   },
   {
     "nom": "Route des Esclaves",
     "category": "site_touristique",
-    "description": "Chemin mémoriel de la traite négrière menant à la Porte du Non-Retour.",
+    "description": "Un peu plus de trois kilomètres entre la place des enchères et la plage : la Route des Esclaves retrace le dernier chemin des captifs déportés vers les Amériques. L'arbre de l'Oubli, le mémorial de Zoungbodji et la Porte du Non-Retour, érigée en 1995, en marquent les étapes.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -190,12 +210,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "route-des-esclaves"
   },
   {
     "nom": "Temple des Pythons",
     "category": "site_touristique",
-    "description": "Temple vaudou dédié aux pythons royaux, symboles sacrés.",
+    "description": "Face à la basilique de l'Immaculée Conception, ce sanctuaire vaudou dédié à Dangbé, le dieu python, abrite des dizaines de pythons royaux. Les guides racontent la place de ces serpents sacrés dans l'histoire de Ouidah — les plus téméraires les portent autour du cou.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -223,12 +247,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "temple-des-pythons"
   },
   {
     "nom": "Forêt sacrée de Kpassè",
     "category": "site_touristique",
-    "description": "Forêt sacrée liée à la mythologie vaudou et au fondateur de Ouidah.",
+    "description": "Selon la tradition, le roi Kpassè, fondateur de Ouidah, s'y serait changé en iroko pour échapper à ses ennemis. Sous les grands arbres, des sculptures de divinités vaudou installées pour le festival de 1993 jalonnent une balade paisible en plein centre-ville.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -257,12 +285,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "foret-sacree-de-kpasse"
   },
   {
     "nom": "Fort Portugais de Ouidah",
     "category": "site_touristique",
-    "description": "Ancien comptoir colonial portugais, vestige historique. (Possiblement fermé pour rénovation depuis 2026 — vérifier avant de s'y rendre.)",
+    "description": "Construit en 1721, l'ancien fort portugais abrite le musée d'histoire de Ouidah et ses quelque 700 objets sur la traite et les liens entre le Bénin, le Brésil et les Caraïbes. Vérifiez l'ouverture avant de vous déplacer : le site a été annoncé en rénovation.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -289,12 +321,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "fort-portugais-de-ouidah"
   },
   {
     "nom": "Ganvié",
     "category": "site_touristique",
-    "description": "Village lacustre sur pilotis, surnommé la Venise de l'Afrique.",
+    "description": "Plus grand village lacustre d'Afrique, Ganvié s'est bâti sur pilotis au milieu du lac Nokoué, où les Tofinu se réfugièrent pour échapper aux razzias esclavagistes. On le découvre en pirogue, entre maisons sur l'eau, marché flottant et techniques de pêche ancestrales.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Lac Nokoué, Atlantique",
@@ -322,12 +358,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "ganvie"
   },
   {
     "nom": "Palais royal de Porto-Novo",
     "category": "site_touristique",
-    "description": "Ancien palais du roi Toffa, aujourd'hui musée d'histoire.",
+    "description": "Le musée Honmè occupe le palais du roi Toffa, qui signa le protectorat avec la France en 1883. Les pièces conservées dans leur état d'origine racontent la vie de cour du royaume de Hogbonou, ancêtre de Porto-Novo.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Porto-Novo, Ouémé",
@@ -355,12 +395,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "palais-royal-de-porto-novo"
   },
   {
     "nom": "Musée da Silva",
     "category": "site_touristique",
-    "description": "Musée sur l'histoire afro-brésilienne et la traite négrière.",
+    "description": "Installé dans une belle demeure afro-brésilienne de 1870, le musée da Silva retrace l'histoire des Agudas, ces anciens esclaves revenus du Brésil. Mobilier d'époque et photos anciennes font revivre l'architecture et le métissage culturel de Porto-Novo.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Porto-Novo, Ouémé",
@@ -388,12 +432,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "musee-da-silva"
   },
   {
     "nom": "Musée ethnographique Alexandre Sènou Adandé",
     "category": "site_touristique",
-    "description": "Collections culturelles et traditionnelles béninoises.",
+    "description": "Fondé en 1957 dans une maison coloniale, le musée Adandé réunit masques guèlèdè, statuettes et objets rituels venus de tout le pays. Une introduction claire à la diversité des cultures béninoises, avant de partir les découvrir sur le terrain.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "RNIE1, Porto-Novo",
@@ -420,12 +468,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "musee-ethnographique-alexandre-senou-adande"
   },
   {
     "nom": "Centre Songhaï",
     "category": "site_touristique",
-    "description": "Centre agro-écologique reconnu, visites pédagogiques.",
+    "description": "Fondé en 1985 par le père Godfrey Nzamujo, Songhaï est devenu une référence de l'agriculture intégrée en Afrique : « rien ne se perd, tout se transforme ». La visite guidée d'une heure parcourt cultures, élevages et ateliers, avant une pause au restaurant ou à la boutique de produits maison.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Route de Ouando, Porto-Novo",
@@ -453,12 +505,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "centre-songhai"
   },
   {
     "nom": "Cathédrale Notre-Dame de Porto-Novo",
     "category": "site_touristique",
-    "description": "Cathédrale de l'Immaculée Conception, édifice religieux historique.",
+    "description": "La cathédrale Notre-Dame-de-l'Immaculée-Conception affiche une façade colorée inspirée de l'architecture afro-brésilienne du vieux Porto-Novo. Un arrêt rapide pendant une balade dans le centre historique de la capitale.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "RNIE1, Porto-Novo",
@@ -485,12 +541,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "cathedrale-notre-dame-de-porto-novo"
   },
   {
     "nom": "Cité royale de Kétou",
     "category": "site_touristique",
-    "description": "Ancienne cité yoruba, berceau du Guèlèdè (patrimoine UNESCO).",
+    "description": "Kétou, cité yoruba fondée au XIVe siècle, est le berceau du Guèlèdè, inscrit au patrimoine immatériel de l'UNESCO. On y découvre la cour royale, les remparts de terre et la célèbre porte Akaba Idéna.",
     "department": "Plateau",
     "country": "Bénin",
     "address": "Kétou, Plateau",
@@ -518,12 +578,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "cite-royale-de-ketou"
   },
   {
     "nom": "Musée Akaba Idena",
     "category": "site_touristique",
-    "description": "Musée dédié à l'histoire et aux traditions de Kétou. (En travaux de réhabilitation — accessibilité à vérifier.)",
+    "description": "Akaba Idéna, la « porte magique », gardait l'entrée de Kétou ; reconstruite en 1894 après la destruction de la ville par le royaume d'Abomey, elle abrite des autels des divinités yoruba. Le site est en travaux de réhabilitation : renseignez-vous avant de vous déplacer.",
     "department": "Plateau",
     "country": "Bénin",
     "address": "Kétou, Plateau",
@@ -550,12 +614,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "musee-akaba-idena"
   },
   {
     "nom": "Ville de Pobè",
     "category": "site_touristique",
-    "description": "Chef-lieu du département du Plateau, culture yoruba-nago.",
+    "description": "Chef-lieu du Plateau, Pobè vit au rythme de la culture yoruba-nago et des palmeraies qui l'entourent. Une étape authentique, loin des circuits classiques, pour qui explore l'est du pays.",
     "department": "Plateau",
     "country": "Bénin",
     "address": "Pobè, Plateau",
@@ -581,12 +649,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "ville-de-pobe"
   },
   {
     "nom": "Palais royaux d'Abomey",
     "category": "site_touristique",
-    "description": "Ensemble de palais du royaume du Dahomey, classé UNESCO.",
+    "description": "Douze rois du Dahomey se sont succédé ici de 1625 à 1900, chacun bâtissant son propre palais. Classé à l'UNESCO depuis 1985, le site dévoile ses bas-reliefs, trônes et récits de la cour, avec les palais restaurés de Ghézo et de Glèlè.",
     "department": "Zou",
     "country": "Bénin",
     "address": "Abomey, Zou",
@@ -614,12 +686,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "palais-royaux-d-abomey"
   },
   {
     "nom": "Place Béhanzin (Place Goho)",
     "category": "loisir",
-    "description": "Place centrale avec statue du roi Béhanzin, symbole de résistance. (Un état d'entretien dégradé a été signalé par la presse locale.)",
+    "description": "La place Goho rend hommage à Béhanzin, dernier roi du Dahomey indépendant, figure de la résistance à la conquête coloniale. Sa statue monumentale accueille les visiteurs à l'entrée d'Abomey. (Un état d'entretien dégradé a été signalé par la presse locale.)",
     "department": "Zou",
     "country": "Bénin",
     "address": "Abomey, Zou",
@@ -646,12 +722,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "place-behanzin-place-goho"
   },
   {
     "nom": "Forêt classée de la Lama",
     "category": "loisir",
-    "description": "Grande forêt naturelle, observation d'animaux et de flore variée.",
+    "description": "Au cœur de ses 16 000 hectares, la forêt de la Lama protège un noyau de forêt dense où vit le singe à ventre rouge, une espèce qu'on ne trouve qu'au Bénin. Une sortie nature à organiser avec un guide, entre Toffo et Zogbodomey.",
     "department": "Atlantique/Zou",
     "country": "Bénin",
     "address": "Toffo, Atlantique / Zogbodomey, Zou",
@@ -678,12 +758,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "foret-classee-de-la-lama"
   },
   {
     "nom": "Grotte mariale de Dassa-Zoumé",
     "category": "site_touristique",
-    "description": "Lieu de pèlerinage catholique niché dans les collines.",
+    "description": "Nichée dans l'une des 41 collines de Dassa-Zoumé, la grotte Notre-Dame d'Arigbo est le plus grand lieu de pèlerinage du pays depuis 1954. Le week-end du 15 août, des milliers de fidèles y convergent ; le reste de l'année, le site invite au calme.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Dassa-Zoumé, Collines",
@@ -711,12 +795,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "grotte-mariale-de-dassa-zoume"
   },
   {
     "nom": "Savalou (ville historique, culte vaudou)",
     "category": "site_touristique",
-    "description": "Ville traditionnelle marquée par la royauté locale et le culte vaudou.",
+    "description": "Ancienne capitale du royaume mahi, Savalou mêle palais royal, fêtes de l'igname et cultes vaudou bien vivants. Le célèbre fétiche de Dankoli, à quelques kilomètres, attire des fidèles de toute la région.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Savalou, Collines",
@@ -744,12 +832,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "savalou-ville-historique-culte-vaudou"
   },
   {
     "nom": "Plage de Grand-Popo",
     "category": "loisir",
-    "description": "Plage réputée du littoral béninois, tourisme balnéaire.",
+    "description": "Entre le fleuve Mono et l'océan, Grand-Popo déroule ses kilomètres de sable bordés de cocotiers, à deux pas du Togo. L'endroit parfait pour décrocher un week-end, entre hôtels de plage et balades en lagune — attention aux courants, la baignade y est risquée.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -777,12 +869,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "plage-de-grand-popo"
   },
   {
     "nom": "Village de Possotomè",
     "category": "site_touristique",
-    "description": "Village au bord du lac Ahémé, source d'eau thermale.",
+    "description": "Sur la rive du lac Ahémé, Possotomè est célèbre pour sa source thermale, dont l'eau minérale est embouteillée et vendue dans tout le pays. On y vient pour le calme, les balades en pirogue et les villages de pêcheurs alentour.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Possotomè, Bopa, Mono",
@@ -811,12 +907,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "village-de-possotome"
   },
   {
     "nom": "Bouche du Roy",
     "category": "site_touristique",
-    "description": "Embouchure spectaculaire entre océan, lagune et mangrove.",
+    "description": "Là où le fleuve Mono rejoint l'Atlantique, la Bouche du Roy forme un delta d'îlots, de prairies et de mangroves parmi les mieux préservés du pays. Une excursion en pirogue d'une demi-journée, souvent conclue par des crevettes grillées.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -845,12 +945,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "bouche-du-roy"
   },
   {
     "nom": "Ville de Lokossa",
     "category": "site_touristique",
-    "description": "Chef-lieu du département du Mono.",
+    "description": "Chef-lieu du Mono, Lokossa est une ville carrefour vivante, point de départ pratique vers le lac Ahémé, Possotomè et la vallée du Mono.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Lokossa, Mono",
@@ -876,12 +980,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "ville-de-lokossa"
   },
   {
     "nom": "Parc national de la Pendjari",
     "category": "site_touristique",
-    "description": "Réserve faunique majeure, safaris et observation de la faune africaine.",
+    "description": "Réserve de biosphère UNESCO depuis 1986, la Pendjari abrite la plus grande population d'éléphants d'Afrique de l'Ouest, ainsi que lions, guépards et hippopotames. Elle forme avec les parcs W et Arly le plus vaste écosystème intact de la région.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Atacora",
@@ -910,12 +1018,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "parc-national-de-la-pendjari"
   },
   {
     "nom": "Villages Tata Somba",
     "category": "site_touristique",
-    "description": "Habitats traditionnels fortifiés des Batammariba.",
+    "description": "Les tata somba, maisons-forteresses en terre à étage des Batammariba, ponctuent les collines entre Natitingou et Boukoumbé. Chaque tata reflète l'organisation familiale et spirituelle de ses habitants : une architecture unique, à découvrir avec un guide local.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Natitingou/Boukoumbé, Atacora",
@@ -943,12 +1055,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "villages-tata-somba"
   },
   {
     "nom": "Cascades de Tanougou",
     "category": "loisir",
-    "description": "Chutes d'eau et bassins naturels dans les montagnes de l'Atacora.",
+    "description": "Au pied de la chaîne de l'Atacora, près de Tanguiéta, la chute de Tanougou plonge d'une quinzaine de mètres dans un bassin naturel propice à la baignade. Le débit varie fortement selon la saison : elle est à son plus beau après les pluies.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Tanongou, Atacora",
@@ -976,12 +1092,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "cascades-de-tanougou"
   },
   {
     "nom": "Musée régional de Natitingou",
     "category": "site_touristique",
-    "description": "Musée sur les traditions socioculturelles de la région.",
+    "description": "Dans un bâtiment colonial réhabilité, le musée régional présente l'habitat et les traditions de l'Atacora, avec des maquettes des différents types de tata somba. Le bon point de départ avant d'aller voir les vraies maisons dans les villages.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Natitingou, Atacora",
@@ -1008,12 +1128,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "musee-regional-de-natitingou"
   },
   {
     "nom": "Chaîne de l'Atacora",
     "category": "loisir",
-    "description": "Massif montagneux, randonnée et paysages du nord-ouest du Bénin.",
+    "description": "Le relief le plus marqué du Bénin, qui culmine vers 658 mètres au mont Sokbaro : falaises, vallées et villages perchés pour des randonnées de plusieurs heures. Un guide local est vivement conseillé.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Atacora (zone)",
@@ -1040,12 +1164,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "chaine-de-l-atacora"
   },
   {
     "nom": "Forêt classée de Wari-Maro",
     "category": "loisir",
-    "description": "Réserve forestière et faunique de la région. (Statut en évolution : fusion annoncée avec la forêt des Monts Kouffé en un nouveau parc national (déc. gouvernementale nov. 2025).)",
+    "description": "Plus de 100 000 hectares de forêts sèches, savanes et galeries forestières entre Bassila et Tchaourou, refuge de primates, d'antilopes et parfois du léopard. Une destination nature encore très sauvage, à explorer accompagné. (Statut en évolution : fusion annoncée avec la forêt des Monts Kouffé en un nouveau parc national (déc. gouvernementale nov. 2025).)",
     "department": "Borgou/Donga",
     "country": "Bénin",
     "address": "Tchaourou, Borgou / Bassila, Donga",
@@ -1071,12 +1199,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "foret-classee-de-wari-maro"
   },
   {
     "nom": "Village de Bassila",
     "category": "site_touristique",
-    "description": "Commune forestière du sud de la Donga.",
+    "description": "Commune forestière du sud de la Donga, Bassila sert de porte d'entrée vers la forêt de Wari-Maro et les paysages verdoyants du centre-ouest du pays.",
     "department": "Donga",
     "country": "Bénin",
     "address": "Bassila, Donga",
@@ -1102,12 +1234,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "village-de-bassila"
   },
   {
     "nom": "Musée de plein air de Parakou",
     "category": "site_touristique",
-    "description": "Musée d'art et traditions populaires du nord du Bénin.",
+    "description": "À ciel ouvert, ce musée ethnographique fait découvrir l'habitat traditionnel, les objets et les arts du nord du Bénin. Une visite courte et vivante au cœur de Parakou, la grande ville du Borgou.",
     "department": "Borgou",
     "country": "Bénin",
     "address": "Parakou, Borgou",
@@ -1135,12 +1271,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "musee-de-plein-air-de-parakou"
   },
   {
     "nom": "Palais royal de Nikki",
     "category": "site_touristique",
-    "description": "Capitale historique des Batombu, siège royal.",
+    "description": "Capitale historique des Baatonu (Bariba), Nikki accueille chaque année la Gaani, grande fête identitaire où cavaliers et dignitaires défilent devant le palais royal. Le reste du temps, la cour raconte l'histoire d'un royaume de cavaliers.",
     "department": "Borgou",
     "country": "Bénin",
     "address": "Nikki, Borgou",
@@ -1167,12 +1307,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "palais-royal-de-nikki"
   },
   {
     "nom": "Parc national du W",
     "category": "site_touristique",
-    "description": "Parc transfrontalier Bénin-Niger-Burkina Faso, UNESCO.",
+    "description": "Partagé entre le Bénin, le Niger et le Burkina Faso et classé à l'UNESCO, le parc W doit son nom aux méandres du fleuve Niger. Éléphants, buffles, hippopotames et oiseaux d'eau y peuplent savanes et zones humides.",
     "department": "Alibori",
     "country": "Bénin",
     "address": "Alibori",
@@ -1200,12 +1344,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "parc-national-du-w"
   },
   {
     "nom": "Fleuve Niger (rives)",
     "category": "loisir",
-    "description": "Rives du fleuve Niger, paysages et activités fluviales.",
+    "description": "À Malanville, le fleuve Niger marque la frontière avec le Niger : rizières, pirogues et grand marché transfrontalier rythment la vie des rives. Un paysage sahélien, très différent du sud du pays.",
     "department": "Alibori",
     "country": "Bénin",
     "address": "Malanville, Alibori",
@@ -1232,12 +1380,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "fleuve-niger-rives"
   },
   {
     "nom": "Ville de Kandi",
     "category": "site_touristique",
-    "description": "Chef-lieu du département de l'Alibori.",
+    "description": "Chef-lieu de l'Alibori, Kandi est une ville du nord sahélien, carrefour d'élevage et de commerce sur la route du Niger.",
     "department": "Alibori",
     "country": "Bénin",
     "address": "Kandi, Alibori",
@@ -1262,12 +1414,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "ville-de-kandi"
   },
   {
     "nom": "Beach Sand Hotel & Resort",
     "category": "hotel",
-    "description": "Hôtel bien noté proche de la plage, quartier des Ambassades.",
+    "description": "Dans le quartier des Ambassades, à quelques pas de la mer, un hôtel bien noté pour séjourner à Cotonou au calme tout en restant proche du centre.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Akpakpa, Cotonou",
@@ -1293,12 +1449,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "beach-sand-hotel-resort"
   },
   {
     "nom": "Benin Berge Hotel",
     "category": "hotel",
-    "description": "Hôtel accessible, central à Cotonou.",
+    "description": "Un hôtel central et sans chichis, pratique pour rayonner dans Cotonou à prix raisonnable.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Cotonou, Littoral",
@@ -1323,12 +1483,16 @@
       "couple"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "benin-berge-hotel"
   },
   {
     "nom": "Résidences Easy Hotel",
     "category": "hotel",
-    "description": "Hôtel avec accès direct à la plage. (Notes très divergentes selon la plateforme (2/5 TripAdvisor vs retours positifs ailleurs).)",
+    "description": "Un hôtel avec accès direct à la plage, à Cotonou. Les avis en ligne sont très partagés selon les plateformes : regardez les commentaires récents avant de réserver.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Cotonou, Littoral",
@@ -1355,12 +1519,16 @@
       "amis"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "residences-easy-hotel"
   },
   {
     "nom": "Aquamazone",
     "category": "activite",
-    "description": "Base nautique : kayak, jet-ski, activités familiales sur la Route des Pêches.",
+    "description": "Une base nautique sur la Route des Pêches : kayak, jet-ski et activités en famille, à quelques minutes de Cotonou. De quoi passer une journée active entre lagune et océan.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Route des Pêches, Cotonou",
@@ -1387,12 +1555,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "aquamazone"
   },
   {
     "nom": "Balade Route des Pêches",
     "category": "activite",
-    "description": "Balade le long du littoral entre Cotonou et Ouidah.",
+    "description": "Entre Cotonou et Ouidah, la Route des Pêches longe l'océan sur une quarantaine de kilomètres : villages de pêcheurs, cocoteraies, plages et maquis. À parcourir en voiture, à moto ou à vélo, en s'arrêtant au gré des envies.",
     "department": "Littoral",
     "country": "Bénin",
     "address": "Cotonou, Littoral",
@@ -1421,12 +1593,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "balade-route-des-peches"
   },
   {
     "nom": "Rio Hôtel Ouidah",
     "category": "hotel",
-    "description": "Hôtel calme proche du centre historique de Ouidah.",
+    "description": "Un hôtel calme à proximité du centre historique, pratique pour visiter Ouidah à pied.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -1451,12 +1627,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "rio-hotel-ouidah"
   },
   {
     "nom": "Native Hotels Ouidah",
     "category": "hotel",
-    "description": "Hôtel haut de gamme dans des bâtiments coloniaux réhabilités.",
+    "description": "Dans le quartier historique, un petit hôtel de charme de 14 chambres avec piscine, bibliothèque et bar, installé dans des bâtiments coloniaux réhabilités. L'adresse haut de gamme de Ouidah.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -1481,12 +1661,16 @@
       "couple"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "native-hotels-ouidah"
   },
   {
     "nom": "Bel Ami sur Pilotis",
     "category": "hotel",
-    "description": "Hébergement paisible au bord du lac Ahémé, proche Ouidah. (Localisation précise : Kpomassè, lac Ahémé (à ~20 min de Ouidah))",
+    "description": "Un hébergement paisible au bord du lac Ahémé, côté Kpomassè : nuits au calme, vue sur l'eau et balades en pirogue au départ de l'hôtel.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Zone Ouidah/lac Ahémé",
@@ -1512,12 +1696,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "bel-ami-sur-pilotis"
   },
   {
     "nom": "Holy Land Parc",
     "category": "activite",
-    "description": "Parc d'attractions familial à Abomey-Calavi.",
+    "description": "À Abomey-Calavi, un parc de détente et de loisirs pour souffler le temps d'un après-midi, en famille ou entre amis.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Abomey-Calavi, Atlantique",
@@ -1542,12 +1730,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "holy-land-parc"
   },
   {
     "nom": "Visite guidée de Ouidah (Nadal Évasion Tours)",
     "category": "activite",
-    "description": "Circuit guidé sur l'histoire, le vaudou et la culture de Ouidah.",
+    "description": "Une agence locale qui fait découvrir Ouidah autrement : histoire de la traite, temples et cérémonies vaudou, artisanat. Le guide adapte le circuit à votre temps et à vos centres d'intérêt.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Ouidah, Atlantique",
@@ -1576,12 +1768,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-guidee-de-ouidah-nadal-evasion-tours"
   },
   {
     "nom": "Sortie pirogue à Ganvié",
     "category": "activite",
-    "description": "Excursion en pirogue dans le village lacustre de Ganvié.",
+    "description": "Au départ de l'embarcadère d'Abomey-Calavi, une pirogue à moteur ou à perche vous emmène à travers le lac Nokoué jusqu'à Ganvié. Comptez deux à quatre heures avec guide, tarif à négocier selon la taille du groupe.",
     "department": "Atlantique",
     "country": "Bénin",
     "address": "Lac Nokoué, Atlantique",
@@ -1609,12 +1805,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "sortie-pirogue-a-ganvie"
   },
   {
     "nom": "Art Résidence Hôtel",
     "category": "hotel",
-    "description": "Hôtel boutique moderne à Porto-Novo.",
+    "description": "Un hôtel-boutique moderne à Porto-Novo, au décor soigné : l'adresse confortable pour découvrir la capitale.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Porto-Novo, Ouémé",
@@ -1639,12 +1839,16 @@
       "couple"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "art-residence-hotel"
   },
   {
     "nom": "Tour Eiffel Hôtel Bénin",
     "category": "hotel",
-    "description": "Grand hôtel avec restaurant et piscine à Porto-Novo.",
+    "description": "Grand hôtel de Porto-Novo avec piscine et restaurant, apprécié pour son rapport qualité-prix.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Porto-Novo, Ouémé",
@@ -1670,12 +1874,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "tour-eiffel-hotel-benin"
   },
   {
     "nom": "Parc d'attraction Ifè",
     "category": "activite",
-    "description": "Parc récréatif familial à Porto-Novo.",
+    "description": "À Porto-Novo, un parc récréatif où les enfants se dépensent pendant que les parents profitent de l'ombre.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Porto-Novo, Ouémé",
@@ -1700,12 +1908,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "parc-d-attraction-ife"
   },
   {
     "nom": "Balade sur la Rivière Noire",
     "category": "activite",
-    "description": "Excursion en pirogue sur la Rivière Noire, village d'artisans.",
+    "description": "À Adjarra, à quelques kilomètres de Porto-Novo, une pirogue glisse sur la Rivière Noire sous les grands arbres, parmi poissons, reptiles et crocodiles nains. La sortie se termine souvent au marché des tam-tams, fabriqués par les artisans du village.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Adjarra, Ouémé",
@@ -1734,12 +1946,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "balade-sur-la-riviere-noire"
   },
   {
     "nom": "Visite du Grand Marché de Porto-Novo",
     "category": "activite",
-    "description": "Immersion dans le grand marché local.",
+    "description": "Reconstruit et inauguré en 2026, le grand marché de Ouando s'étend sur 3,5 hectares : tissus, épices, produits frais et artisanat. Plus animé le mercredi et le samedi matin.",
     "department": "Ouémé",
     "country": "Bénin",
     "address": "Porto-Novo, Ouémé",
@@ -1766,12 +1982,16 @@
       "amis"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-du-grand-marche-de-porto-novo"
   },
   {
     "nom": "Adebayo Hôtel",
     "category": "hotel",
-    "description": "Hôtel avec restaurant, l'un des mieux notés de Pobè.",
+    "description": "L'un des hôtels les mieux notés de Pobè, avec restaurant : une halte pratique pour explorer le Plateau.",
     "department": "Plateau",
     "country": "Bénin",
     "address": "Pobè, Plateau",
@@ -1796,12 +2016,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "adebayo-hotel"
   },
   {
     "nom": "Visite du musée Akaba Idena",
     "category": "activite",
-    "description": "Découverte de l'histoire de Kétou et des portes magiques. (En travaux de réhabilitation — accessibilité à vérifier.)",
+    "description": "Avec un guide, on découvre l'histoire de Kétou à travers la porte Akaba Idéna et ses légendes de protection magique. Le musée est en cours de réhabilitation : vérifiez l'accès avant de partir.",
     "department": "Plateau",
     "country": "Bénin",
     "address": "Kétou, Plateau",
@@ -1828,12 +2052,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-du-musee-akaba-idena"
   },
   {
     "nom": "Balade dans la cité royale de Kétou",
     "category": "activite",
-    "description": "Immersion dans l'histoire yoruba-nago.",
+    "description": "Une immersion dans la plus ancienne cité yoruba du pays : cour royale, remparts, autels et, avec un peu de chance, une sortie de masques guèlèdè.",
     "department": "Plateau",
     "country": "Bénin",
     "address": "Kétou, Plateau",
@@ -1861,12 +2089,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "balade-dans-la-cite-royale-de-ketou"
   },
   {
     "nom": "Ekagnon Hôtel Abomey",
     "category": "hotel",
-    "description": "Hôtel haut de gamme, l'un des mieux notés d'Abomey.",
+    "description": "L'un des hôtels les mieux notés d'Abomey, idéal pour une nuit confortable après la visite des palais royaux.",
     "department": "Zou",
     "country": "Bénin",
     "address": "Abomey, Zou",
@@ -1891,12 +2123,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "ekagnon-hotel-abomey"
   },
   {
     "nom": "Bois Vert Hôtel",
     "category": "hotel",
-    "description": "Hôtel confortable proche du centre d'Abomey.",
+    "description": "Un hôtel confortable proche du centre d'Abomey, bien placé pour enchaîner palais royaux et marché.",
     "department": "Zou",
     "country": "Bénin",
     "address": "Abomey, Zou",
@@ -1921,12 +2157,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "bois-vert-hotel"
   },
   {
     "nom": "Chez Sabine",
     "category": "hotel",
-    "description": "Maison d'hôtes chaleureuse à Abomey.",
+    "description": "Une maison d'hôtes chaleureuse à Abomey, où l'on est reçu comme en famille : l'adresse idéale pour découvrir la ville au rythme local.",
     "department": "Zou",
     "country": "Bénin",
     "address": "Abomey, Zou",
@@ -1952,12 +2192,16 @@
       "couple"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "chez-sabine"
   },
   {
     "nom": "Visite guidée des palais royaux (Guide Abomey)",
     "category": "activite",
-    "description": "Guide local pour explorer l'histoire du royaume du Dahomey.",
+    "description": "Un guide local fait revivre les douze rois du Dahomey, leurs palais, leurs bas-reliefs et les récits de la cour. Indispensable pour comprendre ce que l'on voit à Abomey.",
     "department": "Zou",
     "country": "Bénin",
     "address": "Abomey, Zou",
@@ -1985,12 +2229,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-guidee-des-palais-royaux-guide-abomey"
   },
   {
     "nom": "Découverte de la Forêt classée de la Lama",
     "category": "activite",
-    "description": "Observation de la faune et de la flore.",
+    "description": "Avec un guide, partez à la recherche du singe à ventre rouge, endémique du Bénin, dans le noyau de forêt dense de la Lama. Prévoyez de bonnes chaussures et un départ tôt le matin.",
     "department": "Atlantique/Zou",
     "country": "Bénin",
     "address": "Toffo, Atlantique / Zogbodomey, Zou",
@@ -2017,12 +2265,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "decouverte-de-la-foret-classee-de-la-lama"
   },
   {
     "nom": "Hôtel Jeco",
     "category": "hotel",
-    "description": "Hôtel confortable avec piscine à Dassa-Zoumé.",
+    "description": "Un grand hôtel de plus de 100 chambres à Dassa-Zoumé, avec piscine, spa et restaurant : la halte confortable sur la route du nord.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Dassa-Zoumé, Collines",
@@ -2047,12 +2299,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-jeco"
   },
   {
     "nom": "Auberge de Dassa-Zoumé",
     "category": "hotel",
-    "description": "Auberge bien située, halte pratique sur la route du nord.",
+    "description": "Une auberge simple et bien située, l'étape pratique pour couper le long trajet entre le sud et le nord du pays.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Dassa-Zoumé, Collines",
@@ -2077,12 +2333,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "auberge-de-dassa-zoume"
   },
   {
     "nom": "Loubna Hôtel & Restauration",
     "category": "hotel",
-    "description": "Hôtel confortable à Paouignan, près des collines. (Référencé en ligne sous le nom « Hôtel Loubna Évolution ».)",
+    "description": "Un hôtel confortable à Paouignan, au pied des collines, avec restaurant sur place. (Référencé en ligne sous le nom « Hôtel Loubna Évolution ».)",
     "department": "Collines",
     "country": "Bénin",
     "address": "Paouignan, Collines",
@@ -2107,12 +2367,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "loubna-hotel-restauration"
   },
   {
     "nom": "Pèlerinage à la Grotte mariale de Dassa",
     "category": "activite",
-    "description": "Visite du site de pèlerinage catholique niché dans les collines.",
+    "description": "Pèlerinage ou simple visite, la grotte d'Arigbo invite au recueillement au milieu des collines de Dassa. Le grand rassemblement a lieu le week-end du 15 août.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Dassa-Zoumé, Collines",
@@ -2140,12 +2404,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "pelerinage-a-la-grotte-mariale-de-dassa"
   },
   {
     "nom": "Visite du sanctuaire vaudou de Dankoli",
     "category": "activite",
-    "description": "Découverte d'un des sanctuaires vaudou les plus actifs d'Afrique de l'Ouest.",
+    "description": "Près de Savalou, le fétiche de Dankoli est l'un des sanctuaires vaudou les plus fréquentés d'Afrique de l'Ouest : on y plante un bout de bois pour formuler un vœu, et l'on revient remercier s'il est exaucé. Une visite forte, à faire avec respect.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Savalou, Collines",
@@ -2172,12 +2440,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-du-sanctuaire-vaudou-de-dankoli"
   },
   {
     "nom": "Visite du Palais Royal de Savalou",
     "category": "activite",
-    "description": "Immersion dans l'histoire du royaume Mahi.",
+    "description": "Le palais royal de Savalou raconte l'histoire du royaume mahi et de ses souverains. Une visite courte, à combiner avec Dankoli et le centre de la ville.",
     "department": "Collines",
     "country": "Bénin",
     "address": "Savalou, Collines",
@@ -2204,12 +2476,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-du-palais-royal-de-savalou"
   },
   {
     "nom": "Awale Plage",
     "category": "hotel",
-    "description": "Hôtel-restaurant en bord de plage à Grand-Popo.",
+    "description": "Hôtel-restaurant les pieds dans le sable à Grand-Popo, avec bungalows et vue sur l'océan : l'adresse détente du littoral ouest.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -2236,12 +2512,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "awale-plage"
   },
   {
     "nom": "ASVA Beach Resort",
     "category": "hotel",
-    "description": "Hôtel proche de la plage, ambiance festive.",
+    "description": "Proche de la plage de Grand-Popo, un hôtel à l'ambiance festive, apprécié des groupes d'amis.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -2267,12 +2547,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "asva-beach-resort"
   },
   {
     "nom": "Millenium Popo Beach Hôtel",
     "category": "hotel",
-    "description": "Grand complexe hôtelier en bord de mer.",
+    "description": "Un grand complexe hôtelier en bord de mer à Grand-Popo, avec piscine et accès direct à la plage.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -2298,12 +2582,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "millenium-popo-beach-hotel"
   },
   {
     "nom": "Excursions avec BAKOLO Tours",
     "category": "activite",
-    "description": "Agence locale pour circuits sur mesure dans la région.",
+    "description": "Agence locale de Grand-Popo pour des circuits sur mesure : Bouche du Roy, villages de la lagune, lac Ahémé ou cultes vaudou.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -2332,12 +2620,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "excursions-avec-bakolo-tours"
   },
   {
     "nom": "Sortie bateau vers la Bouche du Roy",
     "category": "activite",
-    "description": "Excursion vers l'embouchure entre océan et lagune.",
+    "description": "Une remontée de la lagune d'environ deux heures jusqu'à l'embouchure du Mono, entre mangroves et îlots, avant une pause sur une île de pêcheurs.",
     "department": "Mono",
     "country": "Bénin",
     "address": "Grand-Popo, Mono",
@@ -2366,12 +2658,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "sortie-bateau-vers-la-bouche-du-roy"
   },
   {
     "nom": "Hôtel Bellevue",
     "category": "hotel",
-    "description": "Hôtel historique et chaleureux à Natitingou.",
+    "description": "Un hôtel historique et chaleureux de Natitingou, connu aussi pour son restaurant.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Natitingou, Atacora",
@@ -2396,12 +2692,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-bellevue"
   },
   {
     "nom": "Hôtel Tata Somba",
     "category": "hotel",
-    "description": "Hôtel au pied des collines, proche des villages Tata Somba.",
+    "description": "Rénové et rouvert en 2024, l'hôtel Tata Somba est le grand hôtel public du nord, au pied des collines de l'Atacora, avec 25 chambres climatisées.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Natitingou, Atacora",
@@ -2428,12 +2728,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-tata-somba"
   },
   {
     "nom": "Hôtel Totora",
     "category": "hotel",
-    "description": "Hôtel avec piscine et vue sur les montagnes.",
+    "description": "Un hôtel avec piscine et vue sur les montagnes de l'Atacora, pour se reposer entre deux excursions au départ de Natitingou.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Natitingou, Atacora",
@@ -2459,12 +2763,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-totora"
   },
   {
     "nom": "Safari au Parc national de la Pendjari",
     "category": "activite",
-    "description": "Safari guidé pour observer lions, éléphants, hippopotames.",
+    "description": "Safari guidé à l'aube ou en fin de journée, quand les animaux sont les plus actifs : éléphants, lions, hippopotames et antilopes de la savane soudanienne.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Atacora",
@@ -2493,12 +2801,16 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "safari-au-parc-national-de-la-pendjari"
   },
   {
     "nom": "Visite des villages Tata Somba",
     "category": "activite",
-    "description": "Découverte des habitats fortifiés traditionnels.",
+    "description": "Un guide de la région vous ouvre les portes des tata somba et explique la vie en famille dans ces maisons-forteresses à étage, entre greniers, autels et terrasses.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Natitingou/Boukoumbé, Atacora",
@@ -2526,12 +2838,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-des-villages-tata-somba"
   },
   {
     "nom": "Randonnée aux cascades de Tanougou",
     "category": "activite",
-    "description": "Baignade et randonnée dans un cadre naturel.",
+    "description": "Une courte marche dans la végétation mène au bassin de la cascade, pour une baignade rafraîchissante au pied de l'Atacora.",
     "department": "Atacora",
     "country": "Bénin",
     "address": "Tanongou, Atacora",
@@ -2559,12 +2875,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": "Proche des zones frontalières formellement déconseillées du nord. Renseignez-vous sur la situation sécuritaire avant de partir.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "randonnee-aux-cascades-de-tanougou"
   },
   {
     "nom": "Motel Du Lac",
     "category": "hotel",
-    "description": "Hôtel familial réputé pour sa cuisine, à Djougou.",
+    "description": "Un hôtel familial de Djougou, réputé pour sa cuisine.",
     "department": "Donga",
     "country": "Bénin",
     "address": "Djougou, Donga",
@@ -2589,12 +2909,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "motel-du-lac"
   },
   {
     "nom": "Hôtel de la Donga",
     "category": "hotel",
-    "description": "Hôtel simple et pratique à Djougou.",
+    "description": "Un hôtel simple et pratique pour une nuit à Djougou.",
     "department": "Donga",
     "country": "Bénin",
     "address": "Djougou, Donga",
@@ -2618,12 +2942,16 @@
       "solo"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-de-la-donga"
   },
   {
     "nom": "Hôtel Cathas",
     "category": "hotel",
-    "description": "Hôtel accessible au centre de Djougou.",
+    "description": "Un hôtel abordable au centre de Djougou, proche des commerces.",
     "department": "Donga",
     "country": "Bénin",
     "address": "Djougou, Donga",
@@ -2647,12 +2975,16 @@
       "solo"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-cathas"
   },
   {
     "nom": "Découverte de la Forêt classée de Wari-Maro",
     "category": "activite",
-    "description": "Randonnée nature et observation de la faune.",
+    "description": "Randonnée accompagnée dans l'une des plus vastes forêts classées du pays, à l'affût des primates, des antilopes et des oiseaux.",
     "department": "Borgou/Donga",
     "country": "Bénin",
     "address": "Tchaourou, Borgou / Bassila, Donga",
@@ -2678,12 +3010,16 @@
       "amis"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "decouverte-de-la-foret-classee-de-wari-maro"
   },
   {
     "nom": "Ola Luxury Hôtel",
     "category": "hotel",
-    "description": "Hôtel confortable et bien noté à Parakou.",
+    "description": "Un hôtel confortable et bien noté à Parakou, pour une étape soignée dans le nord.",
     "department": "Borgou",
     "country": "Bénin",
     "address": "Parakou, Borgou",
@@ -2708,12 +3044,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "ola-luxury-hotel"
   },
   {
     "nom": "Kobourou City Hôtel",
     "category": "hotel",
-    "description": "Grand hôtel avec piscine à Parakou.",
+    "description": "Grand hôtel avec piscine à Parakou, pratique pour les séjours en famille comme pour les déplacements professionnels.",
     "department": "Borgou",
     "country": "Bénin",
     "address": "Parakou, Borgou",
@@ -2739,12 +3079,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "kobourou-city-hotel"
   },
   {
     "nom": "Hôtel Iya-Oasis",
     "category": "hotel",
-    "description": "Hôtel au décor traditionnel, très bien noté à Parakou.",
+    "description": "Un hôtel au décor traditionnel, parmi les mieux notés de Parakou, qui offre une vraie touche locale.",
     "department": "Borgou",
     "country": "Bénin",
     "address": "Parakou, Borgou",
@@ -2770,12 +3114,16 @@
       "couple"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-iya-oasis"
   },
   {
     "nom": "Visite du musée de plein air de Parakou",
     "category": "activite",
-    "description": "Découverte de l'art et des traditions du nord du Bénin.",
+    "description": "Visite guidée des habitats et objets traditionnels du nord du Bénin, à ciel ouvert, au cœur de Parakou.",
     "department": "Borgou",
     "country": "Bénin",
     "address": "Parakou, Borgou",
@@ -2803,12 +3151,16 @@
       "famille"
     ],
     "infos_estimees": true,
+    "alerte": null,
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "visite-du-musee-de-plein-air-de-parakou"
   },
   {
     "nom": "Hôtel Séjour du Sahel",
     "category": "hotel",
-    "description": "Hôtel propre et sécurisé à Malanville.",
+    "description": "Un hôtel propre et sécurisé à Malanville, près de la frontière avec le Niger.",
     "department": "Alibori",
     "country": "Bénin",
     "address": "Malanville, Alibori",
@@ -2832,12 +3184,16 @@
       "solo"
     ],
     "infos_estimees": true,
+    "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "hotel-sejour-du-sahel"
   },
   {
     "nom": "Safari au Parc national du W",
     "category": "activite",
-    "description": "Observation de la faune dans le parc transfrontalier UNESCO.",
+    "description": "Observation de la faune du parc W, entre savanes et méandres du fleuve Niger : éléphants, buffles, hippopotames et oiseaux d'eau.",
     "department": "Alibori",
     "country": "Bénin",
     "address": "Alibori",
@@ -2865,6 +3221,10 @@
       "famille"
     ],
     "infos_estimees": false,
+    "alerte": "Zone formellement déconseillée aux voyageurs (risque d'attaques terroristes et d'enlèvements, frontière nord). Vérifiez les conseils aux voyageurs de votre pays avant tout déplacement.",
+    "photos": null,
+    "photo_credit": null,
+    "photo_source": null,
     "slug": "safari-au-parc-national-du-w"
   }
 ]

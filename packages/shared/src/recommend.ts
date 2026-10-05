@@ -79,6 +79,8 @@ function classer(lieux: Lieu[], criteres: RecoCriteres, limit: number): Recomman
     // Un hôtel n'est pas une sortie en soi : il reviendra avec le pilier
     // « Créer sa sortie » (activité + hébergement).
     if (lieu.category === "hotel") continue;
+    // On ne propose jamais une sortie signalée comme déconseillée.
+    if (lieu.alerte) continue;
     if (!lieu.price_level || !lieu.duree) continue;
     if (PRICE_ORDER.indexOf(lieu.price_level) > maxPrice) continue;
     if (DUREE_ORDER.indexOf(lieu.duree) > maxDuree) continue;

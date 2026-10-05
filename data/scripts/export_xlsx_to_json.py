@@ -105,6 +105,14 @@ def extra_fields(row, headers, offset):
         "tags": parse_list(extra.get("Ambiances")),
         "ideal_pour": parse_list(extra.get("Idéal pour")),
         "infos_estimees": str(extra.get("Infos estimées") or "").lower() == "oui",
+        # Avertissement affiché en tête de fiche (sécurité, fermeture...) ;
+        # un lieu en alerte n'est jamais proposé par les recommandations.
+        "alerte": extra.get("Alerte"),
+        # Vraie photo (Wikimedia Commons via fetch_commons_photos.py, ou
+        # saisie à la main) + crédit exigé par sa licence.
+        "photos": [extra["Photo"]] if extra.get("Photo") else None,
+        "photo_credit": extra.get("Photo crédit"),
+        "photo_source": extra.get("Photo source"),
     }
 
 

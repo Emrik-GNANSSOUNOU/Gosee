@@ -84,4 +84,9 @@ export interface Lieu {
   tags?: Ambiance[] | null;
   ideal_pour?: IdealPour[] | null;
   infos_estimees?: boolean;
+  // Avertissement à afficher en tête de fiche (zone déconseillée, fermeture...).
+  alerte?: string | null;
+  // Attribution de photos[0] (auteur, licence) et lien vers sa page d'origine.
+  photo_credit?: string | null;
+  photo_source?: string | null;
 }

@@ -114,6 +114,8 @@ Ces variables sont déjà configurées sur Vercel (projet `gosee-web`) pour Prod
 - Lint : `npm run lint`
 - Seed Supabase : `npm run seed` (réimporte tout `data/seed/lieux.json` — supprime puis réinsère toutes les lignes de la table `lieux`)
 - Régénérer le JSON depuis le xlsx : `python data/scripts/export_xlsx_to_json.py` (nécessite `pip install openpyxl`)
+- Mettre à jour la base sans PC ni seed : `python data/scripts/generate_sql_update.py` → coller `supabase/maj_contenu.sql` dans le SQL Editor de Supabase puis Run (ajoute les colonnes manquantes, met à jour les 90 lieux par slug, sans changer leurs id ; relançable sans risque)
+- Vraies photos (Wikimedia Commons, licences libres) : `python data/scripts/fetch_commons_photos.py` (revue CSV seule) puis `--apply` (écrit les colonnes Photo du xlsx) ; nécessite l'accès réseau à `commons.wikimedia.org`
 - Tests : [à définir]
 
 ## État d'avancement (dernière mise à jour : octobre 2026)
@@ -123,23 +125,26 @@ Ces variables sont déjà configurées sur Vercel (projet `gosee-web`) pour Prod
 - Pilier 2 (Découverte géolocalisée) : bandeau "Autour de moi" (mis en avant visuellement, pas un simple filtre discret), rayon ajustable 5/10/25/50 km, tri par distance, itinéraire Google Maps sur la fiche détail
 - 90 lieux en base (les événements ont été retirés du périmètre produit — voir pilier 1 et règles ci-dessous)
 - ~32 lieux enrichis (horaires, téléphone, site web, note/avis) par recherche web manuelle ; le reste n'a pas d'info publique trouvable (sites naturels, petits établissements) — champs laissés vides plutôt qu'inventés
-- Photos : images libres de droit génériques par catégorie (pas les vraies photos des lieux), via `apps/web/lib/images.ts`
+- Photos : visuels neutres SVG par catégorie (`public/images/placeholders`, les anciennes photos génériques trompeuses ont été retirées) tant qu'aucune vraie photo n'est rattachée ; chaîne Wikimedia Commons prête (script + colonnes Photo/Photo crédit/Photo source + crédit affiché sous la photo de la fiche + `upload.wikimedia.org` autorisé dans next.config), pas encore exécutée faute d'accès réseau depuis la session cloud
 - Infos pratiques (préparation du pilier Recommandations, oct. 2026) : les 90 lieux ont gamme de prix, durée, ambiances et public idéal (colonnes xlsx « Prix », « Gamme de prix », « Durée », « Ambiances », « Idéal pour », « Infos estimées »), affichés dans un bloc « Infos pratiques » sur la fiche. Prix sourcés quand un tarif public a été trouvé (souvent anciens : 2021, plateformes de réservation) ; sinon `infos_estimees = true` et la fiche l'indique. Vocabulaire partagé dans `packages/shared/src/pratique.ts`
 
 - Pilier Recommandations personnalisées (passé devant la billetterie sur décision explicite de l'utilisateur, oct. 2026 — billetterie en pause) : page `/recommandations` « Je ne sais pas quoi faire » (bandeau orange sur l'accueil, au-dessus d'« Autour de moi »), questionnaire budget/temps/groupe/ambiances + position facultative, 5 suggestions avec leurs raisons. Moteur à règles dans `packages/shared/src/recommend.ts` (exclusion budget/durée/distance max selon le temps dispo, score ambiances/groupe/proximité/note, dédoublonnage des lieux au même endroit, élargissement automatique si aucune ambiance ne correspond). Hôtels exclus (reviendront avec « Créer sa sortie »). API `GET /api/recommandations` pour le mobile. Préférences gardées en localStorage (pas de compte)
 
+- SEO (oct. 2026) : vraies pages `/categorie/<slug>` (titre, h1, intro, canonical propres ; anciennes `/?category=X` redirigées en 308), fil d'Ariane + BreadcrumbList, bloc « À proximité » (3 lieux voisins), meta descriptions générées (`packages/shared/src/meta.ts`, tournures variées), images de partage `next/og`, ISR 5 min partout (`revalidate = 300`, fiches en ISR à la demande)
+- Descriptions des 90 lieux réécrites à partir de recherches (UNESCO, sites officiels, presse) ; champ `alerte` (bandeau rouge en tête de fiche, lieu exclu des recommandations) : Pendjari, parc W et Malanville = zone formellement déconseillée (conseils aux voyageurs), Tanougou/Atacora/Kandi = proches de cette zone
+
 **Prochaine étape :** à décider avec l'utilisateur — reprendre la billetterie (dernier pilier du MVP) ou « Créer sa sortie » (activité + restaurant/hôtel + itinéraire), qui s'appuie sur les recommandations.
 
-**À faire côté dashboard Supabase** pour que les infos pratiques et les recommandations fonctionnent en prod : coller `supabase/infos_pratiques.sql` dans le SQL Editor puis Run (migration + données des 90 lieux, sans PC ni seed ; équivaut au bloc « Infos pratiques » de `schema.sql` + `npm run seed`), puis merger la branche sur `main`. Sans ça, la page `/recommandations` ne propose rien (aucun lieu n'a de budget/durée en base).
+**Après chaque modification du contenu** : régénérer et coller `supabase/maj_contenu.sql` dans le SQL Editor de Supabase (voir Commandes), puis merger la branche sur `main`.
 
 **En attente / bloqué :**
 - Vraies photos + avis Google Places : nécessite une clé API Google Cloud (Places API), bloquée côté utilisateur sur l'activation de la facturation Google Cloud. Plan déjà défini une fois débloqué : résoudre un `place_id` par lieu, proxy serveur pour les photos (cache court, jamais stockées en permanence — CGU Google), Google Places prioritaire sur les données déjà enrichies par recherche web.
 
 ## Points de vigilance (infra)
 
-- **Deux projets Vercel** (`gosee-web` et `gosee-web-gwtp`) pointent sur le même repo GitHub — doublon jamais nettoyé, les deux se déploient à chaque push. `gosee-web-gwtp` n'a pas `NEXT_PUBLIC_SITE_URL` configurée (contrairement à `gosee-web`).
+- **Deux projets Vercel** (`gosee-web` et `gosee-web-gwtp`) pointent sur le même repo GitHub — `gosee-web-gwtp` est à supprimer (contenu dupliqué indexable, canonicals vers localhost car sans `NEXT_PUBLIC_SITE_URL`) ; suppression à faire par l'utilisateur dans le dashboard Vercel (pas d'accès Vercel depuis les sessions cloud).
 - **Déploiements Vercel bloqués si l'auteur du commit n'est pas reconnu** : le plan Hobby exige que l'auteur git soit le compte GitHub lié au compte Vercel (`Emrik-GNANSSOUNOU`). La config git de ce repo est déjà réglée en conséquence (`git config user.name/user.email` au niveau du repo, pas globalement) — si une nouvelle machine/session clone le repo, refaire ce réglage avant de push, sinon le déploiement reste bloqué (`TEAM_ACCESS_REQUIRED`).
-- **Supabase (plan gratuit)** se met en pause après une période d'inactivité prolongée — le site renvoie alors une 500 (la page d'accueil est `force-dynamic`, elle dépend d'un fetch Supabase réussi). Se répare en rouvrant le dashboard Supabase et en cliquant "Restore project".
+- **Supabase (plan gratuit)** se met en pause après une période d'inactivité prolongée. Depuis le passage en ISR (oct. 2026), les pages déjà générées restent servies pendant la pause (plus de 500), mais **un build lancé pendant la pause échoue** (accueil, catégories et `/recommandations` sont pré-générés au build) — le déploiement précédent reste alors en ligne. Se répare en rouvrant le dashboard Supabase et en cliquant "Restore project", puis en relançant le déploiement. Un build local/cloud sans accès réseau à Supabase échoue pour la même raison (vérifier avec `npx tsc --noEmit -p apps/web` + lint, ou un build avec données mockées).
 - **Dépôt GitHub public** (pas privé) — à vérifier si c'est voulu.
 
 ## Règles pour Claude Code

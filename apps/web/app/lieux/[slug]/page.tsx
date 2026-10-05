@@ -11,10 +11,11 @@ import {
   type Category,
   type Lieu,
 } from "@gosee/shared";
+import { AlerteLieu } from "@/components/AlerteLieu";
 import { AProximite } from "@/components/AProximite";
 import { FilAriane } from "@/components/FilAriane";
 import { InfosPratiques } from "@/components/InfosPratiques";
-import { getLieuImage } from "@/lib/images";
+import { lieuImageProps } from "@/lib/images";
 import { getAllLieux, getLieuBySlug } from "@/lib/lieux";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -47,7 +48,7 @@ function jsonLd(lieu: Lieu, url: string) {
     name: lieu.nom,
     description: lieu.description ?? undefined,
     url,
-    image: `${url}/opengraph-image`,
+    image: lieu.photos?.[0] ?? `${url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
       addressLocality: lieu.department ?? undefined,
@@ -95,7 +96,7 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
 
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-200 sm:aspect-[16/7]">
         <Image
-          src={getLieuImage(lieu)}
+          {...lieuImageProps(lieu)}
           alt={lieu.nom}
           fill
           priority
@@ -136,6 +137,18 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
         </div>
       </div>
 
+      {lieu.photos?.[0] && lieu.photo_credit && (
+        <p className="mx-auto max-w-2xl px-4 pt-1 text-right text-[11px] text-neutral-500">
+          {lieu.photo_source ? (
+            <a href={lieu.photo_source} target="_blank" rel="noopener noreferrer" className="hover:underline">
+              {lieu.photo_credit}
+            </a>
+          ) : (
+            lieu.photo_credit
+          )}
+        </p>
+      )}
+
       <div className="mx-auto max-w-2xl px-4">
         <FilAriane
           className="mt-4"
@@ -148,6 +161,8 @@ export default async function LieuDetailPage({ params }: { params: Params }) {
             { name: lieu.nom, path: `/lieux/${lieu.slug}` },
           ]}
         />
+
+        {lieu.alerte && <AlerteLieu message={lieu.alerte} />}
 
         {lieu.description && (
           <p className="mt-4 leading-relaxed text-neutral-700">{lieu.description}</p>
